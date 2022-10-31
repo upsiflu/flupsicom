@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Flupsi's movement practices">
+ 	<meta name="keywords" content="Portfolio, Art, Ritual, Allegory, Cyborgism, Framing">
+  	<meta name="author" content="Flupsi Upsi">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>φλυψι</title>
+	<style>
+html,body,div,span,
+h1,h2,h3,h4,h5,p,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{    margin:0;    padding:0;    border:0;    outline:0;    font-size:100%;    font:inherit;    vertical-align:baseline;    box-sizing: border-box;}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{    display:block;
+}
+body{    line-height:1;}
+h1,h2,h3,h4,h5,h6{line-height:100%;}
+ol,ul{    list-style:none;}
+blockquote,q{    quotes:none;}
+blockquote:before,blockquote:after,
+q:before,q:after{    content:’’;    content:none;}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+*:focus{    border-left-color:rgb(240,255,40);}
+em {font-style:italic;}
+	</style>
+	<style>
+
+/* Portfolio-Standard */
+
+#welcome h1 {color:white;font-size:5rem; line-height:4rem;text-stroke:.02em white;-webkit-text-stroke:.02em white;}
+#welcome p {color:white;font-size:2rem; line-height:2rem;text-stroke:.02em white;-webkit-text-stroke:.02em white;}
+#welcome {position:fixed;}
+
+#contents {top:100vh; padding-top:5rem;background-color:rgba(0,0,0,0);position:absolute;padding-bottom:2em;width:100%;}
+/*
+#contents > .table-of-contents {transform:rotate(-90deg);background:transparent; font-style: italic;font-size:1.6em;
+padding-left:0;top:0vh;margin-top:-55vh; margin-bottom:6rem;
+line-height:4.4rem;max-width:35rem;}
+#contents > .table-of-contents > a {display:inline-block;background:#ccc; outline:.03rem solid black;padding:.0rem .8rem .2rem .8rem;margin-bottom:.5rem;
+border-width:.13rem !important;border-style: outset;text-decoration:none !important;font-style:normal;color:black;}
+#contents > .table-of-contents > a:hover {background:rgb(230,160,30);outline-width: .3rem;outline-style:double;}
+*/
+#contents > .table-of-contents {background:white;min-width: 100vw;}
+#contents > .table-of-contents a {font-size: 2.2em;margin-right:2em;
+    line-height: 1em; margin-bottom:1em;
+    display: inline-block;}
+#contents > .table-of-contents a small {display:inline-block; vertical-align: middle;font-size:0.8em; max-width:4.5em;line-height:1.0em;font-style:italic;margin:-.2rem; padding:.2em;text-align:center;}
+#contents > .table-of-contents a aside {display:block;color:black; text-decoration:none;vertical-align: middle;font-size:1rem; max-width:9em;line-height:1.0rem;font-style:italic;margin:-.2rem; padding:.2rem;margin-right:4rem;margin-left:-2rem;margin-bottom:-0.5rem;}
+#contents > .table-of-contents a:hover aside{background:transparent;}
+/* Standard */
+body {font-family: 'Cormorant Garamond', serif; line-height:1.2em;overflow-x:hidden;}
+*{transition: width .3s, height .8s, left .3s, right .3s, margin .3s, padding .3s, background-color 1s,border-left-color .2s, max-width .3s;}
+img {width:100%;}
+outlined {outline: .06em solid rgba(230,180,0,.9);outline-offset:.17em;}
+.s2 {width:50%;}
+.s3 {width:33.33%;}
+.s4 {width:25%;}
+.s23 {width:66.66%;}
+.s34 {width:75%;}
+.s16 {width:16.16%;}
+.s17 {width:14.28%;}
+.s27 {width:28.57%;}
+.s37 {width:43.85%;}
+.s47 {width:57.14%;}
+.s57 {width:71.42%;}
+.s19 {width:11.11%;}
+.s29 {width:22.22%;}
+.s49 {width:44.44%;}
+.s49 {width:55.55%;}
+.s79 {width:77.77%;}
+.s89 {width:88.88%;}
+.s112 {width:8.08%;}
+.p2 {width:12rem;}
+.p3 {width:8rem;}
+.p4 {width:6rem;}
+.p23 {width:16rem;}
+.p34 {width:18rem;}
+.p25 {width:9.6rem;}
+.p16 {width:4rem;}
+.p27 {width:6.8571rem;}
+.p37 {width:10.285rem;}
+.p49 {width:10.666rem;}
+.c {margin-left:2.7rem;}
+
+#contents {min-width:24rem;} 
+/*Abstand zwischen sections*/
+#contents>section {margin-top:1rem;}
+aside.navigational {margin-top: -1em;    padding-top: 1em;}
+article,.table-of-contents {max-width:30rem; background:white;display:block;padding-bottom:1.6rem;padding-top:1.6rem;}
+p,h1,h2,h3,h4,h5,.table-of-contents, details {padding:.3rem 2.4rem .5rem 2.7rem;border:.4rem solid rgba(0,0,0,0); border-left-width:.06rem;}
+/*Abstand zwischen p*/
+p + p {border-top-width: 0rem; padding-top: 0rem;} /*make multi paragraphs stay more together */
+h1 +img {border-top:.07rem solid black;margin-top:.2em;}
+h1 {font-size:3em;padding-bottom:.7rem; padding-top:.9rem; margin-left:-.2rem;letter-spacing:-0.12rem;}
+h2 {font-size:2.4em ;padding-bottom:.5rem; padding-top:.7rem;margin-left:-.15rem;letter-spacing:-0.09rem;}
+h3 {font-size:1.9em ;padding-bottom:.3rem;}
+h3:first-child {padding-top:0;margin-top:-.8rem;}
+h4, summary {font-size:1em; letter-spacing:.1em; padding-top:.5rem; padding-bottom:0rem; border-bottom-width:0rem;}
+h4+* {border-top-width:0rem;}
+
+em em, em em em em, aside em, aside aside {font-style:normal;}
+em, em em em, aside em em {font-style:italic;}
+
+.hide-sticky {background:white;z-index:2;width:2.2rem;height:2.2rem;display:block;margin-bottom:-2.2rem;position:absolute;box-shadow:0px 5px 5px white;}
+.sticky {  position: -webkit-sticky;  position: sticky; margin-left:0; display:block; top:0;right:0; margin-bottom:-2.2rem;}
+.sticky a {background:rgba(255,255,255,0.01);text-shadow:.5px  .5px 0px white, -.5px  -.5px 0px white, .5px -.5px 0px white,-.5px  .5px 0px white,.5px -.5px 0px white;height:2.2rem; width:2.2rem; overflow:hidden; letter-spacing:-.1em; font-size:1.8rem; line-height:2.2rem;display:block;text-align:center;text-decoration:none;}
+	</style>
+	<style>
+/* Flupsi */
+a {color: rgb(200,130,0);}
+::selection {background:rgba(230,200,0,.4);}
+details:hover, p>a:hover, aside>a:hover, nav>a:hover,a>aside:hover {background:rgba(230,200,0,.4);}
+article {outline: .4em solid rgba(255,255,255,.99)}
+#CV p em:first-child {text-indent:-1rem;display: inline-block; margin-right:.3rem;}
+aside{display:inline-block;padding:0rem 1.8rem .5rem .4rem; position:relative;top:-.6rem;left:3rem;margin-bottom:-.4rem;
+font-style:italic;width:19rem; margin-left:.7rem; border-left:.08em solid black;}
+aside p, aside h1, aside h2, aside h3, aside h4, aside details {padding-left:0rem;}
+
+/*embellishment*/
+.sticky+section{background:white; outline:.7rem solid white;min-width:100% !important;}/*to hide stickything*/
+aside+h1 {    margin-top: -1.3rem;}
+#contents.night>section {-webkit-filter: invert(100%);} /*night reading*/
+#contents.night>section img, #contents.night>section iframe  {-webkit-filter: invert(100%);}
+.work h2::before {content:"«";position:relative;display:inline-block;width:2em;text-align:right; margin-left:-2em;}
+.work h2::after {content:"»";position:relative;display:inline-block;margin-right:-2em;width:2em;}
+.work h2 {display:inline-block;}
+.overview {background:#ddd;margin-top:-1em;}
+.overview>*:first-child {font-size: 130%;line-height:1.2; font-style:italic;}
+#contents > section::before {border-top:.07rem dashed black !important;z-index:3;position:relative; top:0em;content:" "; width:100%;display:block;background:transparent;}
+.pdf::before {position:relative; top:0; left:-1rem; border:.03rem solid white;outline:.03rem solid #000; background:black; width:1.6rem; height:1.6rem; content:".pdf";display:block;line-height:1.6rem; margin-left:-1.6rem; margin-bottom:-1.5rem; color:white; font-size:1rem; letter-spacing:-.05rem; text-decoration:none !important;}
+#current {width:100%; background:rgb(30,0,50); color: yellow;max-width: 100%;    outline: .7rem solid white;z-index:14 !important;}
+#current aside {border-color:yellow !important;top:0.6rem;}
+	</style>
+	<style>
+/* 1-column layout (default) */
+img.marginal {object-fit:scale-down;border-radius:4.5rem;width:9rem; height:9rem;padding:.15rem .15rem .15rem .15rem;background:rgba(0,0,0,.02); border:.07rem solid rgb(200,130,0) !important; margin:.8rem -.2rem -.2rem 2.4rem;z-index:4;}
+
+	
+/* up to medium phone, portrait */
+@media only screen and (max-width: 30em) {
+	/*collapsible navigation bar -- initially show the toc*/
+	#contents {top:70vh !important;}
+	h1 {font-size:2.7em ;padding-bottom:.7rem; padding-top:.9rem; margin-left:-.2rem;letter-spacing:-0.10rem;}
+	h2 {font-size:2.1em ;padding-bottom:.5rem; padding-top:.7rem;margin-left:-.15rem;letter-spacing:-0.08rem;}
+	img.marginal {/*width:80vw !important; height:80vw !important;*/ border-radius:40vw !important; margin-left:10vw !important;}
+}
+
+/* 1-column layout with margin (small window) */
+@media only screen and (min-width: 30em) {
+	article {min-width:100%;}
+	 p{max-width:30em;}
+	img.illustrative {display:inline-block;max-width:50%; max-height:29rem;padding:.5rem .4rem .8rem .4rem;background:rgba(0,0,0,.01);}
+}
+
+@media only screen and (min-width: 40em) {
+	html {font-size:1.2em;}
+}
+/* 2-column layout (tablet, small portrait screens) */
+@media only screen and (min-width: 72em) {
+	#contents {top:77vh;}
+	p {padding:.6rem 2.4rem 1rem 2.4rem;border:.4rem solid transparent;}
+	h1 +img.illustrative {border:none;margin-top:0em;}
+	h1 +img.marginal {border:none;margin-top:0em;}
+	article {min-width:60em;width:60em;margin-left:auto;margin-right:auto;column-count:2;-moz-column-count:2;-webkit-column-count:2;}
+	h1 {column-span: all;}
+	h1+p {border-top-width:0;padding-top:0rem;}/* to make the firs paragraphs in both columns align well*/
+	p {display:inline-block;}
+	img.illustrative {display:inline-block;max-width:29rem; max-height:29rem;padding:.5rem .4rem .8rem .4rem;background:rgba(0,0,0,.01);}	
+	/*align 2 illustrative images*/
+	img.illustrative+img.illustrative {margin-left:16rem;}
+
+}
+@media only screen and (min-width: 84em) {
+	html {font-size:1.3em;}
+}
+
+/* 2.5-column layout (any large window) */
+@media only screen and (min-width: 99em) {
+	article > nav.table-of-contents {position: -webkit-sticky;  position: sticky; top:0;max-width:100% !important;z-index:5;background-color:rgb(222,222,222)!important;
+	border-width:.09rem;border-left-color:white;border-bottom-color:black;border-top-color:white;border-right-color:rgba(0,0,0,.2);outline:.03rem solid grey;box-shadow:inset 0 -.1rem 0 #888888;}
+	h1 +img.marginal {border:none;margin-top:0em;}
+	p {display:inline-block;}
+	img.marginal:first-of-type {width:9rem; height:9rem;padding:.15rem .15rem .15rem .15rem;background:rgba(0,0,0,0); border:.05rem solid black !important; position:absolute;left:50%;margin-top:.8rem;margin-left:-38rem;;z-index:4;}
+}
+
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i" rel="stylesheet"><!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+	<div id="background-image" style="position: fixed;background: url('specimen2.jpg') no-repeat center center fixed; background-size:cover; background-color:blue;height:100vh;width:100vw;margin-bottom:-100vh;">&nbsp;</div>
+	<header id="welcome">
+		<p>flupsi: mutual pleasures!</p>
+		<p>take a look at the <a href="#current">current projects</a>.</p>
+	</header>
+	
+	<section id="contents">
+		<nav id="main-menu" class="table-of-contents">
+			<span style="float:left;">go to Flupsi's&nbsp;☞&nbsp;</span> <a href="#CV">CV</a><br/>
+  			<p>and read about&nbsp;☟&nbsp;</p><br/>
+  			<a href="#economy"><aside>can dance crack codes of deprivation?</aside>performing&nbsp;economy&nbsp;<small>along the edges of allegory</small>&nbsp;'17-18
+  				</a>
+  			<a href="#pleasures"><aside>where lie our cyborg strengths?</aside>machine&nbsp;pleasures&nbsp;<small>in material cyborgism</small>&nbsp;'13-18
+  				</a>
+  			<a href="#myth"><aside>give us, space, <nobr>a fairy-tale!</nobr></aside>myth&nbsp;container&nbsp;<small>and the end of all images</small>&nbsp;'12-16
+  				</a>
+		</nav>
+		<article id="current" class="work" style="width:100%;padding-left:auto;padding-right:auto;">
+			<div style="display: block; max-width:30rem;margin-left:auto;margin-right:auto;">
+			<aside>
+				upcoming exhibition:<br/>
+				Jul 17, 9-17h (slot t.b.a.); Hardenbergstraße 33
+			</aside><h2>solo for my body</h2>
+			<p>My graduation piece after five years of fine arts and dance studies is open to everyone, and I'd love to see you there. I'll perform in the secret garden east of the main building, and then have a 10min Q&A. Unfortunately the organizers cannot yet tell any of the graduators when our slot is, so I'll try to get that fixed, and come back later to find it here :-)</p>
+			</div>
+			<div style="display: block; max-width:30rem;margin-left:auto;margin-right:auto;">
+			<aside>
+				currently working on:
+			</aside><h2>tableau vivant</h2>
+			<p>In «tableaux vivants», ‘living images’, actors represent a concept through staging a scenic figure taken from a known text. It fell out of use amidst the onset of industrialization due to a somewhat ribald excess: a body is always more than what it supposedly marks. In particular, excessive pleasures may transcend narrative frames and bear yet-unwritten myths from the cyborg worlds. A gallery exhibition with the working title «tableau vivant» (for Sep ‘18) is afoot, and my graduation work «solo for my body» (July 17, ‘18) will assay the concept.</p>
+			</div>
+		</article>
+		<div class="hide-sticky"></div>
+  		<nav class="sticky go-back"><a href="#main-menu" alt="main menu">&uarr;</a></nav>
+  		
+  		<section id="CV">
+			<article><h1>artistic&nbsp;CV</h1>
+				<p><em>Feb-Jun, 18</em> Flupsi organizes regular jam sessions on
+				«material cyborgism», a dance practice based on Donna Haraway's Cyborg Manifesto
+				and research in different boundaries around bodies.</p>
+				<p><em>Sep-Dec, 17</em> initiates project «allegory of economy»;
+				Occupation with Allegory and Dispositif theory.</p>
+				<aside class="links">more <a href="#allegory">here</a> and <a href="http://www.allegory.fun">on&nbsp;the&nbsp;blog</a></aside>
+				<p><em>Mar-Dec, 17</em> «future witchcraft», a collaboration with
+				Josephine Witt, Judith Förster and Pia Achterkamp;
+				permanent performance lab in Aarhus, a show at
+				Volksbühne, a «framing ritual» workshop and experiment on
+				body-and-frame awareness; final workshop in betOnest</p>
+				<a href="http://futurewitchcraft.org"><aside class="links">our project site</aside></a>
+				<p><em>17</em> working as performer for Alexandra Pirici and
+				Rebecca Goyette; critical reassessment of the frames and
+				spaces of performance art</p>
+				<p><em>16</em> initiation of the network “compagnie sorcellerie” and
+				the project “future witchcraft” on the inscription of
+				witch-hunts in the body; formulation of a gift economy
+				(genet.space); studying of matriarchy and feminisms</p>
+				<p><em>15-17</em> leaning to dance: taking courses in improvisation,
+				release, bmc, CI…; attending seminars at HZT;
+				collaboration with some HZT students</p>
+				<p><em>14-15</em> project group “sociétés in the city without
+				environs” on urbanism and self-&#8288;indulgence; also giving
+				regular workshops in parks</p>
+				<p><em>14</em> project group “strange movements” to explore
+				motion, mechanisms and encounters in a fictional space</p>
+				<p><em>13-18</em> studies of fine arts and performance art at UdK
+				Berlin; ever-recurring themes of ephemeral spaces that
+				invite utopia; new name: “Flupsi”.</p>
+				<p><em>10-15</em> creating some feature films (camera,
+				scenography, costumes, postproduction).</p>
+				<a href="http://stefanröben.de"><aside class="links">watch my cinematography portfolio</aside></a>
+				<p><em>10</em> founding a noncommercial filmmaking collective
+				since 09: film studies at FU Berlin; participating in
+				various political street theatre groups.</p>
+				<p><em>08-9</em> working at Armes Theater Chemnitz
+				(material theater / children's theatre).</p>
+				<p><em>99-08</em> Gymnasium in a rural area; robotics and design projects.</p>
+				<p><em>88-96</em> born and grown up in Frankfurt (Main).</p>
+				
+			</article>
+		</section>
+  		
+  		<section id="economy">
+			<article class="intro">
+				<aside class="navigational">
+					<details>
+  						<summary>6 works</summary>
+						<a href="#tableau"><h4>«tableau vivant» choreographic installation</h4></a>
+						<a href="#genet"><h4>«gift economy network» modelling language research</h4></a>
+  						<a href="#allegory"><h4>«allegory of economy» framework</h4></a>
+						<a href="#witchcraft"><h4>«future witchcraft»</h4></a>
+						<a href="#framing"><h4>«framing ritual»</h4></a>
+						<a href="#sand"><h4>«sand practice» workshops and residencies</h4></a>
+					</details>
+					<details>
+  						<summary>1 public exhibition</summary>
+					</details>
+					<details>
+  						<summary>2 downloads</summary>
+						<a href="kunst_und_gesellschaft.pdf" download><h4 class="pdf">«Akademie» portfolio, ‘13</h4></a>
+						<a href="Societe of Labyrinth - project description - Guzowska Torabi Röben Boeno Pishvai.pdf" download><h4 class="pdf">«Sociétés» exposée, ‘15</h4></a>
+					</details>
+				</aside>
+				<h1>performing economies</h1>
+				<p>Economies of space underlie every choreography. Bodies serve as currency and token in economies of representation. And finally, art is a market in which I am a freelancer.
+				</p><p>During the «sand residency» in July ‘18, me and two fellow dancers will explore the mutualities that emerge within an improvised dance. Several workshops throughout June have produced a comprehensive codex of practices.
+				</p><p>The collective research project «allegory of economy» (December ‘17, ongoing) aims to leverage allegory as a tool to understand and reassemble economies in relation to bodies, transactions and customs
+				</p><p>«future witchcraft» (feb-dec ‘17) comprised of a residency with an open lab, several performances and rituals, workshops and a  theatre play, all approaching the political struggles of early modern women in Europe that ended, as we all know, in mass gynocides. Can we, in our situation, join these witches’ emancipatory stategies of magic practice, ritual, and direct action, and eventually undo the historic  establishment of female gender as economic marker?
+				</p><p>Through the «framing ritual» (Jun 9, ‘17), I related the apparatus’ frame (such as central perspective) through spontaneous gestures and inscriptions (lines painted on skin) to inner foci, in an attempt to exclude conventional interprlay between these three layers. The awareness of five foci in the body which mold the appreciation of surroundings proved a useful ingredient for all successive practices.
+				</p>
+			</article><article>
+				<h3>Can dance crack codes of deprivation?</h3>
+				<p>“This is the first discovery: that patriarchy is not a construction, an order or a structure, but an economy, for which women are the first and founding commodities”, Sadie Plant writes in her essay «On the matrix: cyberfeminist simulations». An then she quotes Luce Irigaray: In this economy, “Women, signs, commodities, and currency always pass from one man to another”; their existance being reduced to what it signifies: “the possibility of mediation. transaction, transition, transference”. And adds: “Women have served as his media and interfaces, muses and messengers, currenties and screens, interactions, operators, decoders, secretaries… they have been man’s go-&#8288;betweend, the in-&#8288;betweens, taking his message, bearing his children, and passing his genetic code.”</p>
+				<p>In retrospect, allegories and emblems of the early modern age are blatantly sexist, and nescessarily so as they were to depict interfaces of circulation as female-&#8288;marked bodies. The project of gendering the symbolic realm, a foundational effort of modern patriarchy, has, despite resistance from women, been successful, and continues to inform image production in the contemporary fields. And, in a not-&#8288;so-&#8288;ironic reappropriation, “Twentieth-&#8288;century scientists call on this earlier visual technology for insisting on a specific kind of reality, which readily makes today’s observers forget the conditions, apparatuses and histories of its production. Especially in computer an information sciences and in biotechnology and biomedicine, representations of late twentieth century technosciences make liberal use of iconic exemplars of early modern European art/humanism/technology. Current images of technoscience quote, point to, and otherwise evoke a small, conventional, potent stock of Renaissance visual analogues, which provide a legitimate lineage and origin story for technical revolutions at the end of the Second Christian Millenium”, as Donna J. Haraway describes in her «Virtual Speculum». Deeper motivations may have stayed the same for 500 years as the extended-&#8288;shelf-&#8288;life visual apparatus canonized in the Renaissance still, in distinct ways, serves the production and reproduction of gender.</p>
+				<p>The visible spill of early modern emblems into cyber-&#8288;science throughout the 90s has inspired me to revisit contemporary body representation through the lens of Allegory. I discovered this word in many critical texts on 20th century feminist performance art as well as on early modern construction of gender, and despite its demise in the 19th century, Walter Benjamin’s seminal essay on Allegory seems to have spurred a slow but lasting reassessment of this concept throughout late modernity right into post modernism. Allegory, with its ternary structure and its figure’s superfluity, helps uncover myths that contemporary symbols would keep implied.</p>
+				<p>Economy is the other side of the model I work with, and it appears in three guises. First, as the circulation mediated by the figure-&#8288;as-&#8288;sign. Rebecca Schneider, in «The Explicit body», asserts that female-&#8288;marked bodies in capitalism serve as “allegory for commodity circulation”, and to form the ternary structure of allegory, the text in this case is the ‘dreamscapes’ of ‘insatiable desire’, an economy itself, in which touch is impossible and gaze is infinite. Second, economy is instrinsic to my process of working, where resources, transactions and symbolic evaluation determine what I can produce. And third, the volatile space I summon through performance/dance is itself structured by an economy of bodies-&#8288;as-&#8288;material, even before any score is noted.</p>
+				<p>Allegory is a model to scutinize and construct approaches to alterity, i.e. what T. W. Adorno called ‘mimesis’. The explication of code/myth as requisite allows for normative assessment. It allows me to create images without conceding my judgement to the seductive affirmativity of the symbol, and it potentially gives the Other a language.</p>
+			</article>
+			<article id="allegory_of_economy" class="work">
+				<img class="full p25 c" src='allegory_emblem_white.jpg' style="display:block;" />
+				<h2>Allegory&nbsp;of&nbsp;Economy</h2>
+				<section class="overview">
+					<p>Umbrella project over somatic, art-historic, and performative research and experiments. Since December '17.</p><aside class="links"> <a href="www.allegory.fun">visit the project site</a></aside>
+					<p>In collaboration with numerous choreographers, facilitators and performers, we set to link our economic struggles as freelancers with a performative approach to economic systems, informed by the three occurances of economy in our practices as stated above.</p>
+				</section>
+				</article>
+				<article id="tableau" style="display:none;"">
+					<img class="full" src="torso0.jpg" alt="torso practices" />
+				 	<em>«I am listening with my torso.»</em>
+					<p style="display:none;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+					<img class="full" src='torso1.jpg' />
+					<img class="full" src='tableau_0.jpg' />
+					<h2>tableau&nbsp;vivant</h2>
+					<p style="display:none;">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+					<img class="full" src='sand_jam5.jpg' />
+					<p style="display:none;">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+					<img class="full" src='sand_jam3.jpg' />
+					<img class="full s57 c" src='gravity.jpg' /><img class="full s57 c" src='activity.jpg' /><img class="full s57 c" src='economy.jpg' />
+				</article>
+				<article id="project2" style="display:none;">
+					<h2>Project 2</h2>
+					<img class="marginal" src='sand.jpg' />
+					<img class="marginal" src='loop.jpg' />
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+					<img class="full" src='tractions.jpg' />				<img class="full" src='loop.jpg' />
+
+					<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+				</article>
+			
+		</section>
+		
+		<section id="pleasures">
+			<article class="intro">
+				<aside class="navigational">
+					<details>
+  						<summary>6 works</summary>
+  						<a href="#crawling"><h4>«animal movement» & «crawling group»</h4></a>
+						<a href="#skills"><h4>«machine skills» workshops</h4></a>
+						<a href="#cyborgism"><h4>«limit cyborgism» practices</h4></a>
+						<a href="#river"><h4>«river species» ritual</h4></a>
+						<a href="#instrument"><h4>«mechanized workshops» score compilation («group's instrument of…»)</h4></a>
+						<a href="#stillness"><h4>«my&nbsp;stillness in the garden» workshop series</h4></a>
+					</details>
+					<details>
+  						<summary>2 public exhibitions</summary>
+						<a href="#societes"><h4>«machine skills»</h4></a>
+						<p>workshop performance on counterpoint technique at Vulva Club #15.</p>
+						<aside class="links"><a href="https://www.facebook.com/events/1869636803326598/"><span>the event site</span></a></aside>
+						<a href="#societes"><h4>«river species»</h4></a>
+						<p>workshop at Rundgang 17.</p>
+					</details>
+					<details>
+  						<summary>2 downloads</summary>
+						<a href="kunst_und_gesellschaft.pdf" download><h4 class="pdf">«Akademie» portfolio, ‘13</h4></a>
+						<a href="Societe of Labyrinth - project description - Guzowska Torabi Röben Boeno Pishvai.pdf" download><h4 class="pdf">«Sociétés» exposée, ‘15</h4></a>
+					</details>
+				</aside>
+				<h1>machine pleasures</h1>
+				<p>In «tableaux vivants», ‘living images’, actors represent a concept through staging a scenic figure taken from a known text. It fell out of use amidst the onset of industrialization due to a somewhat ribald excess: a body is always more than what it supposedly marks. In particular, excessive pleasures may transcend narrative frames and bear yet-unwritten myths from the cyborg worlds. A gallery exhibition with the working title «tableau vivant» (for Sep ‘18) is afoot, and my graduation work «solo for my body» (July 17, ‘18) will assay the concept.
+				</p><p>«machine skills» was a workshop performance I gave in several frames. Tackling D.A. Haraway’s enigmatic assurance that “intense pleasures” were to arise from “machine skills”, I created a garden for cyborgs, and invited the participants to embark on counterpoint singing, affirming they have the according skills.
+				</p><p>The «cyborgism» practice was the result of my first interpretation of Haraway’s Cyborg Manifesto as a choreographic score. In several workshops and jams, the guests explored the pleasurable implications of being a cyborg in a shared space.
+				</p><p>How would a cyborg perceive and engage the material world? Sensations of touch and gravity guided the «moss residency» with dancer/artist Pauline Payen that comprised of somatic practice as well as felting interfaces, and talking about our economic situations.
+				</p><p>An aspect of cyborgs’ spacial economy is how we perceive limits. In recurring «limit jams», the invitees explored resistance and presence through malleable, contracting and expanding boundaries with tools from meditation, contact improvisation and martial arts.
+				</p><p>«my stillness with the garden», a technique for grounding and preceiving everything as material began to develop in early ‘16 within ritual retreats I organized on the basis of Starhawk’s emancipatory witchcraft writings.
+				</p><p>Throughout summer ‘14, I met with three fellow artists to move like animals. We called ourselves the «crawling group». What started as a development process towards the production of a butoh-inspired performance, eventually became a deep dive into an alternative way of encounter, with both the environment and each other.
+				</p>
+			<article style="display:none;"><h1>Material&nbsp;Cyborgism&nbsp;'18</h1>
+				<nav class="table-of-contents">
+					<a href="#moss">moss residency (Mar 18)</a>
+					<a href="#limit">limit jams ('17-&#8288;)</a>
+				</nav>
+				<article id="project1">
+				 	<h2>Project 1</h2>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+				</article>
+				<article id="project2">
+					<h2>Project 2</h2>
+					<img class="marginal" src='sand.jpg' />
+					<img class="marginal" src='loop.jpg' />
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+					<img class="full" src='tractions.jpg' />				<img class="full" src='loop.jpg' />
+
+					<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+				</article>
+				<article id="project3">
+					<h2>Project 3</h2>
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. </p>
+					<img class="full" src='material_cyborgism.jpg' />
+					<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. </p>
+				</article>
+			
+			</article>
+		</section>
+		
+		<section id="myth">
+			<article class="intro">
+				<aside class="navigational">
+					<details>
+  						<summary>4 works</summary>
+  						<a href="#luftschiff"><h4>«Luftschiff»</h4></a>
+						<a href="#societes"><h4>«Sociétés in the city without environs»</h4></a>
+						<a href="#stillness"><h4>«my&nbsp;stillness&nbsp;with the garden»</h4></a>
+						<a href="#fabelfilm"><h4>«fabulous&nbsp;clarity» workshop series</h4></a>
+					</details>
+					<details>
+  						<summary>2 public exhibitions</summary>
+						<a href="#societes"><h4>«Sociétés in the city without environs»</h4></a>
+						<p>Société du Labyrinthe, on Feb&nbsp;2,&thinsp;‘15, in a repurposed shop and basement at Eulerstraße 1a, Berlin.</p>
+						<h4>«Disconnected Space»</h4>
+						<aside class="links"><a href="teheran.pdf" download><span class="pdf"> download the portfolio</span></a></aside>
+						<p>Environment on a rooftop using local fabrics, a dish with water and local building materials; 2x3x5m. On Sep&nbsp;2-9,&thinsp;‘16, at Mohsen Gallery, Tehran.</p>
+					</details>
+					<details>
+  						<summary>2 downloads</summary>
+						<a href="kunst_und_gesellschaft.pdf" download><h4 class="pdf">«Akademie» portfolio, ‘13</h4></a>
+						<a href="Societe of Labyrinth - project description - Guzowska Torabi Röben Boeno Pishvai.pdf" download><h4 class="pdf">«Sociétés» exposée, ‘15</h4></a>
+					</details>
+				</aside>
+				<h1>myth container</h1>
+				<p>What I call <em>myth container</em> («Fabelcontainer», ‘12-&#8288;13) is a site-&#8288;as-&#8288;figure. Armed with the hieroglyphic fragments of an abandoned, or counterfeit discourse (they are always latent), we can enter this site-&#8288;as-&#8288;figure and practice the dislocation of our dance into a parallel world. Historical discourses depend on models of societies, and, in retrospect, evoke fascinating myths, stories within ideal societies. I stumble upon heterostopies, sites that are both what they are, i.e. material, and ideal, as if they were hosting imaginary parties of societies in a parallel world. This nourishing relation is mutual; the choice of a site juxtaposed with an abandoned discourse produces an ideal society, and in many ways this production covertly mirrors allegorese (allegorical interpretation), where a vessel that is more than its function, the figure of the body as marked by gender and other attributes, invokes meaning through a conventional myth. Conclusively, just as we commonly dance to produce a volatile space, through latent narratives, the volatility of a space arouses a dance in return.</p>
+				<p>The expression ‘double in a parallel world’, liberally borrowed from Alice Chauchat, may grasp a grounding concept in several of my works. Those include the theatre script «K-&#8288;Gruppen» set in a looping 1972 election night shifting between ‘limits to growth’, radical agit-&#8288;prop, and cyberneticized popular front politics (‘13), as well as  the «Luftschiff» and «Architecten» narratives (with related works since ‘13) which are both set in a never-&#8288;ending WWI in Europe in the years 1917 resp. 1999, and inspired by the heterotopicity I experiences in the film-&#8288;sets I had been working in. In the context of my Fine Arts studies occured the ‘democratic pleasury’ («ein demokratischer Lustgarten»; ‘16-&#8288;17) and the precursury 19th-&#8288;century «Akademie» world (‘12-&#8288;13), both inspired by Prussian garden architecture, which would later inform my practical approaches to an aesthetic of Tableau Vivant. The «Sociétés in the city without environs», finally, took the epinymous space not as figure but as rhethorical means to the end of informing a volatile space in which we’d find our ‘Other’, in Lacanian terms. Finding one’s double in these parallel societies nescessarily incurs a surrender towards fragments of a theory ethic-&#8288;esthetic, orphaned discourse looking for its debaters. Joy lies in connecting these pieces, mending the fissures, still failing a nod towards history’s actual tale, to create an iridescent mosaic. The latter’s mimetic like(li)ness and spatial fidelity to the architectural sediment (as in ‘take the hyroglyph for text’) carries a promise, a gesture of deference to normative reality effects, and this gesture is what I am trying to cultivate in all my projects.</p>
+				<p id="luftschiff">«Luftschiff» and «Architecten», as well as the «Akademie» and «Lustgarten» take place in a fictional socialist Europe that has never embraced the steam engine. While the latter two are situated in a stratified but affluent late (and long) 19th century, the airship in «Luftschiff» crosses the Baltic sea in 1917, and hosts the author of a fiction, «Architecten», that projects WWI up int the year ‘99, including a slimy communications network based on biotech. The paradigmatic topos from which discourses evolve is that of neoclassical sculpture. The European discourses of rationality, humanism and misogyny find a lasting expression in gardens with statues, especially of the ‘pleasury’ variety. A 21st century European may find it hard to reconcile masculinist Enlightenment rhethoric with the tactile qualities of Baroque and Classicist sculpture, in which the human figure poses as some mythical emanation. The unease is caused by the ‘too-&#8288;much’ that Walter Benjamin ascribes to (Baroque) allegorical figure. Classical and neoclassical aesthetics petrify allegory to an unbearable extent during the ‘Sattelzeit’ (early 19th century). This conflict warrants a nonfactual scenario, in which the early modern forms around allegory would have been rescued into modernity. How would the first modern world war be staged through this hypothetical setup? Which art corresponds to a society that perpetually reperforms long-&#8288;forgotten antique myths? Very likely, we may develop a sensibility for the history of that world in our’s—after all, has the early modern age in Europe ever ended?</p>
+				<a href="kunst_und_gesellschaft.pdf" download><aside class="pdf links"> download my original take on the «Akademie» myth, which was my application portfolio for UdK fine arts academy in 2013.</aside></a>
+				<p id="societes">In «Sociétés in the city without environs» (‘14-15), the myth begins with the endlessness of a periphery (the site), and the self-&#8288;sufficiency of local secret societies (the hypothetical discourse), and then asks the site for fragments of a text. Which is the practice, or ritual, that a ‘city without environs’ lends itself to? The paradigmatic sprawl speaks of urban-&#8288;social indifference. How would the Sociétés ‘other’ each other? Through a compartmentalization: a history of labyrinthine entrenchment through an infinite, malleable concrete fabric, etc. Our performative explorations into the «Sociétés in the city without environs» started with bygone spaces rhethorically appropriated in order to summon the double of our troupe in another world, such as the (re)constructed labyrinth as synecdoche, or the abandoned Iraqui embassy building taken as metonym for the «bureaucracie».</p>
+				<a href="Societe of Labyrinth - project description - Guzowska Torabi Röben Boeno Pishvai.pdf" download><aside class="pdf links"> download our «Sociétés» project exposée, which details a ‘functor L’ that transforms any given space.</aside></a>
+				<p>The site-&#8288;as-&#8288;figure in an allegorical equation is a device I find myself using all the time. But similarly, the solutions to the equations are developing their own lives as inquiry devices: they illuminate the contingency of today’s specific patriarchy. As they intergrow, their shared world, a ‘parallel’, raises issues of our’s. This is the cradle in which my inquiries in ‘18—«allegory of economy», «my stillness with the garden», and the performances around «cyborgism» and «machine pleasures»—would form: they are all questions that other world poses us.</p>
+			</article>
+			
+			<article class="work" id="stillness"><h2>my&nbsp;stillness&nbsp;in the garden</h2>
+				<section class="overview">
+					<p>Workshops and experiments in remote sites. ‘15-&#8288;18.</p>
+					<p>The basic assumption is that a certain stillness facilitates the appreciation of
+						wind, moisture and presence towards a sense of mutuality: my stillness in the garden is my <em>“with-&#8288;ness”</em>.</p>
+				</section>
+				<div class="videoWrapper"><iframe width="1080" height="768" src="https://www.youtube.com/embed/6hYqtUxOd2U?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</article>
+			
+			<article id="alchemy">
+				<article id="other_world"><h2>Fabelfilm</h2>
+					<aside class="links"> <a href="http://fabelfilm.github.io/projekt/">visit the invitation&nbsp;site (2014)</a></aside>
+				</article>
+				<article><h2>curiously using alchemy</h2>
+					<a href="http://xn--stefanrben-kcb.de/alchemist/"><img class="full" src="alchemy0.jpeg" /><em>visit the project site</em></a>
+				</article>
+			</article>
+		</section>
+		<article id="footer"><p>(c) 2018-&#8288;2049 Flupsi Upsi.</p></article>
+		
+	</section>
+		
+	</section>
+	<script>
+		var reflowAll = function (tags){
+			var joinLastWords = function (p){
+					p.innerHTML = p.innerHTML.replace(/^\s+|\s+$/g, '');//remove trailing whitespace
+					p.innerHTML = p.innerHTML.replace(/ (?=[^ ]*$)/, '&nbsp;');//join last two words
+			}
+			var toReflow = [];
+			for (var t=0; t<tags.length; t++) {
+				var elements = document.getElementsByTagName(tags[t]);
+				for (var i=0; i<elements.length; i++) {
+					var e = elements[i];
+					toReflow.push(e); if(tags[t]=="p") toReflow.push(e); //paragraphs get double treatment
+				}
+			}
+			for (var t=0; t<toReflow.length; t++) {
+				var paragraph = toReflow.pop();
+				//console.log(paragraph);
+				joinLastWords (paragraph);
+			}
+		}
+		window.onload = function(){window.requestAnimationFrame(function() {reflowAll(["p","h1","h2","h3","h4","h5","aside"]);});};
+	</script>
+	
+
+</body>
+</html>

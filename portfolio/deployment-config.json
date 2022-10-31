@@ -1,0 +1,9 @@
+{
+    "type": "sftp",
+    "host": "kopff.uberspace.de",
+    "username": "flupsi",
+    "password": "commercial art commercial",
+    "port": 22,
+    "remotePath": "html/portfolio",
+    "uploadOnSave": true
+}
