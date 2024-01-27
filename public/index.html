@@ -1,1222 +1,1234 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Flupsi's movement practices">
-        <meta name="keywords"
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Flupsi's movement practices">
+    <meta name="keywords"
         content="portfolio, art, ritual, allegory, cyborgism, framing, cyberfeminism, proletariat, companionship">
-        <meta name="author" content="Flupsi Upsi">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>φλυψι</title>
-        <style>
-            /*normalize*/
-            a,
-            abbr,
-            acronym,
-            address,
-            article,
-            aside,
-            audio,
-            b,
-            big,
-            body,
-            canvas,
-            caption,
-            center,
-            cite,
-            code,
-            dd,
-            del,
-            details,
-            dfn,
-            div,
-            dl,
-            dt,
-            em,
-            fieldset,
-            figcaption,
-            figure,
-            footer,
-            form,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            header,
-            hgroup,
-            html,
-            i,
-            img,
-            ins,
-            kbd,
-            label,
-            legend,
-            li,
-            mark,
-            menu,
-            nav,
-            ol,
-            p,
-            q,
-            s,
-            samp,
-            section,
-            small,
-            span,
-            strike,
-            strong,
-            sub,
-            summary,
-            sup,
-            table,
-            tbody,
-            td,
-            tfoot,
-            th,
-            thead,
-            time,
-            tr,
-            tt,
-            u,
-            ul,
-            var,
-            video {
-                margin: 0;
-                padding: 0;
-                border: 0;
-                outline: 0;
-                font-size: 100%;
-                font: inherit;
-                vertical-align: baseline;
-                box-sizing: border-box;
-            }
+    <meta name="author" content="Flupsi Upsi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>φλυψι</title>
+    <style>
+        /*normalize*/
+        a,
+        abbr,
+        acronym,
+        address,
+        article,
+        aside,
+        audio,
+        b,
+        big,
+        body,
+        canvas,
+        caption,
+        center,
+        cite,
+        code,
+        dd,
+        del,
+        details,
+        dfn,
+        div,
+        dl,
+        dt,
+        em,
+        fieldset,
+        figcaption,
+        figure,
+        footer,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        header,
+        hgroup,
+        html,
+        i,
+        img,
+        ins,
+        kbd,
+        label,
+        legend,
+        li,
+        mark,
+        menu,
+        nav,
+        ol,
+        p,
+        q,
+        s,
+        samp,
+        section,
+        small,
+        span,
+        strike,
+        strong,
+        sub,
+        summary,
+        sup,
+        table,
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead,
+        time,
+        tr,
+        tt,
+        u,
+        ul,
+        var,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            box-sizing: border-box;
+        }
 
-            /* HTML5 display-role reset for older browsers */
-            article,
-            aside,
-            details,
-            figcaption,
-            figure,
-            footer,
-            header,
-            hgroup,
-            menu,
-            nav,
-            section {
-                display: block;
-            }
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
 
-            body,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                line-height: 1;
-            }
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            line-height: 1;
+        }
 
-            ol,
-            ul {
-                list-style: none;
-            }
+        ol,
+        ul {
+            list-style: none;
+        }
 
-            blockquote,
-            q {
-                quotes: none;
-            }
+        blockquote,
+        q {
+            quotes: none;
+        }
 
-            blockquote:after,
-            blockquote:before,
-            q:after,
-            q:before {
-                content: ’’;
-                content: none;
-            }
+        blockquote:after,
+        blockquote:before,
+        q:after,
+        q:before {
+            content: ’’;
+            content: none;
+        }
 
-            .videoWrapper {
-                position: relative;
-                padding-bottom: 56.25%;
-                /* 16:9 */
-                padding-top: 25px;
-                height: 0;
-            }
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 */
+            padding-top: 25px;
+            height: 0;
+        }
 
-            .videoWrapper iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
+        .videoWrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
-            em {
-                font-style: italic;
-            }
-        </style>
-        <style>
-            /*portfolio-layout*/
-            img {
-                width: 100vw;
-            }
+        em {
+            font-style: italic;
+        }
+    </style>
+    <style>
+        /*portfolio-layout*/
+        img {
+            width: 100vw;
+        }
 
-            iframe {
-                width: 100vw;
-                height: 90vh;
-                border-bottom: 0.107rem solid black;
-                margin-bottom: 2rem;
-            }
+        iframe {
+            width: 100vw;
+            height: 90vh;
+            border-bottom: 0.107rem solid black;
+            margin-bottom: 2rem;
+        }
 
-            #welcome nav > a {
-                display: inline-block;
-                padding: 0.3em 0.5em;
-            }
+        #welcome nav>a {
+            display: inline-block;
+            padding: 0.3em 0.5em;
+        }
 
-            #welcome nav {
-                display: inline-block;
-                margin-right: 0.8rem;
-            }
+        #welcome nav {
+            display: inline-block;
+            margin-right: 0.8rem;
+        }
 
-            nav#toc > a {
-                display: block;
-                padding: 0.5em 0.8em;
-            }
+        nav#toc>a {
+            display: block;
+            padding: 0.5em 0.8em;
+        }
 
-            nav#toc > a {
-                text-decoration: none;
-            }
+        nav#toc>a {
+            text-decoration: none;
+        }
 
-            nav#toc > a > h2 {
-                text-decoration: underline;
-                font-size: 1.6em;
-            }
+        nav#toc>a>h2 {
+            text-decoration: underline;
+            font-size: 1.6em;
+        }
 
-            body > .content+section::before {
-                border-top: 0.07rem dashed black !important;
-                z-index: 3;
-                position: relative;
-                top: 0;
-                content: " ";
-                width: 100%;
-                height: 1rem;
-                display: block;
-                background: transparent;
-            }
+        body>.content+section::before {
+            border-top: 0.07rem dashed black !important;
+            z-index: 3;
+            position: relative;
+            top: 0;
+            content: " ";
+            width: 100%;
+            height: 1rem;
+            display: block;
+            background: transparent;
+        }
 
-            h3.caption {
-                margin-bottom: -1.2em;
-                margin-top: 1.2em;
-            }
+        h3.caption {
+            margin-bottom: -1.2em;
+            margin-top: 1.2em;
+        }
 
-            aside.caption {
-                margin-bottom: -1.2em;
-                margin-top: 1.2em;
-            }
+        aside.caption {
+            margin-bottom: -1.2em;
+            margin-top: 1.2em;
+        }
 
-            aside.locate {}
+        aside.locate {}
 
-            aside.explore:target {
-                outline: 0.2em solid violet;
-            }
+        aside.explore:target {
+            outline: 0.2em solid violet;
+        }
 
-            aside.explore {
-                max-width: 16rem;
-                margin-left: auto;
-                padding: 0;
-                text-align: right;
-                margin-bottom: 2em;
-                margin-top: -.2em;
-            }
+        aside.explore {
+            max-width: 16rem;
+            margin-left: auto;
+            padding: 0;
+            text-align: right;
+            margin-bottom: 2em;
+            margin-top: -.2em;
+        }
 
-            aside.introductory {
-                text-align: left;
-                font-style: italic;
-                line-height: 1.5rem;
-                margin-bottom: -1.6rem;
-            }
+        aside.introductory {
+            text-align: left;
+            font-style: italic;
+            line-height: 1.5rem;
+            margin-bottom: -1.6rem;
+        }
 
-            aside.introductory~h1 {
-                padding-top: 0;
-            }
+        aside.introductory~h1 {
+            padding-top: 0;
+        }
 
-            aside.introductory * {
-                font-style: normal;
-            }
+        aside.introductory * {
+            font-style: normal;
+        }
 
-            aside.links a {
-                text-decoration: none;
-                line-height: 2em;
-                display: inline-block;
-                margin-left: auto;
-                outline: 0.03rem dotted #000;
-                outline-offset: 0.15rem;
-            }
+        aside.links a {
+            text-decoration: none;
+            line-height: 2em;
+            display: inline-block;
+            margin-left: auto;
+            outline: 0.03rem dotted #000;
+            outline-offset: 0.15rem;
+        }
 
-            .cards {
-                display: table;
-            }
+        .cards {
+            display: table;
+        }
 
-            .cards a {
-                text-decoration: none;
-                vertical-align: middle;
-                margin-left: 1rem;
-                display: table-cell;
-                width: 5rem;
-                height: 5rem;
-                margin-bottom: 1.5rem;
-                border-radius: 100%;
-                border: 0.03rem dotted black;
-                text-align: center;
-            }
+        .cards a {
+            text-decoration: none;
+            vertical-align: middle;
+            margin-left: 1rem;
+            display: table-cell;
+            width: 5rem;
+            height: 5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 100%;
+            border: 0.03rem dotted black;
+            text-align: center;
+        }
 
-            .cards a:nth-child(even) {
-                transform: translateY(-3.6em);
-            }
-        </style>
-        <style>
-            /*typographic*/
-            body {
-                font-family: 'Cormorant Garamond', serif;
-                line-height: 1.2em;
-                overflow-x: hidden;
-            }
+        .cards a:nth-child(even) {
+            transform: translateY(-3.6em);
+        }
+    </style>
+    <style>
+        /*typographic*/
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 1.2em;
+            overflow-x: hidden;
+        }
 
-            p+p {
-                border-top-width: 0;
-                padding-top: 0;
-            }
+        p+p {
+            border-top-width: 0;
+            padding-top: 0;
+        }
 
-            /* make multi paragraphs stay more together */
-            h1+img {
-                border-top: 0.07rem solid black;
-                margin-top: 0.2em;
-            }
+        /* make multi paragraphs stay more together */
+        h1+img {
+            border-top: 0.07rem solid black;
+            margin-top: 0.2em;
+        }
 
-            /* images below paragraphs are offset */
+        /* images below paragraphs are offset */
+        h1 {
+            padding-bottom: 0.125em;
+            padding-top: 0.15em;
+            margin-left: -.05em;
+            letter-spacing: -0.05em;
+            line-height: 0.9em;
+        }
+
+        h2 {
+            padding-bottom: 0.125em;
+            padding-top: 0.3em;
+            margin-left: -.035em;
+            letter-spacing: -0.04em;
+        }
+
+        h3 {
+            padding-bottom: 0.1em;
+            letter-spacing: -0.05em;
+        }
+
+        h3:first-child {
+            padding-top: 0;
+            margin-top: -.8em;
+        }
+
+        /* captions have less headspace */
+        h4,
+        summary {
+            font-size: 1em;
+            letter-spacing: 0.1em;
+            padding-top: 0.5rem;
+            padding-bottom: 0;
+            border-bottom-width: 0;
+        }
+
+        h4+* {
+            border-top-width: 0;
+        }
+
+        aside aside,
+        aside em,
+        em em,
+        em em em em {
+            font-style: normal;
+        }
+
+        aside em em,
+        em,
+        em em em {
+            font-style: italic;
+        }
+    </style>
+    <style>
+        /* explicit layouts: screen, relative, article, paragraph, ... */
+        /* screen width */
+        .s1 {
+            width: 100vw;
+            position: relative;
+            left: 16rem;
+            margin-left: -50vw;
+            padding: 0 1em;
+        }
+
+        .s2 {
+            width: 50vw;
+        }
+
+        .s3 {
+            width: 33.33vw;
+        }
+
+        .s4 {
+            width: 25vw;
+        }
+
+        .s23 {
+            width: 66.66vw;
+        }
+
+        .s34 {
+            width: 75vw;
+        }
+
+        .s6 {
+            width: 16.16vw;
+        }
+
+        .s7 {
+            width: 14.28vw;
+        }
+
+        .s27 {
+            width: 28.57vw;
+        }
+
+        .s37 {
+            width: 43.85vw;
+        }
+
+        .s47 {
+            width: 57.14vw;
+        }
+
+        .s57 {
+            width: 71.42vw;
+        }
+
+        .s9 {
+            width: 11.11vw;
+        }
+
+        .s29 {
+            width: 22.22vw;
+        }
+
+        .s49 {
+            width: 44.44vw;
+        }
+
+        .s49 {
+            width: 55.55vw;
+        }
+
+        .s79 {
+            width: 77.77vw;
+        }
+
+        .s89 {
+            width: 88.88vw;
+        }
+
+        .s12 {
+            width: 8.08vw;
+        }
+
+        .s14 {
+            width: 7.14vw;
+        }
+
+        /* fraction of the container */
+        .r2 {
+            width: 50%;
+        }
+
+        .r3 {
+            width: 33.33%;
+        }
+
+        .r4 {
+            width: 25%;
+        }
+
+        .r23 {
+            width: 66.66%;
+        }
+
+        .r34 {
+            width: 75%;
+        }
+
+        .r6 {
+            width: 16.16%;
+        }
+
+        .r7 {
+            width: 14.28%;
+        }
+
+        .r27 {
+            width: 28.57%;
+        }
+
+        .r37 {
+            width: 43.85%;
+        }
+
+        .r47 {
+            width: 57.14%;
+        }
+
+        .r57 {
+            width: 71.42%;
+        }
+
+        .r9 {
+            width: 11.11%;
+        }
+
+        .r9 {
+            width: 22.22%;
+        }
+
+        .r49 {
+            width: 44.44%;
+        }
+
+        .r49 {
+            width: 55.55%;
+        }
+
+        .r79 {
+            width: 77.77%;
+        }
+
+        .r89 {
+            width: 88.88%;
+        }
+
+        .r12 {
+            width: 8.08%;
+        }
+
+        /* article width */
+        .a1 {
+            width: 32rem;
+        }
+
+        .a2 {
+            width: 16rem;
+        }
+
+        .a3 {
+            width: 10.6666rem;
+        }
+
+        .a4 {
+            width: 8rem;
+        }
+
+        /* paragraph 2/3rd width */
+        .p2 {
+            width: 12rem;
+        }
+
+        .p3 {
+            width: 8rem;
+        }
+
+        .p4 {
+            width: 6rem;
+        }
+
+        .p23 {
+            width: 16rem;
+        }
+
+        .p34 {
+            width: 18rem;
+        }
+
+        .p25 {
+            width: 9.6rem;
+        }
+
+        .p35 {
+            width: 14.4rem;
+        }
+
+        .p6 {
+            width: 4rem;
+        }
+
+        .p27 {
+            width: 6.8571rem;
+        }
+
+        .p37 {
+            width: 10.285rem;
+        }
+
+        .p49 {
+            width: 10.666rem;
+        }
+
+        /* harmonious indentation */
+        .c {
+            margin-left: 2.7rem;
+        }
+    </style>
+    <style>
+        /* feedback */
+        * {
+            transition: width 0.3s, height 0.8s, left 0.3s, right 0.3s, margin 0.3s, padding 0.3s, flex-basis 0.3s, background-color 1s, border-left-color 0.2s, max-width 0.3s;
+        }
+
+        *:focus {
+            border-left-color: rgb(240, 255, 40);
+        }
+    </style>
+    <style>
+        /*special decorative classes*/
+        outlined {
+            outline: 0.06em solid rgba(230, 180, 0, .9);
+            outline-offset: 0.17em;
+        }
+    </style>
+    <style>
+        /*colors*/
+        a {
+            color: rgb(200, 130, 0);
+        }
+
+        ::selection {
+            background: rgba(230, 200, 0, .4);
+        }
+
+        #CV p em:first-child {
+            text-indent: -1rem;
+            display: inline-block;
+            margin-right: 0.3rem;
+        }
+
+        /* icons */
+        h5 {
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 0.05rem solid black;
+            text-align: right;
+            float: left;
+            padding-right: 0.1rem !important;
+            font-size: 1em;
+            padding-bottom: 0.2rem;
+            letter-spacing: -0.05rem;
+            margin-left: -1rem;
+            padding-top: 1rem;
+            margin-right: 1rem;
+        }
+
+        .pdf::before {
+            content: ".pdf";
+            display: inline-block;
+            color: black;
+            font-family: "EB Garamond";
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 0.05rem solid black;
+            text-align: right;
+            float: left;
+            padding-bottom: 0.2rem;
+            letter-spacing: -0.05rem;
+            margin-left: -1rem;
+            padding-top: 1rem;
+            margin-right: 1rem;
+        }
+
+        /* special color schemes and adornments */
+        #contents.night>section {
+            -webkit-filter: invert(100%);
+        }
+
+        /*night reading*/
+        #contents.night>section iframe,
+        #contents.night>section img {
+            -webkit-filter: invert(100%);
+        }
+
+        .work h2::before {
+            content: "«";
+            position: relative;
+            display: inline-block;
+            width: 2em;
+            text-align: right;
+            margin-left: -2em;
+        }
+
+        .work h2::after {
+            content: "»";
+            position: relative;
+            display: inline-block;
+            margin-right: -2em;
+            width: 2em;
+        }
+
+        aside.work h2::after {
+            content: "»";
+            position: relative;
+            display: inline-block;
+            margin-right: -.7em;
+            width: auto;
+        }
+
+        .overview {
+            background: rgba(0, 0, 0, .2);
+            margin-top: -1em;
+        }
+
+        .overview>*:first-child {
+            font-size: 130%;
+            line-height: 1.2;
+            font-style: italic;
+        }
+    </style>
+    <style>
+        /* responsive screen size adaptations */
+        html {
+            font-size: 1.125em;
+            /* stays constant (at 32rem per 36-rem column) on wider screens */
+        }
+
+        aside,
+        body,
+        h1,
+        h2,
+        h3,
+        html,
+        p {
+            margin: 0;
+        }
+
+        .content {
+            width: 32em;
+            padding: 1em 0 6em;
+            margin: 0 auto;
+            will-change: transform;
+        }
+
+        aside,
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+            font-weight: normal;
+            padding: 0.7em 1rem 0.3em;
+        }
+
+        h1,
+        h2 {
+            text-indent: -.1em;
+        }
+
+        /*offset the optical spacing for larger font sizes*/
+        h3 {
+            /* titles and captions in small print */
+            font-size: 0.8rem;
+        }
+
+        .caption,
+        aside a,
+        aside.explore,
+        h5 {
+            font-size: 0.6rem;
+            line-height: 0.75rem;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        p {
+            max-width: 32rem;
+            font-size: 1.4em;
+            line-height: 1.4em;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        @media (max-width:36em) {
             h1 {
-                padding-bottom: 0.125em;
-                padding-top: 0.15em;
-                margin-left: -.05em;
-                letter-spacing: -0.05em;
-                line-height: 0.9em;
+                font-size: 3.2rem;
             }
 
-            h2 {
-                padding-bottom: 0.125em;
-                padding-top: 0.3em;
-                margin-left: -.035em;
-                letter-spacing: -0.04em;
-            }
-
-            h3 {
-                padding-bottom: 0.1em;
-                letter-spacing: -0.05em;
-            }
-
-            h3:first-child {
-                padding-top: 0;
-                margin-top: -.8em;
-            }
-
-            /* captions have less headspace */
-            h4,
-            summary {
-                font-size: 1em;
-                letter-spacing: 0.1em;
-                padding-top: 0.5rem;
-                padding-bottom: 0;
-                border-bottom-width: 0;
-            }
-
-            h4+* {
-                border-top-width: 0;
-            }
-
-            aside aside,
-            aside em,
-            em em,
-            em em em em {
-                font-style: normal;
-            }
-
-            aside em em,
-            em,
-            em em em {
-                font-style: italic;
-            }
-        </style>
-        <style>
-            /* explicit layouts: screen, relative, article, paragraph, ... */
-            /* screen width */
-            .s1 {
-                width: 100vw;
-                position: relative;
-                left: 16rem;
-                margin-left: -50vw;
-                padding: 0 1em;
-            }
-
-            .s2 {
-                width: 50vw;
-            }
-
-            .s3 {
-                width: 33.33vw;
-            }
-
-            .s4 {
-                width: 25vw;
-            }
-
-            .s23 {
-                width: 66.66vw;
-            }
-
-            .s34 {
-                width: 75vw;
-            }
-
-            .s6 {
-                width: 16.16vw;
-            }
-
-            .s7 {
-                width: 14.28vw;
-            }
-
-            .s27 {
-                width: 28.57vw;
-            }
-
-            .s37 {
-                width: 43.85vw;
-            }
-
-            .s47 {
-                width: 57.14vw;
-            }
-
-            .s57 {
-                width: 71.42vw;
-            }
-
-            .s9 {
-                width: 11.11vw;
-            }
-
-            .s29 {
-                width: 22.22vw;
-            }
-
-            .s49 {
-                width: 44.44vw;
-            }
-
-            .s49 {
-                width: 55.55vw;
-            }
-
-            .s79 {
-                width: 77.77vw;
-            }
-
-            .s89 {
-                width: 88.88vw;
-            }
-
-            .s12 {
-                width: 8.08vw;
-            }
-
-            .s14 {
-                width: 7.14vw;
-            }
-
-            /* fraction of the container */
-            .r2 {
-                width: 50%;
-            }
-
-            .r3 {
-                width: 33.33%;
-            }
-
-            .r4 {
-                width: 25%;
-            }
-
-            .r23 {
-                width: 66.66%;
-            }
-
-            .r34 {
-                width: 75%;
-            }
-
-            .r6 {
-                width: 16.16%;
-            }
-
-            .r7 {
-                width: 14.28%;
-            }
-
-            .r27 {
-                width: 28.57%;
-            }
-
-            .r37 {
-                width: 43.85%;
-            }
-
-            .r47 {
-                width: 57.14%;
-            }
-
-            .r57 {
-                width: 71.42%;
-            }
-
-            .r9 {
-                width: 11.11%;
-            }
-
-            .r9 {
-                width: 22.22%;
-            }
-
-            .r49 {
-                width: 44.44%;
-            }
-
-            .r49 {
-                width: 55.55%;
-            }
-
-            .r79 {
-                width: 77.77%;
-            }
-
-            .r89 {
-                width: 88.88%;
-            }
-
-            .r12 {
-                width: 8.08%;
-            }
-
-            /* article width */
-            .a1 {
-                width: 32rem;
-            }
-
-            .a2 {
-                width: 16rem;
-            }
-
-            .a3 {
-                width: 10.6666rem;
-            }
-
-            .a4 {
-                width: 8rem;
-            }
-
-            /* paragraph 2/3rd width */
-            .p2 {
-                width: 12rem;
-            }
-
-            .p3 {
-                width: 8rem;
-            }
-
-            .p4 {
-                width: 6rem;
-            }
-
-            .p23 {
-                width: 16rem;
-            }
-
-            .p34 {
-                width: 18rem;
-            }
-
-            .p25 {
-                width: 9.6rem;
-            }
-
-            .p35 {
-                width: 14.4rem;
-            }
-
-            .p6 {
-                width: 4rem;
-            }
-
-            .p27 {
-                width: 6.8571rem;
-            }
-
-            .p37 {
-                width: 10.285rem;
-            }
-
-            .p49 {
-                width: 10.666rem;
-            }
-
-            /* harmonious indentation */
-            .c {
-                margin-left: 2.7rem;
-            }
-        </style>
-        <style>
-            /* feedback */
-            * {
-                transition: width 0.3s, height 0.8s, left 0.3s, right 0.3s, margin 0.3s, padding 0.3s, flex-basis 0.3s, background-color 1s, border-left-color 0.2s, max-width 0.3s;
-            }
-
-            *:focus {
-                border-left-color: rgb(240, 255, 40);
-            }
-        </style>
-        <style>
-            /*special decorative classes*/
-            outlined {
-                outline: 0.06em solid rgba(230, 180, 0, .9);
-                outline-offset: 0.17em;
-            }
-        </style>
-        <style>
-            /*colors*/
-            a {
-                color: rgb(200, 130, 0);
-            }
-
-            ::selection {
-                background: rgba(230, 200, 0, .4);
-            }
-
-            #CV p em:first-child {
-                text-indent: -1rem;
-                display: inline-block;
-                margin-right: 0.3rem;
-            }
-
-            /* icons */
-            h5 {
-                width: 2.5rem;
-                height: 2.5rem;
-                border: 0.05rem solid black;
-                text-align: right;
-                float: left;
-                padding-right: 0.1rem !important;
-                font-size: 1em;
-                padding-bottom: 0.2rem;
-                letter-spacing: -0.05rem;
-                margin-left: -1rem;
-                padding-top: 1rem;
-                margin-right: 1rem;
-            }
-
-            .pdf::before {
-                content: ".pdf";
-                display: inline-block;
-                color: black;
-                font-family: "EB Garamond";
-                width: 2.5rem;
-                height: 2.5rem;
-                border: 0.05rem solid black;
-                text-align: right;
-                float: left;
-                padding-bottom: 0.2rem;
-                letter-spacing: -0.05rem;
-                margin-left: -1rem;
-                padding-top: 1rem;
-                margin-right: 1rem;
-            }
-
-            /* special color schemes and adornments */
-            #contents.night > section {
-                -webkit-filter: invert(100%);
-            }
-
-            /*night reading*/
-            #contents.night > section iframe,
-            #contents.night > section img {
-                -webkit-filter: invert(100%);
-            }
-
-            .work h2::before {
-                content: "«";
-                position: relative;
-                display: inline-block;
-                width: 2em;
-                text-align: right;
-                margin-left: -2em;
-            }
-
-            .work h2::after {
-                content: "»";
-                position: relative;
-                display: inline-block;
-                margin-right: -2em;
-                width: 2em;
-            }
-
-            aside.work h2::after {
-                content: "»";
-                position: relative;
-                display: inline-block;
-                margin-right: -.7em;
-                width: auto;
-            }
-
-            .overview {
-                background: rgba(0, 0, 0, .2);
-                margin-top: -1em;
-            }
-
-            .overview > *:first-child {
-                font-size: 130%;
-                line-height: 1.2;
-                font-style: italic;
-            }
-        </style>
-        <style>
-            /* responsive screen size adaptations */
             html {
-                font-size: 1.125em;
-                /* stays constant (at 32rem per 36-rem column) on wider screens */
+                font-size: 3.125vw;
+                /* exactly 32 em width on small screens */
+            }
+        }
+
+        @media (min-width:36em) {
+            h1 {
+                font-size: calc(2rem + 3.75vw);
             }
 
-            aside,
-            body,
-            h1,
-            h2,
-            h3,
-            html,
-            p {
-                margin: 0;
-            }
+            ;
+            /*will keep contrasty even on very large screens*/
+        }
 
-            .content {
-                width: 32em;
-                padding: 1em 0 10em;
-                margin: 0 auto;
-                will-change: transform;
-            }
-
-            aside,
-            h1,
-            h2,
-            h3,
-            h4,
-            p {
-                font-weight: normal;
-                padding: 0.7em 1rem 0.3em;
-            }
+        /* navigational margin to the left and aside margin on the right (any large window) */
+        @media only screen and (min-width: 90em) {
 
             h1,
             h2 {
-                text-indent: -.1em;
+                column-span: all;
             }
 
-            /*offset the optical spacing for larger font sizes*/
-            h3 {
-                /* titles and captions in small print */
-                font-size: 0.8rem;
+            aside>h1+p {
+                border-top-width: 0;
+                padding-top: 0;
             }
 
-            .caption,
-            aside a,
-            aside.explore,
-            h5 {
-                font-size: 0.6rem;
-                line-height: 0.75rem;
-                font-weight: bold;
-                font-family: sans-serif;
-            }
+            /* to make the first paragraphs in both columns align well*/
+        }
 
-            p {
-                max-width: 32rem;
-                font-size: 1.4em;
-                line-height: 1.4em;
-            }
+        /* bookmarks open in place */
+        aside.bookmark {}
 
-            h2 {
-                font-size: 2rem;
-            }
+        article.client:nth-child(odd) {
+            background: #212206;
+        }
 
-            @media (max-width:36em) {
-                h1 {
-                    font-size: 3.2rem;
-                }
+        article.client {
+            color: white;
+            background: black;
+            width: 50vw;
+            display: inline-block;
+            padding-bottom: 1.5rem;
+        }
 
-                html {
-                    font-size: 3.125vw;
-                    /* exactly 32 em width on small screens */
-                }
-            }
+        .client img {
+            max-width: 100%;
+        }
 
-            @media (min-width:36em) {
-                h1 {
-                    font-size: calc(2rem + 3.75vw);
-                };
-                /*will keep contrasty even on very large screens*/
-            }
+        article.small.client {
+            font-size: 0.66666666em;
+            max-width: 25vw;
+        }
 
-            /* navigational margin to the left and aside margin on the right (any large window) */
-            @media only screen and (min-width: 90em) {
+        section#companionship>article {
+            column-count: 2;
+            column-gap: 0;
+        }
 
-                h1,
-                h2 {
-                    column-span: all;
-                }
-
-                aside > h1+p {
-                    border-top-width: 0;
-                    padding-top: 0;
-                }
-
-                /* to make the first paragraphs in both columns align well*/
-            }
-
-            /* bookmarks open in place */
-            aside.bookmark {}
-
-            article.client:nth-child(odd) {
-                background: #212206;
-            }
-
-            article.client {
-                color: white;
-                background: black;
-                width: 50vw;
-                display: inline-block;
-                padding-bottom: 1.5rem;
-            }
-
-            .client img {
-                max-width: 100%;
+        @media (max-width:36em) {
+            section#companionship>article {
+                column-count: 1;
             }
 
             article.small.client {
-                font-size: 0.66666666em;
-                max-width: 25vw;
+                font-size: 0.75em;
+                max-width: 50vw;
             }
 
-            section#companionship > article {
-                column-count: 2;
-                column-gap: 0;
+            .client img {
+                max-width: 50vw;
+                margin: auto;
+                float: right;
             }
 
-            @media (max-width:36em) {
-                section#companionship > article {
-                    column-count: 1;
-                }
-
-                article.small.client {
-                    font-size: 0.75em;
-                    max-width: 50vw;
-                }
-
-                .client img {
-                    max-width: 50vw;
-                    margin: auto;
-                    float: right;
-                }
-
-                article.client {
-                    max-width: 100vw;
-                }
+            article.client {
+                max-width: 100vw;
             }
+        }
 
-            details.accordeon:not([open]) {
-                position: relative;
-                z-index: 1;
-                width: 33.33%;
-                display: inline-block;
-            }
+        details.accordeon:not([open]) {
+            position: relative;
+            z-index: 1;
+            width: 33.33%;
+            display: inline-block;
+        }
 
-            summary.accordeon {
-                height: 12rem;
-            }
+        summary.accordeon {
+            height: 12rem;
+        }
 
-            summary.accordeon~.accordeon {
-                position: relative;
-                z-index: 2;
-                left: 0;
-                top: -12rem;
-                margin-bottom: -10rem;
-                background: rgba(0, 0, 0, .8);
-            }
+        summary.accordeon~.accordeon {
+            position: relative;
+            z-index: 2;
+            left: 0;
+            top: -12rem;
+            margin-bottom: -10rem;
+            background: rgba(0, 0, 0, .8);
+        }
 
-            section.intro {
-                width: 100%;
-                background: rgb(17, 0, 32);
-                color: goldenrod;
-                padding: 2rem 0;
-            }
+        section.intro {
+            width: 100%;
+            background: rgb(17, 0, 32);
+            color: goldenrod;
+            padding: 2rem 0;
+        }
 
-            section.intro p {
-                max-width: 26rem;
-                margin: 0 auto;
-                width: 100%;
-            }
+        section.intro p {
+            max-width: 26rem;
+            margin: 0 auto;
+            width: 100%;
+        }
 
-            section.intro ul {
-                max-width: 24rem;
-                margin: 0 auto;
-                width: 100%;
-                font-style: italic;
-            }
+        section.intro ul {
+            max-width: 24rem;
+            margin: 0 auto;
+            width: 100%;
+            font-style: italic;
+        }
 
-            #companionship h3 {
-                font-size: 2rem;
-                line-height: 1.5rem;
-                margin-top: 2rem;
-                font-style: italic;
-            }
-        </style>
-        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i" rel="stylesheet">
-        <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-        <script>
-            /*
-        window.addEventListener('load', event => {
-            // get all draggie elements
-            var draggableElems = document.querySelectorAll('.draggable');
-            for (var i = 0; i < draggableElems.length; i++) {
-                var draggableElem = draggableElems[i];
-                draggableElem.addEventListener("click", e => {
-                    let theDetails =
-                        e.composedPath().find(el => el.tagName?.toLowerCase() === 'details');
-                    let theSummary =
-                        e.composedPath().find(el => el.tagName?.toLowerCase() === 'summary');
-                    console.log("ancestors:", e.composedPath());
-                    //if (theSummary) { return; }
-                    console.log(theDetails.getAttribute('open'));
-                    if (theDetails.getAttribute('open')) {
-                        console.log("has true-ish 'open' attribute");
-                        theDetails.removeAttribute('open');
-                    } else {
-                        theDetails.open = true;
-                        console.log("open is set true!!!!!!!!!")
-                    }
-                    console.log("toggling open:", theDetails);
-                    e.stopPropagation();
-                })
-            }
-        })
-        */
-        </script>
-        <style>
-            .draggable.box {
-                display: inline-block;
-            }
+        #companionship h3 {
+            font-size: 2rem;
+            line-height: 1.5rem;
+            margin-top: 2rem;
+            font-style: italic;
+        }
 
-            .draggable.box > summary {
-                background: rgba(32, 0, 64, .5);
-                border: 2px solid rgba(255, 255, 255, .3);
-                border-bottom-color: rgba(0, 0, 0, .5);
-                border-right-color: rgba(0, 0, 0, .3);
-            }
+        details.inline-bevel>summary {
+            background: #333;
+            border: 3px outset #444;
+            cursor: pointer;
+        }
 
-            .draggable.box:hover > summary {
-                background: rgba(32, 0, 64, .8);
-                border: 2px solid rgba(255, 255, 255, .5);
-                border-bottom-color: rgba(0, 0, 0, 1);
-                border-right-color: rgba(0, 0, 0, .7);
-                z-index: 102;
-            }
+        details.inline-bevel>summary:hover {
+            background: #222;
+            border: 3px ridge #333;
+        }
 
-            .draggable.box:active > summary,
-            .draggable.box[open] > summary {
-                background: rgba(32, 0, 64, .5);
-                border: 2px solid rgba(255, 255, 255, .3);
-                border-top-color: rgba(0, 0, 0, .5);
-                border-left-color: rgba(0, 0, 0, .3);
-            }
+        details.inline-bevel[open]>summary {
+            background: #222;
+            border: 3px inset #333;
+        }
 
-            .draggable.box > *:not(summary) {
-                transition: all 1s;
-                z-index: 200;
-            }
+        details.inline-bevel>summary>p {
+            display: inline-flex;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i" rel="stylesheet">
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script>
+        var run = (id_) => document
+            .querySelector(id_)
+            .play();
+    </script>
+    <style>
+        .draggable.box {
+            display: inline-block;
+        }
 
-            .draggable.box:not[open] > *:not(summary) {
-                background: transparent;
-                color: transparent;
-            }
+        .draggable.box>summary {
+            background: rgba(32, 0, 64, .5);
+            border: 2px solid rgba(255, 255, 255, .3);
+            border-bottom-color: rgba(0, 0, 0, .5);
+            border-right-color: rgba(0, 0, 0, .3);
+        }
 
-            .draggable.box[open] > *:not(summary) {
-                position: absolute;
-                background: black;
-            }
-        </style>
-    </head>
+        .draggable.box:hover>summary {
+            background: rgba(32, 0, 64, .8);
+            border: 2px solid rgba(255, 255, 255, .5);
+            border-bottom-color: rgba(0, 0, 0, 1);
+            border-right-color: rgba(0, 0, 0, .7);
+            z-index: 102;
+        }
 
-    <body>
-        <section id="intro" class="intro">
-            <details class="draggable box r27" style="margin-right:-.3rem;">
-                <summary>
-                    <span style="background:cyan; color:black;">Welcome to this shell.</span></summary>
-                <p> It's spring 2021 already, and I've spent the windy days with the cyberfeminists of the early 90s. At
-                some point, a recurring figure struck me: the SHELL, embodiment of the abutting surfaces that carry the
-                imaginaries. </p>
-            </details>
-            <details class="draggable box r27" style="margin-right:-.3rem;">
-                <summary>
-                    <span style="color:cyan;"> Where are you?</span>
-                </summary>
-                <p style="color:cyan"> Your feet may be on a ground somewhere on this planet, but your hands reach halfway
-                into cyberspace. Or the other way around. Are you comfortable? How would you like to live, which beings
-                to share these minutes with? </p>
-            </details>
-            <details class="draggable box r7" style="margin-right:-.3rem;">
-                <summary>🚧 Poem for you </summary>
-                <i
-                style="background-color:indigo; color:lavenderblush; display:block; font-style:italic; font-size:0.75rem;">
-                    <p>Can't I do the good work? What's this bugging pain? I want to live on a boat under a willow-tent, I
-                    want to read one page per day, I want a deep conversation per day, eat a bouquet of flowers and
-                    colors, drink tea and coffee, move through the dim, prospective air of dreams. I want to take a dip
-                    and melt, then reassemble myself in the harsh breeze; again and again, day for day, season for
-                    season. Summer, whose promise, or imagined promise, is too large to bear, cruel you, give me the
-                    courage to fall!</p>
-                    <p>There you are, scent of budding, earthworm, virtuoso of harpsicord and trombone. I thought you were
-                    gone. You should have gone for I was horrible. But perhaps you don't mind so much? You like this
-                    place? And your comrades, they're here as well? How fabulous, how delightful!</p>
-                    <p>I want to play the instruments with you. Or listen. I want to sing to you and cry. I want you close
-                    or distant. In silent appreciation or disdain. I want all of you close or distant, I want to know if
-                    I want you close or distant. I want to tell you in clear and calm words, now is the time for me, and
-                    I want you to tell me, or to tell each other with our bodies, or with the closing note.</p>
-                    <p>I miss you.</p>
-                    <p>I miss you so dearly, but am I missing the imaginary memories I created, that I composed out of
-                    helplessness and self-sorrow once, out of the vapors of warm soil, the moist, infested shade behind
-                    a straw bale? Am I missing a second hand or third hand memory or caricature thereof?</p>
-                    <p>We take a walk on the cloud that is mist over the morning river, our feet dissolving. I want to
-                    freeze and to evaporate. I want my skin to be the portal of your anger and your hope. I want the
-                    path to open once a year to let a stranger in, but only if they know what I don't know. Don't tell
-                    me about the systems some guru has told you about. No, I want to admire how every limb of your body
-                    moves with the swells of mood and temperature. I want your four liquids all over the place. I want
-                    your grace and earnesty.</p>
-                    <p>I know you. The better I know me I know you. I know us. We are many. I know it's a small step from
-                    the cubicle to the vast, open. We are connected. I am feeling the umbilical channel ring like a
-                    phone line. Knock, and I'm scared to accept.</p>
-                    <p>Help me accept. Wind, help me accept and trust that I can deny when I need to. Sun, help me stay
-                    where I am and go where I go. Help me channel my anger, my radiant, sound, manifest rage, into
-                    beauty for I am one beautiful beast as my naked feet are dancing on the dry planks over mud and
-                    puddles. Ocean, give me the salty drops that heal my pain. Let it rain on me to make my skin
-                    transparent. Embrace my clay-made, readymade, multiple body to exchange the heat and soften the
-                    form. Dust, injure my eyes so that I listen. Make me stiff and long so that I forget the dragon in
-                    my womb.</p>
-                </i>
-            </details>
-            <details class="draggable box r27">
-                <summary>
-                    <span style=" color:chartreuse"> This night, I had a pleasurable dream. </span>
-                </summary>
-                <span>
-                    <p>I woke up and told a friend, via e-mail. Pleasurable but disturbing. Distance is quite relative, and
-                    I'm just learning to be intimate with myself. </p>
-                    <p style="color:crimson">Those who talk big about the future have no clue. They believe in euklidean
-                    space and binary gender, and these superstitions make them deaf to the whirring and whirling all
-                    around. I am hereby devoting the rest of my life to nurturing connections across and beyond the
-                    territorial.</p>
-                </span>
-            </details>
-            <p style="color:cyan;"> On Sunday, 29th January 2023, I invite you to join the <b>naked limit jam</b> from 9:30-13:00h,
-         and explore 
-        other ways of encountering each other. More info  <a
-                href="https://flupsi.uber.space/limitJam/invitation.pdf">in the invitation</a>. The practice will be open and free. 
-                <br/>
-                <a href="./Naked%20Limit%20Jam%20-%20ScheduleAndConsensus.pdf"> Click here to read the schedule and consensus</a>
+        .draggable.box:active>summary,
+        .draggable.box[open]>summary {
+            background: rgba(32, 0, 64, .5);
+            border: 2px solid rgba(255, 255, 255, .3);
+            border-top-color: rgba(0, 0, 0, .5);
+            border-left-color: rgba(0, 0, 0, .3);
+        }
 
+        .draggable.box>*:not(summary) {
+            transition: all 1s;
+            z-index: 200;
+        }
+
+        .draggable.box:not[open]>*:not(summary) {
+            background: transparent;
+            color: transparent;
+        }
+
+        .draggable.box[open]>*:not(summary) {
+            position: absolute;
+            background: black;
+        }
+
+        #about {
+            max-width: min-content;
+            margin-left: auto;
+            position: relative;
+            font-size: 1rem;
+        }
+
+        #about p {
+            padding: 0;
+        }
+
+        nav#main {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 12vw;
+        }
+
+        nav#main>a {
+            display: block;
+            padding: 1em;
+            font-size: min(7vw, 3rem);
+        }
+
+        nav>a,
+        #intro p {
+            font-family: 'Cormorant Garamond', serif !important;
+        }
+
+        a+nav.Multimedia {
+            max-height: 0;
+        }
+
+        a:hover+nav.Multimedia,
+        a+nav.Multimedia:hover {
+            max-height: 5rem;
+        }
+
+        nav.Multimedia {
+            position: static;
+            top: 0;
+            font-size: 1rem;
+            margin-left: 4rem;
+            padding: 0;
+            display: inline-block;
+            outline: 0.5px solid black;
+            width: max-content;
+            overflow: hidden;
+            transition: all .2s;
+        }
+
+        nav.Multimedia>* {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: calc(100vw / 7);
+        }
+
+        nav.Multimedia a:hover {
+            filter: invert(1);
+        }
+
+        nav.Multimedia * {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav.Multimedia p {
+            display: block;
+            padding: 0;
+            margin: 0;
+            line-height: 0;
+        }
+
+        nav.Multimedia img {
+            height: 4rem;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="intro">
+        <section id="about">
+            <p>flupsi</p>
+            <p>upsiflu[at]gmail.com</p>
+            <p><a href="https://flupsi.com">flupsi.com</a> (You are here) </p>
+            <p><a href="https://instagram.com/flupsiupsi" target="_blank">instagram.com/flupsiupsi</a>
             </p>
-
-            <p style="color:magenta;" id="shells"> And on Saturday, 18th February 2023, I'll host a workshop at altes finanzamt where I will share my recent practices with Shells, and we can move with them and have fun and unknow lots of hegemonial knowledge thanks to how weird the Shell is!  
-                 The practice will be open and free. </p>
-
-            <details>
-                <summary>
-                    <p style="color:magenta;"> Click here for more info on the Shells Workshop at altes</p>
-                </summary>
-                <div style="color:#FF99aa; padding: 1em 10vw; background:rgba(255,200,200,.2);">
-
-                    <h2>Workshop Schelldule</h2>
-                    <ol style="list-style: square;">
-                        <li> Arrival </li>
-                        <li> Warm-up: Shaking. While shaking, in quick succession: impossible-scores, fantasy-names, mime-masks, sense-or-ship, massaging-the-floor-by-surprise, landscape-painting, proximity-layers, positional-voicing, chimera-embodiment, becoming-sand-and-moss.</li>
-                        <li>Teatime (also eating raw kale and parsleyroots if desired)</li>
-                        <li>Making-a-wish round, then suspending knowledge (and placing it temporarily on the window-sills)</li>
-                        <li>Trying out how to know-with (together, we will create and populate a little toolbox)</li>
-                        <li> Smoking Break (or just going out and having some air)</li>
-                        <li> Tableau-vivant: Using our toolbox to know-with a constellation; then add little movement-loops.</li>
-                        <li> Reflection round and Thorough Documentation! (and tea)</li>
-                        <li> Open Stage: other shells, monstrous bodies — a time to play and imagine otherwise.</li>
-                        <li> In the end, everybody can donate, and receives a copy of the after-care zine.</li>
-                    </ol>
-                    <h2>Requirements for participation</h2>
-                    <ol style="list-style: inside;">
-                        <li> I'm really bad at recapitulating something I read a few years ago because everything becomes quite a soup in my mind, so I require you to bring your own idea of the words hegemony, binary, glitch, and the like. Just any understanding, perhaps opposite of mine, perhaps a fantasy, your imagination of what they could mean, why not. </li>
-                        <li> Be prepared to suspend what you know about things. I will invite you to leave bits and pieces of your knowledge on one of the window-sills, and will remind you to take them back if you still need them after the workshop.</li>
-                        <li> Put your body into and out of the Shells: Our practive may entail experimenting with unconventional Shells, alternative virtual and physical avatars that mask your body. Reflect your limits and boundaries, decide when and where (and whether) to shift them. All exercises will be voluntary and on your initiative, so be prepared to articulate your needs and desires, verbally or nonverbally, and to engage with others' needs and desires.</li>
-                        <li> Co-create an environment of mutual support, listening and awareness where all the above becomes possible.</li>
-                    </ol>
-                    <a href="https://www.instagram.com/altesfinanzamt/">Check out altes'insta here!</a>
-                </div>
-            </details>
-            <p style="color:white"> You may also like to visit the <a
-                href="https://www.are.na/flupsi-upsi/shell-3fezyrjc5iy">site where I gather material for my current
-                project, SHELL</a>, or <a href="https://www.instagram.com/flupsiupsi/">visit me on instagram</a> where I
-            have prepared some more lascive pixels for you. </p>
-            <hr/>
-            <p style="color:coral"> Go ahead and read some of these texts that have accumulated in the recent years. Or skip
-            to the pictures. Since I'm usually undecided, I leave you the choice whether you want to go chronologically,
-            thematically or associatively. As I love arbitrary-but-insistent schemes of classification, I came up with a
-            trifecta of themes that can be found in the stuff I was concerned with, ca. 2011-19. These are: </p>
-            <ul style="color:coral">
-                <li>• approaching dance as economy, or economy as dance</li>
-                <li>• a collection of extended pleasure techniques</li>
-                <li>• taking "empty" spaces as sites of yet-untold stories.</li>
-            </ul>
-
-            <p style="color:white">What follows now may not be up to date, but then, the internet is mostly a trace of
+            <p><a href="https://github.com/upsiflu" target="_blank">github.com/upsiflu</a>
+            </p>
+        </section>
+    </section>
+    <nav id="main">
+        <a href="./multimedia">Multimedia Portfolio</a>
+        <a href="#companionship">Process Companionship</a>
+        <a href="#welcome">Art & Activism</a>
+        <a href="#poetry">Poetry</a>
+    </nav>
+    <nav id="nav_current" style="min-height: 1em; background:royalblue; position: relative;
+         width: 100%; display: block; color: black;">
+        <a style=" width:100%;padding: .5em; display: block;background:blue;color: white; text-decoration:dotted;"
+            href="https://www.are.na/block/18602679">
+            <span style="margin-top: auto; display: block;">I offer <em>Mentoring and Training</em> with Shells. Read
+                more about my method <u>here</u>.</p>
+        </a>
+        <a style=" width:100%;padding: .5em; display: block;color: black; text-decoration:dotted;"
+            href="https://sites.google.com/view/material-memory">
+            <span style="margin-top: auto; display: block;">If you came for the <em>material memory practice</em>, find
+                info <u>here</u>.</p>
+        </a>
+        <a style=" width:100%;padding: .5em; display: block;background:cyan; color: black; text-decoration:dotted;"
+            href="https://www.are.na/flupsi-upsi/shell-3fezyrjc5iy">
+            <span style="margin-top: auto; display: block;">If you came for the <em>SHELL</em>, browse the material
+                <u>here</u>.</p>
+        </a>
+    </nav>
+    <section style="background:black; padding:0 calc(50vw - 16rem); color:coral">
+        <p> Go ahead and read some of these texts that have accumulated in the recent years. Or skip to the pictures.
+            Since I'm usually undecided, I leave you the choice whether you want to go chronologically, thematically or
+            associatively. As I love arbitrary-but-insistent schemes of classification, I came up with a trifecta of
+            themes that can be found in the stuff I was concerned with, ca. 2011-19. These are: </p>
+        <ul style="color:coral">
+            <li>• approaching dance as economy, or economy as dance</li>
+            <li>• a collection of extended pleasure techniques</li>
+            <li>• taking "empty" spaces as sites of yet-untold stories.</li>
+        </ul>
+        <p style="color:white">What follows now may not be up to date, but then, the internet is mostly a trace of
             memory, a dumpyard of unfinished and half-connected bites. Enjoy, my heart, and let me know when you need
             something!</p>
-        </section>
-        <nav id="nav_current" style="min-height: 1em; background:royalblue; position: relative;
-         width: 100%; display: block; color: black;">
-            <a
-            style=" width:100%;padding: .5em; display: block;background:blue;color: white; text-decoration:dotted;"
-            href="https://flupsi.uber.space/limitJam/invitation.pdf">
-                <span style="margin-top: auto; display: block;">If you came for the <em>naked limit jam</em>, find
-                 the invitation with all details <u>here</u>.</p>
+        </p>
+    </section>
+    <header id="welcome" class="content">
+        <nav id="main_nav_0">
+            <a href="#statement">artist’s statement</a>
+            <a href="#CV">bio & CV</a>
+            <a href="#companionship">process companionship</a>
+            <a href="#current">current production and upcoming presentations</a>
+        </nav>
+        <hr style="opacity:0;" />
+        <nav id="main_nav_2" style="z-index: 2; position: relative;">
+            <a href="#contact">contact</a>
+            <a href="#imprint">imprint</a>
+        </nav>
+    </header>
+    <h1 style="margin-bottom:-15vw;font-style:italic;text-align:center; color: transparent;">flupsi: mutual pleasures!
+    </h1>
+    <image style="border-color: transparent; position: absolute; top:calc(15.5em - 19vw); z-index:-2;"
+        src="https://lh6.googleusercontent.com/_9eL5_L3F-irVzotn5i4aaQ_8Ud3P-Lt6WZ4y6eAS5TlmiL1bSQ_9L0ZaHU6fAzfV1DhHrRsNOphh12r9kc3Xw2YRqg_ofgjoVFUe4svhUBNfLDXO0k9hrJQj9v5c2lIznCIMcNK">
+    </image>
+    <section id="title_nav" class="content">
+        <nav id="toc">
+            <a href="#pleasures" style="text-align:right;">
+                <aside class="caption">where lie our<br />cyborg strengths?</aside>
+                <h2>machine pleasures</h2>
             </a>
-            <a
-            style=" width:100%;padding: .5em; display: block;color: black; text-decoration:dotted;"
-            href="https://sites.google.com/view/material-memory">
-                <span style="margin-top: auto; display: block;">If you came for the <em>material memory practice</em>, find
-                 info <u>here</u>.</p>
+            <a href="#economy" style="text-align:center;">
+                <aside class="caption">can dance crack codes<br />of deprivation?</aside>
+                <h2>dancing economy</h2>
             </a>
-
-            <a style=" width:100%;padding: .5em; display: block;background:cyan; color: black; text-decoration:dotted;"
-            href="https://www.are.na/flupsi-upsi/shell-3fezyrjc5iy">
-                <span style="margin-top: auto; display: block;">If you came for the <em>SHELL</em>, browse the material
-                <u>here</u>.</p>
+            <a href="#myth">
+                <aside class="caption">give us, space,<br />
+                    <nobr>a fairy-tale!</nobr>
+                </aside>
+                <h2>myth container</h2>
             </a>
         </nav>
-        <header id="welcome" class="content">
-            <nav id="main_nav_0">
-                <a href="#statement">artist’s statement</a>
-                <a href="#CV">bio & CV</a>
-                <a href="#companionship">process companionship</a>
-                <a href="#current">current production and upcoming presentations</a>
-                <a href="#fail">failed grant applications</a>
-            </nav>
-            <hr style="opacity:0;"/>
-            <nav id="main_nav_2" style="z-index: 2; position: relative;">
-                <a href="#contact">contact</a>
-                <a href="#imprint">imprint</a>
-            </nav>
-        </header>
-        <h1 style="margin-bottom:-15vw;font-style:italic;text-align:center; color: transparent;">flupsi: mutual pleasures!
-    </h1>
-        <image style="border-color: transparent; position: absolute; top:calc(15.5em - 19vw); z-index:-2;"
-        src="https://lh6.googleusercontent.com/_9eL5_L3F-irVzotn5i4aaQ_8Ud3P-Lt6WZ4y6eAS5TlmiL1bSQ_9L0ZaHU6fAzfV1DhHrRsNOphh12r9kc3Xw2YRqg_ofgjoVFUe4svhUBNfLDXO0k9hrJQj9v5c2lIznCIMcNK"></image>
-        <section id="title_nav" class="content">
-            <nav id="toc">
-                <a href="#pleasures" style="text-align:right;">
-                    <aside class="caption">where lie our<br/>cyborg strengths?</aside>
-                    <h2>machine pleasures</h2>
-                </a>
-                <a href="#economy" style="text-align:center;">
-                    <aside class="caption">can dance crack codes<br/>of deprivation?</aside>
-                    <h2>dancing economy</h2>
-                </a>
-                <a href="#myth">
-                    <aside class="caption">give us, space,<br/>
-                        <nobr>a fairy-tale!</nobr>
-                    </aside>
-                    <h2>myth container</h2>
-                </a>
-            </nav>
-        </section>
-        <section id="statement" class="content">
-            <article>
-                <img src="title_icon.jpg" class="a1"/>
-                <h1>end of images</h1>
-                <p>The corpus presented here starts with the end of images. What is left to do if all new images are doomed
+    </section>
+    <section id="statement" class="content">
+        <article>
+            <img src="title_icon.jpg" class="a1" />
+            <h1>end of images</h1>
+            <p>The corpus presented here starts with the end of images. What is left to do if all new images are doomed
                 to turn out as replicas of previous images? If everything you see just tells the same old myth again?
             </p>
-                <p>This is where I found myself around 2013, and looking back today, I can discern three approaches I would
+            <p>This is where I found myself around 2013, and looking back today, I can discern three approaches I would
                 try. First, dreaming into the figures of abandoned spaces, and taking a site as <em>myth container</em>.
                 Voids filled with imaginary societies and the peculiar became self-evident. I sense the traction of
                 alternative myths.</p>
-                <p>Second, to empty the situation of all signs, to dance without knowledge, to let my belly guide. In small
+            <p>Second, to empty the situation of all signs, to dance without knowledge, to let my belly guide. In small
                 groups, exploration of our <em>machine pleasures</em>, untainted from hypertrophic subjectivity, would
                 reopen our attention to materiality and mutuality, and enable encounter: as an unconditional gift. We
                 let ourselves fall into figures from a world without violence.</p>
-                <p>Third, where is the knowledge of <em>that</em> world? Which economy is without violence? What language
+            <p>Third, where is the knowledge of <em>that</em> world? Which economy is without violence? What language
                 will post-patriarchy speak? Reading D.A. Haraway’s cyborg manifesto and Silvia Federici’s
                 economy-history of body inscriptions as <em>scores</em>, in several collaborative projects I put
                 together a toolbox of rituals, narratives and practices that may help us dance cyborgs' liminal spaces
                 into our realities: <em>dancing economy</em>.</p>
-            </article>
-        </section>
-        <section id="CV" class="content">
-            <article>
-                <h1>artistic CV</h1>
-                <p>
-                    <em>2022</em> Preparations for future congresses in Bologna and London; more Shell cooperations with
-                activists.</p>
-                <p>
-                    <em>Jul-Aug 2021</em> First International Congress on Shells, in the Garden.</p>
-                <p>
-                    <em>2021</em> connecting with fellow curators in the Young Curators' Academy.</p>
-                <p>
-                    <em>since 2021</em> re-visiting cyberfeminist writing and starting the SHELL process with some comrades
-                around the world.</p>
-                <p>
-                    <em>Aug 2020</em> undressing: experiment with audience and cops in public space, at Alexanderplatz,
-                Berlin.</p>
-                <p>
-                    <em>Sep 27, 2019</em> first installment of «material memory», practicing a non-symbolic body
+        </article>
+    </section>
+    <section id="CV" class="content">
+        <article>
+            <h1>artistic CV</h1>
+            <p>
+                <em>2023</em> experimental naked limit jam; several open Shell workshops; producing a dance piece with
+                Alina Belyagina; volunteering for an eco-anarchist server collective frontend
+            <aside id="bookmark_altes" class="bookmark explore work links">
+                <h2 class="caption">imagining with shells</h2>
+                <p> <a
+                        href="https://docs.google.com/document/d/e/2PACX-1vQrtVZQEc9QHKuutcXynNZCqoDP9UnomuEkwbghRHjgYg23kE5ATUpGD0tHlaurPRuAxQmngfkBwfRg/pub">More
+                        Info</a>; </p>
+            </aside>
+            <aside id="bookmark_limit" class="bookmark explore work links">
+                <h2 class="caption">naked limit jam</h2>
+                <p> other ways of encountering each other. <a
+                        href="https://flupsi.uber.space/limitJam/invitation.pdf">Invitation</a>; <a
+                        href="./Naked%20Limit%20Jam%20-%20ScheduleAndConsensus.pdf"> Schedule</a>
+                </p>
+            </aside>
+            </p>
+            <p>
+                <em>December 2022</em> Residency in Kempten with Katya Volkova and Alina Belyagina.
+            </p>
+            <p>
+            <p>
+                <em>2022</em> Preparations for future congresses in Bologna and London; more Shell cooperations with
+                activists such as Michelle Zhang and Maya Cohen; also creating <a
+                    href="https://movingAcrossThresholds.com">movingAcrossThresholds.com</a> and designing the related
+                newsletter with Renae Shadler
+            </p>
+            <p>
+                <em>Jul-Aug 2021</em> First International Congress on Shells, in the Garden.
+            <aside id="bookmark_congress" class="bookmark explore work links">
+                <h2 class="caption">Congress</h2>
+                <p> <a href="https://ShellCongress.com">Website</a>; </p>
+            </aside>
+            </p>
+            <p>
+                <em>2021</em> connecting with fellow curators in the Young Curators' Academy.
+            </p>
+            <p>
+                <em>since 2021</em> re-visiting cyberfeminist writing and starting the SHELL process with some comrades
+                around the world.
+            </p>
+            <p>
+                <em>Aug 2020</em> undressing: experiment with audience and cops in public space, at Alexanderplatz,
+                Berlin.
+            </p>
+            <p>
+                <em>Sep 27, 2019</em> first installment of «material memory», practicing a non-symbolic body
                 language.</em>
             </p>
             <p>
                 <em>Oct-Apr, 2018-19</em> living in Buenos Aires, collaborating with local dancers on «genet.space» and
                 «mud body».
             <aside id="bookmark_material_memory" class="bookmark explore work links">
-                    <h2 class="caption">material memory</h2>
-                    <p>
-                        <a href="#material_memory">more on this practice</a>
-                    </p>
-                </aside>
-                <aside id="bookmark_mud" class="bookmark explore work links">
-                    <h2 class="caption">mud body</h2>
-                    <p>
-                        <a href="#mud">encounters in a soft matrix</a>
-                    </p>
-                </aside>
+                <h2 class="caption">material memory</h2>
+                <p>
+                    <a href="#material_memory">more on this practice</a>
+                </p>
+            </aside>
+            <aside id="bookmark_mud" class="bookmark explore work links">
+                <h2 class="caption">mud body</h2>
+                <p>
+                    <a href="#mud">encounters in a soft matrix</a>
+                </p>
+            </aside>
             </p>
             <p>
                 <em>Jul 17, 2018</em> graduation performance at UdK Berlin, with «solo for my body»; received
-                Meisterschüler degree in fine arts.</p>
+                Meisterschüler degree in fine arts.
+            </p>
             <p>
                 <em>Mar-Sep, 2018</em> facilitating four small residencies (with Pauline Payen, Dorota Michalak, Evgenia
                 Chetkovka and others) to dive into economies of space and coexistence with material, as material.
-                Ongoing project with excursions into places.</p>
+                Ongoing project with excursions into places.
+            </p>
             <p>
                 <em>Feb-Jun, 2018</em> organizing regular dance improvisation sessions on «material cyborgism», my dance
                 practice for liminal bodies in liminal spaces, inspired by Donna Haraway’s Cyborg Manifesto and
-                contemporary political witchcraft.</p>
+                contemporary political witchcraft.
+            </p>
             <p>
                 <em>Sep-Dec, 2017</em> initiating project <a href="#bookmark_allegory">«allegory of economy»</a>;
-                Allegory as model for understanding and unlearning economic dispositifs.</p>
+                Allegory as model for understanding and unlearning economic dispositifs.
+            </p>
             <aside id="bookmark_allegory" class="bookmark explore work links">
                 <h2 class="caption">allegory of economy</h2>
                 <p>more <a href="#allegory">here</a> and <a href="http://www.allegory.fun">on the blog</a>
@@ -1224,10 +1236,11 @@
             </aside>
             <p>
                 <em>Mar-Dec, 2017</em>
-                <a id="witchcraft" href="#bookmark_future">«future witchcraft»</a>, a
-                collaboration with Josephine Witt, Judith Förster and Pia Achterkamp; permanent performance lab in
-                Aarhus, a show at Volksbühne, a «framing ritual» workshop and experiment on body-and-frame awareness;
-                final workshop in the artists' space <em>betOnest</em>.</p>
+                <a id="witchcraft" href="#bookmark_future">«future witchcraft»</a>, a collaboration with Josephine Witt,
+                Judith Förster and Pia Achterkamp; permanent performance lab in Aarhus, a show at Volksbühne, a
+                «framing ritual» workshop and experiment on body-and-frame awareness; final workshop in the artists'
+                space <em>betOnest</em>.
+            </p>
             <aside id="bookmark_future" class="bookmark explore work links">
                 <h2 class="caption">future witchcraft</h2>
                 <p class="explore links">
@@ -1235,37 +1248,46 @@
                 </p>
             </aside>
             <p>
-                <em>2017</em> working as performer for Alexandra Pirici, Rebecca Goyette and others; studying critique of
-                frames and spaces around performance and body art.</p>
+                <em>2017</em> working as performer for Alexandra Pirici, Rebecca Goyette and others; studying critique
+                of frames and spaces around performance and body art.
+            </p>
             <p>
-                <em>2016</em> initiation of the network <em>compagnie sorcellerie</em> and research on the inscription of
-                witch-hunts in the body; formulation of a gift economy («gift economy network», or
-                <em>genet.space</em>).</p>
+                <em>2016</em> initiation of the network <em>compagnie sorcellerie</em> and research on the inscription
+                of witch-hunts in the body; formulation of a gift economy («gift economy network», or
+                <em>genet.space</em>).
+            </p>
             <p>
                 <em>2015-18</em> learning to dance; attending classes with Alice Chauchat, Benoît Lechambre, Keith
                 Hennessey, Isabelle Schad and others; several collaborations with <em>SODA</em> and <em>MA</em>
-                students.</p>
+                students.
+            </p>
             <p>
                 <em>2014-15</em> project group «sociétés in the city without environs» on urbanism and self-⁠indulgence;
-                giving regular workshops in public spaces; exposition «disconnected spaces» in Berlin and Tehran.</p>
+                giving regular workshops in public spaces; exposition «disconnected spaces» in Berlin and Tehran.
+            </p>
             <p>
                 <em>2014</em> project group «strange movements» to explore motion, mechanisms and encounters in a
-                fictional space.</p>
+                fictional space.
+            </p>
             <p>
                 <em>2013-18</em> study fine arts and performance art at UdK Berlin; ever-recurring themes of ephemeral
-                spaces that invite utopia; new name: <em>Flupsi</em>.</p>
+                spaces that invite utopia; new name: <em>Flupsi</em>.
+            </p>
             <p>
                 <em>2010-15</em> co-creating several feature films <a href="#bookmark_camera">(camera, scenography,
-                    costumes, postproduction)</a>.</p>
+                    costumes, postproduction)</a>.
+            </p>
             <aside id="bookmark_camera" class="bookmark explore links">
                 <h2 class="caption">cinematography</h2>
                 <p>watch my <a href="http://s2.rasalhague.uberspace.de/">cinematography portfolio</a>
                 </p>
             </aside>
             <p>
-                <em>2010</em> founding the noncommercial filmmaking collective <em>Filmgeschichte</em>.</p>
+                <em>2010</em> founding the noncommercial filmmaking collective <em>Filmgeschichte</em>.
+            </p>
             <p>
-                <em>2009-12</em> film studies at FU Berlin; participating in various political street theatre groups.</p>
+                <em>2009-12</em> film studies at FU Berlin; participating in various political street theatre groups.
+            </p>
             <p>
                 <em>2008-9</em> working at <em>
                     <nobr>Armes Theater Chemnitz</nobr>
@@ -1273,10 +1295,12 @@
                 <nobr>(material theater / children’s theatre)</nobr>.
             </p>
             <p>
-                <em>1999-2008</em> switching school to a rural, violent village; later: robotics, many theater and design
-                projects.</p>
+                <em>1999-2008</em> switching school to a rural, violent village; later: robotics, many theater and
+                design projects.
+            </p>
             <p>
-                <em>1988-96</em> born and grown up in Frankfurt (Main).</p>
+                <em>1988-96</em> born and grown up in Frankfurt (Main).
+            </p>
         </article>
     </section>
     <section id="companionship">
@@ -1286,8 +1310,8 @@
                 help with writing, critique, framing, and creative decisions, contribute my experience with
                 collaborative work, and propose fruitful approaches to develop artistic material.</p>
             <p>
-                <em>Contact me if you have a process going and need an outside ear/eye/heart! I’m usually available for a
-                    spontaneous, free coffee.</em>
+                <em>Contact me if you have a process going and need an outside ear/eye/heart! I’m usually available for
+                    a spontaneous, free coffee.</em>
             </p>
             <p style="background: coral; padding: 1em;">
                 <strong style="color: coral; background: black;">price structure:</strong> My hourly price is 0.1% of
@@ -1345,7 +1369,8 @@
                 <article class="client">
                     <h2>Pauline Payen</h2>
                     <p>
-                        <em>Ready Mad</em>, Berlin, 2018-19.</p>
+                        <em>Ready Mad</em>, Berlin, 2018-19.
+                    </p>
                     <p>Grantwriting; research; translation; assistant of production.</p>
                     <p>
                         <em>This buffonesque play has been in development for several months. I helped Pauline writing
@@ -1357,7 +1382,8 @@
                 <article class="client" style="background:#20120a">
                     <h2>Deva Schubert &amp; Juan Felipe Amaya Gonzalez</h2>
                     <p>
-                        <em>Grand Opening: Ein Euphemismus</em>, Berlin, May-Jun 2019.</p>
+                        <em>Grand Opening: Ein Euphemismus</em>, Berlin, May-Jun 2019.
+                    </p>
                     <p>Concept and Grant writing; support in the early stages of creation; research on materials.</p>
                     <p>While this essay on metamodernity (a contemporary language that reappropriates postmodern forms
                         for affective and romantic storytelling) never came to realization, its development proved
@@ -1369,7 +1395,8 @@
                         src="https://lh3.googleusercontent.com/tYy453iz9YPXlAglECeRGEiUsgeUHxHw9XRr7whsQddgBanx-Fj6yLjfi7CaGJfgVa8IajkT8Qi-x8t8BvzDjljsfDWAjCNO3qmX_mkttVX-eQa-6CQ_huZjf9UNR73gUMbh0Z-C">
                     <h2>Eleni Danesi</h2>
                     <p>
-                        <em>Walling Practice;&nbsp;Molding the Void</em>, Berlin, Sep 2018—May 2019.</p>
+                        <em>Walling Practice;&nbsp;Molding the Void</em>, Berlin, Sep 2018—May 2019.
+                    </p>
                     <p>Research, dance and videography.</p>
                     <p>Towards a series of workshops, Eleni researched how to dance the negative and ‘in-between’
                         spaces, both inside and outside our bodies, and how bodies form a collective sculpture of these
@@ -1381,7 +1408,8 @@
                         src="https://lh5.googleusercontent.com/Grj4f-sqtFDsnPsJ6-f4Dyi9nJNUopbBwT491LTHKDtHB7xBOtEy5SM-RdC6e-W3eKhbzZAouz-hpzgGFpFdcoC-f_XFcfvYktQ5XsbhuNLXR-8ih6JKMVUOSrpkpFDvbLb8RHfh">
                     <h2>Mmakgosi Kgabi</h2>
                     <p>
-                        <em>The Shape of Emotion</em>, Berlin, Nov 2018.</p>
+                        <em>The Shape of Emotion</em>, Berlin, Nov 2018.
+                    </p>
                     <p>Mentoring (via HZT Berlin); stage and projection models; dome structures.</p>
                     <p>In preparation of her graduation performance, Mmakgosi approached me with the idea of projecting
                         her mouth into the inside of a giant dome. We recycled cardboard and researched spherical
@@ -1393,7 +1421,8 @@
                         src="https://lh6.googleusercontent.com/zioCoo61_u_9YuYTmRtEuaU-SGd2_99CW8etgWsA_c4mjKiND5p2sYTnMy-e8qZ9eUXnjE_zUicdiRQ3-8Hxls_25nn_Frr1_9JWwbjBiktcu7_OIbHog5xtu4c3S0EB9QRN4ayS">
                     <h2>Akseli Aittomäki</h2>
                     <p>
-                        <em>Actors of production</em>, Berlin, Dec 2017.</p>
+                        <em>Actors of production</em>, Berlin, Dec 2017.
+                    </p>
                     <p>
                         <a
                             href="https://www.google.com/url?q=https://vimeo.com/207170296&amp;sa=D&amp;ust=1568587307605000">https://vimeo.com/207170296</a>
@@ -1410,204 +1439,207 @@
                         <p>Paula Zacharias, projects on CI and Alexander technique. Buenos&nbsp;Aires, <wbr>Verano 2018/19.
                         </p>
                         <p>Videography and production, framing <wrb>and critique.</p>
-                        </article>
-                        <article class="small client">
-                            <p>Josephine Witt, <wbr>
-                                <em>Ein&nbsp;bisschen Julia und Romeo</em>. Berlin, Sep 2018.</p>
-                            <p>Video documentation.</p>
-                        </article>
-                        <article class="small client" style="background:#05161e">
-                            <img
-                            src="https://lh3.googleusercontent.com/onJXVzJpcfBQziKL9r4aaaedbMMYzfYhrHKpwLzWtokBjA0u02-BVE1kiRodsQykwESXfhO-0-X7N2qxzLcowI-lLTBUIWor0RgbRqjt-BFK6L4hsLe84tmtua4f0mZUh8R5qpXV">
-                            <p>Katarzyna Guzowska and Eleni Zipser, <wbr>
-                                <em>duo bombast</em> (performances). <wbr>Berlin, 2016-18.
+                    </article>
+                    <article class="small client">
+                        <p>Josephine Witt, <wbr>
+                            <em>Ein&nbsp;bisschen Julia und Romeo</em>. Berlin, Sep 2018.
                         </p>
-                            <p>Photography and web counselling.</p>
-                            <p>
-                                <a href="duobombast.com">Visit their website to see all photos.</a>
-                            </p>
-                        </article>
-                        <article class="small client">
-                            <img
+                        <p>Video documentation.</p>
+                    </article>
+                    <article class="small client" style="background:#05161e">
+                        <img
+                            src="https://lh3.googleusercontent.com/onJXVzJpcfBQziKL9r4aaaedbMMYzfYhrHKpwLzWtokBjA0u02-BVE1kiRodsQykwESXfhO-0-X7N2qxzLcowI-lLTBUIWor0RgbRqjt-BFK6L4hsLe84tmtua4f0mZUh8R5qpXV">
+                        <p>Katarzyna Guzowska and Eleni Zipser, <wbr>
+                            <em>duo bombast</em> (performances). <wbr>Berlin, 2016-18.
+                        </p>
+                        <p>Photography and web counselling.</p>
+                        <p>
+                            <a href="duobombast.com">Visit their website to see all photos.</a>
+                        </p>
+                    </article>
+                    <article class="small client">
+                        <img
                             src="https://lh4.googleusercontent.com/YA9KeEIRqJl8Cbop6UdWjr384lWHO0MBPJ1SSrJRGI4Tdk4T0gpgiYUY5OBiB9jZYOBfsEoPdkkjdwkyiYJsIa_6fND3HIZVCY00wYGjqMbGTfHKWsgfjp2P28IEYnSrRzLwr6hH">
-                            <p>Stephanie Hanna, <em>Die Weisen</em>&nbsp;(interactive sculpture). Jun 2017.</p>
-                            <p>Translating an interactive audio-sculpture into the virtual realm.</p>
-                            <p>
-                                <a href="http://www.stephaniehanna.de/wp-content/weiseapp2018/weiseapp.html">Visit
+                        <p>Stephanie Hanna, <em>Die Weisen</em>&nbsp;(interactive sculpture). Jun 2017.</p>
+                        <p>Translating an interactive audio-sculpture into the virtual realm.</p>
+                        <p>
+                            <a href="http://www.stephaniehanna.de/wp-content/weiseapp2018/weiseapp.html">Visit
                                 Stephanie's app.</a>
-                            </p>
-                        </article>
-                        <article class="small client" style="background:#2b273d">
-                            <img
+                        </p>
+                    </article>
+                    <article class="small client" style="background:#2b273d">
+                        <img
                             src="https://lh3.googleusercontent.com/oWnQG-yHioB4PleACBEYjj1STC_-hmQjYp_JT9VrlcIt9UGl8PmSxYTnuAH8vaL5EsVXgR00ILD6PXc-XoybWzA94toISQOiXuE3AknBC_0a7Zp66hC0qi99_A0xhuWWzqoFkqlY">
-                            <p>Elisabeth Wood and her Gray Voice Ensemble, <em>The Prayer for Community</em>. Berlin, Summer
+                        <p>Elisabeth Wood and her Gray Voice Ensemble, <em>The Prayer for Community</em>. Berlin, Summer
                             2017.</p>
-                            <p>Camera operation.</p>
-                            <p>
-                                <a href="https://www.youtube.com/watch?v%3DH0emRy_T_3c">Watch the video.</a>
-                            </article>
-                            <article class="small client">
-                                <img
+                        <p>Camera operation.</p>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v%3DH0emRy_T_3c">Watch the video.</a>
+                    </article>
+                    <article class="small client">
+                        <img
                             src="https://lh4.googleusercontent.com/d_PgzD-l5dmTHdAYz-o66-v82b_35SLkjD27hgj68BIKvVZbxYuQUB0aRzp_jQPu0EKymY284ZmQIlYjBWP7Mdbe5xqZIalMVaZxQilToK2RQjgbDu9My58r2i0R8ve-d0GPUObF">
-                                <p>Caroline Kühner, <em>folifoli</em> (performance). Berlin, Dec 2016.</p>
-                                <p>Video documentation.</p>
-                                <p>
-                                    <a
+                        <p>Caroline Kühner, <em>folifoli</em> (performance). Berlin, Dec 2016.</p>
+                        <p>Video documentation.</p>
+                        <p>
+                            <a
                                 href="https://www.google.com/url?q=https://vimeo.com/200402424&amp;sa=D&amp;ust=1568587307609000">Watch
                                 the video.</a>
-                                </p>
-                            </article>
-                            <article class="small client">
-                                <img
-                            src="https://lh4.googleusercontent.com/eOsci9gMSC6T9nvnqIDBwbwBh5V_UkTvl2YOKLIXOT3GQVIaJXQjKZEjoDDalTKRkPYrk103vggork3W4szlUaMaZysVqjk9z92gWi0vWNe0OLvoRGpuxbE0T1JIL6OyaWFYED16">
-                                <p>Alon Stoler (Trombone), <em>pieces from Leopold Mozart and Luciano Berio</em>. Berlin, Apr
-                            2016.</p>
-                                <p>Multichannel video with synchronous sound.</p>
-                            </article>
-                            <article class="small client">
-                                <img
-                            src="https://lh4.googleusercontent.com/fPKCG3LEwaR_QzWKoH_PbeAP3xr6XAe2AJYu360Pi_clcFcVIBt3X5hE5cHI74OJ4t6Pi8sjF9k9WViQHH9O-_ENiu3Qj7wkselyyCRa7rfQrrFyccaedqDSBl-dEYfjCZ6pctzO">
-                                <p>Asaf Hameiri, <em>Franny and Zooey</em> (theater play). Berlin, Jun 2016.</p>
-                                <p>Lights, stage design, video documentation.</p>
-                            </article>
-                            <article class="small client" style="background:#08272c">
-                                <img
-                            src="https://lh4.googleusercontent.com/lXTNrVuc2PVACbMm1OxXcej55MF4kYjVT1WGIGhdwzo1x1IDt5JG7PU0LyyUrltQA_ryyKuQCu9Tis1lAbr4HA7YxbdTUMDjYXQXXi6XJyDVhIMxLVwDG7KZiMkqubHqSsC_M7HT">
-                                <p>Guiselt Thaiz, <em>Trash Life</em> (animated still life from trash found in the ocean).
-                            Berlin, Jan 2016.</p>
-                                <p>Lights, videography, post-production.</p>
-                            </article>
-                            <article class="small client">
-                                <img
-                            src="https://lh6.googleusercontent.com/J_hfaFBEcj6HjxDhu7Ttbl1pv7VCHr7rYAwyAzJ1F77aDSA38o8PjYk4UWIRAsC2JQ1ywyCs-cs7sGW0vhvGoTHlHb5ZW0SNCc0-BbEpZnMlTOFR4Jipe80iKiq-dttrRBQpW56N">
-                                <p>Lisa Müller-Trede, <em>crash</em> (performance with live video). Berlin, Mar 2016.</p>
-                                <p class="c2">Video documentation.</p>
-                            </article>
-                        </div>
+                        </p>
                     </article>
-                </section>
-                <section id="current" class="content">
-                    <h1>current</h1>
-                    <article class="work" style="width:100%;padding-left:auto;padding-right:auto;">
-                        <aside class="caption"> currently working on: </aside>
-                        <a href="https://www.are.na/flupsi-upsi/shell-3fezyrjc5iy">
-                            <details>
-                                <summary>SHELL: "Where does your body encounter uncanny gaps, conflicts between adjacent codes?
+                    <article class="small client">
+                        <img
+                            src="https://lh4.googleusercontent.com/eOsci9gMSC6T9nvnqIDBwbwBh5V_UkTvl2YOKLIXOT3GQVIaJXQjKZEjoDDalTKRkPYrk103vggork3W4szlUaMaZysVqjk9z92gWi0vWNe0OLvoRGpuxbE0T1JIL6OyaWFYED16">
+                        <p>Alon Stoler (Trombone), <em>pieces from Leopold Mozart and Luciano Berio</em>. Berlin, Apr
+                            2016.</p>
+                        <p>Multichannel video with synchronous sound.</p>
+                    </article>
+                    <article class="small client">
+                        <img
+                            src="https://lh4.googleusercontent.com/fPKCG3LEwaR_QzWKoH_PbeAP3xr6XAe2AJYu360Pi_clcFcVIBt3X5hE5cHI74OJ4t6Pi8sjF9k9WViQHH9O-_ENiu3Qj7wkselyyCRa7rfQrrFyccaedqDSBl-dEYfjCZ6pctzO">
+                        <p>Asaf Hameiri, <em>Franny and Zooey</em> (theater play). Berlin, Jun 2016.</p>
+                        <p>Lights, stage design, video documentation.</p>
+                    </article>
+                    <article class="small client" style="background:#08272c">
+                        <img
+                            src="https://lh4.googleusercontent.com/lXTNrVuc2PVACbMm1OxXcej55MF4kYjVT1WGIGhdwzo1x1IDt5JG7PU0LyyUrltQA_ryyKuQCu9Tis1lAbr4HA7YxbdTUMDjYXQXXi6XJyDVhIMxLVwDG7KZiMkqubHqSsC_M7HT">
+                        <p>Guiselt Thaiz, <em>Trash Life</em> (animated still life from trash found in the ocean).
+                            Berlin, Jan 2016.</p>
+                        <p>Lights, videography, post-production.</p>
+                    </article>
+                    <article class="small client">
+                        <img
+                            src="https://lh6.googleusercontent.com/J_hfaFBEcj6HjxDhu7Ttbl1pv7VCHr7rYAwyAzJ1F77aDSA38o8PjYk4UWIRAsC2JQ1ywyCs-cs7sGW0vhvGoTHlHb5ZW0SNCc0-BbEpZnMlTOFR4Jipe80iKiq-dttrRBQpW56N">
+                        <p>Lisa Müller-Trede, <em>crash</em> (performance with live video). Berlin, Mar 2016.</p>
+                        <p class="c2">Video documentation.</p>
+                    </article>
+                </div>
+        </article>
+    </section>
+    <section id="current" class="content">
+        <h1>current</h1>
+        <article class="work" style="width:100%;padding-left:auto;padding-right:auto;">
+            <aside class="caption"> currently working on: </aside>
+            <a href="https://www.are.na/flupsi-upsi/shell-3fezyrjc5iy">
+                <details>
+                    <summary>SHELL: "Where does your body encounter uncanny gaps, conflicts between adjacent codes?
                     </summary> Such voids harbor amazing expanses which I call SHELL. Together we can inscribe defiant
                     cyborg-corporealities on them."
                 </details>
-                        </a>
-                        <img id="material_memory" class="s1"
+            </a>
+            <img id="material_memory" class="s1"
                 src="https://lh6.googleusercontent.com/EUZPVNcNb8vJvE7fxzzvyjwqkv6sri_-2cGXaEoh8sGcB15hkwYBFeAokZAVAdShq8TkeSl6j5unVm4fX6s3nrPIKDSVoJwI7OgIyGGM74auUuIius6xbZo4Fyq2qaUBdme6SToB">
-                        <h2>material memory</h2>
-                        <p>I want to share and receive memories stored in the body, from body to body, not with spoken language in
+            <h2>material memory</h2>
+            <p>I want to share and receive memories stored in the body, from body to body, not with spoken language in
                 academic or social frames. I want to perceive my body and yours and our collective body as material, not
                 as signifiers and tokens of oppressive and oppressed identities.</p>
-                        <p> This language has no symbols. It is a precarious language of our precarity. It has no meaning other than
+            <p> This language has no symbols. It is a precarious language of our precarity. It has no meaning other than
                 our bodies and their encounter. I think, in the long term, that's how we can organize and become the
                 Leafy Proletariat that Donna Haraway envisioned.</p>
-                        <p>«material memory» is a practice based on the tiny movements and oscillating tensions that run through our
+            <p>«material memory» is a practice based on the tiny movements and oscillating tensions that run through our
                 bodies, shaped and modulated by the memories that inhabit our muscles, fascia, fat tissue.</p>
-                        <hr/>
-                        <a style=" height: 6em; padding: .5em; display: block;color: black; text-decoration:dotted;"
+            <hr />
+            <a style=" height: 6em; padding: .5em; display: block;color: black; text-decoration:dotted;"
                 href="https://sites.google.com/view/material-memory">
-                            <img src="https://bit.ly/2SR2mUa"
+                <img src="https://bit.ly/2SR2mUa"
                     style="height: calc(100% + 1em); width: auto; float: left; margin-right: 1em; margin-top: -.5em;">
-                            <span style="margin-top: auto; display: block;">We are now in the process of opening the archive we have
+                <span style="margin-top: auto; display: block;">We are now in the process of opening the archive we have
                     been building since September 2019 and making it publicly accessible. Find updated info on the the
                     <em>material memory practice</em>
-                                <u>here</u>.</p>
-                        </a>
-                        <h2 id="mud">cuerpo de barro</h2>
-                        <p>«mud body» <a href="#bookmark_coro">started in Buenos Aires, in February 2019, with «Coro»</a>, a score
+                    <u>here</u>.</p>
+            </a>
+            <h2 id="mud">cuerpo de barro</h2>
+            <p>«mud body» <a href="#bookmark_coro">started in Buenos Aires, in February 2019, with «Coro»</a>, a score
                 that can be superimposed on any public space. As we were improvising in the parks and playgrounds of
                 Buenos Aires, we found ourselves drawn to the wet earth, so we decided to embark on a 15-months <a
                     href="#bookmark_mud">journey into mud</a>, mud-bodies, and the body-political imbrications of
                 playing in this matrix.</p>
-                        <aside id="bookmark_coro" class="explore work links">
-                            <h2 class="caption">Coro</h2>
-                            <p class="explore links">
-                                <a href="https://www.facebook.com/events/596593090803856/">The event that
-                        asked</a>, "¿How to make material’s inherent movement ours?"</p>
-                        </aside>
-                        <aside id="bookmark_mud" class="explore work links">
-                            <h2 class="caption">Mud Body</h2>
-                            <p class="explore links">
-                                <a href="https://sites.google.com/view/mudbody/home">our portfolio site</a>,
-                    accumulating material from the participants of the project, and additional details.</p>
-                        </aside>
-                        <aside class="caption"> incubating: </aside>
-                        <h2 id="tableau">tableau vivant</h2>
-                        <p>In <em>tableaux vivants</em>, ‘living images’, actors represent a concept through staging a scenic figure
+            <aside id="bookmark_coro" class="explore work links">
+                <h2 class="caption">Coro</h2>
+                <p class="explore links">
+                    <a href="https://www.facebook.com/events/596593090803856/">The event that asked</a>, "¿How to make
+                    material’s inherent movement ours?"
+                </p>
+            </aside>
+            <aside id="bookmark_mud" class="explore work links">
+                <h2 class="caption">Mud Body</h2>
+                <p class="explore links">
+                    <a href="https://sites.google.com/view/mudbody/home">our portfolio site</a>, accumulating material
+                    from the participants of the project, and additional details.
+                </p>
+            </aside>
+            <aside class="caption"> incubating: </aside>
+            <h2 id="tableau">tableau vivant</h2>
+            <p>In <em>tableaux vivants</em>, ‘living images’, actors represent a concept through staging a scenic figure
                 taken from a known text. It fell out of use amidst the onset of industrialization due to a somewhat
                 ribald excess: a body is always more than what it supposedly marks. In particular, excessive pleasures
                 may transcend narrative frames and bear yet-unwritten myths from the cyborg worlds. A gallery exhibition
                 with the working title «tableau vivant» is afoot, based on my graduation work «solo for my body» (July
                 17, ‘18)</p>
-                    </article>
-                </section>
-            </div>
-            <section id="collection" style="border: .7rem solid silver;">
-                <details class="draggable a1">
-                    <summary>
-                        <h1>collection of ephemeral art</h1>
-                    </summary>
-                    <p> An ephemeral artwork is the product of artistic labour that ceases to exist some time after the labour.
+        </article>
+    </section>
+    </div>
+    <section id="collection" style="border: .7rem solid silver;">
+        <details class="draggable a1">
+            <summary>
+                <h1>collection of ephemeral art</h1>
+            </summary>
+            <p> An ephemeral artwork is the product of artistic labour that ceases to exist some time after the labour.
                 The relation between the art industry and ephemerality is peculiar as an ephemeral artwork is hard to
                 commodify. Oral histories, documentation and theatrical reenactment are strategies to keep an ephemeral
                 artwork's aura, i.e. its impact on the sphere of symbolic capital, and thereby retaining the principles
                 of authorship and private property. Embodied memory functions as the medium by which a dance-work is
                 preserved in such a way that it can be restaged. This makes the dancer's body literally a currency. </p>
-                    <p> On the other hand, forgetting and unlearning, false memories, ageing and physical processes in the body
+            <p> On the other hand, forgetting and unlearning, false memories, ageing and physical processes in the body
                 transform the artwork. And when an artist is performing for the now, is not every reenactment and every
                 memory a different artwork in a different context? </p>
-                    <p> My collection of ephemeral artworks attempts to undo the aura and highlight the actual work, the labour
+            <p> My collection of ephemeral artworks attempts to undo the aura and highlight the actual work, the labour
                 that produces an ephemeral artwork. Read it as a contribution to an economy not based on conditional
                 exchange and conventional evaluation but on the uncountable appreciation of lifetime and engagement.
             </p>
-                    <section>
-                        <small style="padding:17%; width: auto; display: block;"> The collection is currently being digitized.
+            <section>
+                <small style="padding:17%; width: auto; display: block;"> The collection is currently being digitized.
                     For inquiries, <a href="#contact">contact me</a> and stay tuned until the documentation appears
                     here. </small>
-                    </section>
-                </details>
             </section>
-            <hr/>
-            <section id="economy" class="content">
-                <article class="intro">
-                    <aside class="introductory links">
-                        <h5>six works</h5> If the economic system determines its dance, why not turn it around and determine an
+        </details>
+    </section>
+    <hr />
+    <section id="economy" class="content">
+        <article class="intro">
+            <aside class="introductory links">
+                <h5>six works</h5> If the economic system determines its dance, why not turn it around and determine an
                 different economy, through different dancing? This is what <a href="#tableau">«tableau vivant»</a>, a
                 planned choreographic installation, attempts. It is the latest installment within the ongoing <a
                     href="#allegory">«allegory of economy»</a> research that provides a ternary model for the
-                construction of non-binary economies.<br/><br/>Certainly, dance can create such models: the <a
+                construction of non-binary economies.<br /><br />Certainly, dance can create such models: the <a
                     href="#genet">«gift economy network»</a> and its language <em>ambilang</em> work exclusively with
                 danceable symbols that humans and computers alike can understand, and its inherent asymmetry makes it
                 incompatible with hierarchical power structures. These symbols originate from experiences in the <a
                     href="#sand">«sand practice»</a>workshop and residency, the rituals and approaches gathered
                 throughout our <a href="#witchcraft">«future witchcraft»</a> project on political witchcraft, and
                 finally from the <a href="#framing">«framing ritual»</a> which attempted to put the body
-                <em>out of perspective</em>: <br/><br/>exercise in
+                <em>out of perspective</em>: <br /><br />exercise in
             </aside>
-                    <h1>performing economies</h1>
-                    <p>Economies of space underlie every choreography. Bodies serve as currency and token in economies of
+            <h1>performing economies</h1>
+            <p>Economies of space underlie every choreography. Bodies serve as currency and token in economies of
                 representation. And finally, art is a market in which I am a freelancer.</p>
-                    <p>During the «sand residency» in July ‘18, Pauline, Dorota and me explored the mutualities that emerge
+            <p>During the «sand residency» in July ‘18, Pauline, Dorota and me explored the mutualities that emerge
                 within an improvised dance. Several workshops throughout June have produced a comprehensive codex of
                 practices.</p>
-                    <p>The collective research project «allegory of economy» (December ‘17, ongoing) aims to leverage allegory
+            <p>The collective research project «allegory of economy» (December ‘17, ongoing) aims to leverage allegory
                 as a tool to understand and reassemble economies in relation to bodies, transactions and customs</p>
-                    <p>«future witchcraft» (feb-dec ‘17) comprised of a residency with an open lab, several performances and
+            <p>«future witchcraft» (feb-dec ‘17) comprised of a residency with an open lab, several performances and
                 rituals, workshops and a theatre play, all approaching the political struggles of early modern women in
                 Europe that ended, as we all know, in mass gynocides. Can we, in our situation, join these witches’
                 emancipatory stategies of magic practice, ritual, and direct action, and eventually undo the historic
                 establishment of female gender as economic marker?</p>
-                    <p>Through the «framing ritual» (Jun 9, ‘17), I related the apparatus’ frame (such as central perspective)
+            <p>Through the «framing ritual» (Jun 9, ‘17), I related the apparatus’ frame (such as central perspective)
                 through spontaneous gestures and inscriptions (lines painted on skin) to inner foci, in an attempt to
                 exclude conventional interprlay between these three layers. The awareness of five foci in the body which
                 mold the appreciation of surroundings proved a useful ingredient for all successive practices.</p>
-                    <h3 class="caption">Can dance crack codes of deprivation?</h3>
-                    <p>“This is the first discovery: that patriarchy is not a construction, an order or a structure, but an
+            <h3 class="caption">Can dance crack codes of deprivation?</h3>
+            <p>“This is the first discovery: that patriarchy is not a construction, an order or a structure, but an
                 economy, for which women are the first and founding commodities”, Sadie Plant writes in her essay «On
                 the matrix: cyberfeminist simulations». And then she quotes Luce Irigaray: In this economy, “Women,
                 signs, commodities, and currency always pass from one man to another”; their existance being reduced to
@@ -1615,7 +1647,7 @@
                 “Women have served as his media and interfaces, muses and messengers, currenties and screens,
                 interactions, operators, decoders, secretaries… they have been man’s go-betweens, the in-betweens,
                 taking his message, bearing his children, and passing his genetic code.”</p>
-                    <p>In retrospect, allegories and emblems of the early modern age are blatantly sexist, and nescessarily so
+            <p>In retrospect, allegories and emblems of the early modern age are blatantly sexist, and nescessarily so
                 as they were to depict interfaces of circulation as female-marked bodies. The project of gendering the
                 symbolic realm, a foundational effort of modern patriarchy, has, despite resistance from women, been
                 successful, and continues to inform image production in the contemporary fields. And, in a
@@ -1629,14 +1661,14 @@
                 end of the Second Christian Millenium”, as Donna J. Haraway describes in her «Virtual Speculum». Deeper
                 motivations may have stayed the same for 500 years as the extended-shelf-life visual apparatus canonized
                 in the Renaissance still, in distinct ways, serves the production and reproduction of gender.</p>
-                    <p>The visible spill of early modern emblems into cyber-⁠science throughout the 90s has inspired me to
+            <p>The visible spill of early modern emblems into cyber-⁠science throughout the 90s has inspired me to
                 revisit contemporary body representation through the lens of Allegory. I discovered this word in many
                 critical texts on 20th century feminist performance art as well as on early modern construction of
                 gender, and despite its demise in the 19th century, Walter Benjamin’s seminal essay on Allegory seems to
                 have spurred a slow but lasting reassessment of this concept throughout late modernity right into post
                 modernism. Allegory, with its ternary structure and its figure’s superfluity, helps uncover myths that
                 contemporary symbols would keep implied.</p>
-                    <p>Economy is the other side of the model I work with, and it appears in three guises. First, as the
+            <p>Economy is the other side of the model I work with, and it appears in three guises. First, as the
                 circulation mediated by the figure-as-sign. Rebecca Schneider, in «The Explicit body», asserts that
                 female-marked bodies in capitalism serve as “allegory for commodity circulation”, and to form the
                 ternary structure of allegory, the text in this case is the ‘dreamscapes’ of ‘insatiable desire’, an
@@ -1644,263 +1676,261 @@
                 process of working, where resources, transactions and symbolic evaluation determine what I can produce.
                 And third, the volatile space I summon through performance/dance is itself structured by an economy of
                 bodies-⁠as-⁠material, even before any score is noted.</p>
-                    <p>Allegory is a model to scutinize and construct approaches to alterity, i.e. what T. W. Adorno called
+            <p>Allegory is a model to scutinize and construct approaches to alterity, i.e. what T. W. Adorno called
                 ‘mimesis’. The explication of code/myth as requisite allows for normative assessment. It allows me to
                 create images without conceding my judgement to the seductive affirmativity of the symbol, and it
                 potentially gives the Other a language.</p>
-                </article>
-                <article id="genet" class="work">
-                    <h2>genet.space</h2>
-                    <section class="overview">
-                        <p>Can extended choreography inform software models? We research the bijection of category theory and
+        </article>
+        <article id="genet" class="work">
+            <h2>genet.space</h2>
+            <section class="overview">
+                <p>Can extended choreography inform software models? We research the bijection of category theory and
                     dance as we are implementing a tool to generate accessible and non-competitive virtual spaces. An
                     ongoing collaboration with Katherine Evans and Alejandro Karasik.</p>
-                    </section>
-                    <p>genet, the <em>gift economy network</em>, is a garden of knowledge. It is a virtual space in which each
+            </section>
+            <p>genet, the <em>gift economy network</em>, is a garden of knowledge. It is a virtual space in which each
                 avatar (a group of users, an individual, or a bot) is invited to plant their compositions. Paths from
                 one space to another are not generated by algorithms but by curatorial activity of the avatars, i.e. by
                 invitation. Virtual spaces are the commons of the present and the future, and they may serve an
                 invaluable role in facilitating the enormous logistical challenge of distributing goods for everyone,
                 thereby replacing capitalist ways of structuring access.</p>
-                    <h3 class="caption">Dancability makes software models tangible.</h3>
-                    <p>In its current form, the interface to genet allows avatars to compose and edit collaboratively. In
+            <h3 class="caption">Dancability makes software models tangible.</h3>
+            <p>In its current form, the interface to genet allows avatars to compose and edit collaboratively. In
                 contrast to any other content management system, it bases its ontologies on a language derived from
                 dance improvisation practices. In fact, any program written in <em>ambilang</em> is an easy-to-grasp
                 score for a dance improvisation jam.</p>
-                    <p>In my experience, the hardest errors in computer programming arise once the implementors are no longer
+            <p>In my experience, the hardest errors in computer programming arise once the implementors are no longer
                 sure about what the program is actually doing, i.e. when they give up understanding of the model that
                 their software realizes. In this case, dancing this model makes the software tangible again.</p>
-                </article>
-                <article id="economy" class="work">
-                    <img class="full p25 c" src='allegory_emblem_white.jpg' style="display:block;margin-top:3rem;"/>
-                    <h2>Allegory of Economy</h2>
-                    <section class="overview">
-                        <p>Umbrella project over somatic, art-historic, and performative research and experiments. Since
+        </article>
+        <article id="economy" class="work">
+            <img class="full p25 c" src='allegory_emblem_white.jpg' style="display:block;margin-top:3rem;" />
+            <h2>Allegory of Economy</h2>
+            <section class="overview">
+                <p>Umbrella project over somatic, art-historic, and performative research and experiments. Since
                     December '17.</p>
-                        <aside class="links">
-                            <a href="www.allegory.fun">visit the project site</a>
-                        </aside>
-                        <p>In collaboration with numerous choreographers, facilitators and performers, we set to link our
+                <aside class="links">
+                    <a href="www.allegory.fun">visit the project site</a>
+                </aside>
+                <p>In collaboration with numerous choreographers, facilitators and performers, we set to link our
                     economic struggles as freelancers with a performative approach to economic systems, informed by the
                     three occurances of economy in our practices as stated above.</p>
-                    </section>
-                </article>
-                <article id="sand" class="work">
-                    <img class="full p34 c" src='sand_jam6.jpg'
-                style="display:block; margin-top:3rem; position:relative; left:-2em;"/>
-                    <h2>Sand Residency</h2>
-                    <section class="overview">
-                        <p>The overarching theme for the Moss and Sand practices (Summer '18) was: how to connect as material.
+            </section>
+        </article>
+        <article id="sand" class="work">
+            <img class="full p34 c" src='sand_jam6.jpg'
+                style="display:block; margin-top:3rem; position:relative; left:-2em;" />
+            <h2>Sand Residency</h2>
+            <section class="overview">
+                <p>The overarching theme for the Moss and Sand practices (Summer '18) was: how to connect as material.
                     Why? Well, while we are already cyborgs, we are isolated. We need to learn affinity to connect and
                     to become the global Proletariat. Donna Haraway specifies this Proletariat as «leafy». I want to
                     learn from moss and from sand how to connect! This is a radically different 'economy' than
                     patriarchal capitalism.</p>
-                    </section>
-                    <section>
-                        <aside class="introductory links"> in preparation of the sand residencies, I invited to several
+            </section>
+            <section>
+                <aside class="introductory links"> in preparation of the sand residencies, I invited to several
                     workshops, with a set of cards. (on the photos, you can see the cards I created for each practice),
                     and a description for each.</aside>
-                        <p>
-                            <details class="accordeon">
-                                <summary class="accordeon">
-                                    <img class="accordeon p2" src="sand_jam0.jpg"/>
-                                </summary>
-                                <div class="accordeon page"><img class="a1" src="sand_jam0.jpg"/></div>
-                            </details>
-                            <details class="accordeon">
-                                <summary class="accordeon">
-                                    <img class="accordeon p2" src="sand_jam2.jpg"/>
-                                </summary>
-                                <div class="accordeon page"><img class="accordeon a1" src="sand_jam2.jpg"/></div>
-                            </details>
-                            <details class="accordeon">
-                                <summary class="accordeon">
-                                    <img class="accordeon p2" src="sand_jam3.jpg"/>
-                                </summary>
-                                <div class="accordeon page"><img class="accordeon a1" src="sand_jam3.jpg"/></div>
-                            </details>
-                            <details class="accordeon">
-                                <summary class="accordeon">
-                                    <img class="accordeon p2" src="sand_jam4.jpg"/>
-                                </summary>
-                                <div class="accordeon page"><img class="accordeon a1" src="sand_jam4.jpg"/></div>
-                            </details>
-                            <details class="accordeon">
-                                <summary class="accordeon">
-                                    <img class="accordeon p2" src="sand_jam5.jpg"/>
-                                </summary>
-                                <div class="accordeon page"><img class="accordeon a1" src="sand_jam5.jpg"/></div>
-                            </details>
-                            <details class="accordeon">
-                                <summary class="accordeon">
-                                    <img class="accordeon p2" src="sand_residency.jpg"/>
-                                </summary>
-                                <div class="accordeon page"><img class="accordeon a1" src="sand_residency.jpg"/></div>
-                            </details>
-                        </p>
-                    </section>
-                </article>
-                <article id="framing" class="work">
-                    <!--img class="full p25 c" src='sand_jam6.jpg' style="display:block;" /-->
-                    <h2>Framing Ritual</h2>
-                    <section class="overview">
-                        <p>The framing ritual was part of 2017's future witchcraft series of experiments (July, with 12
+                <p>
+                <details class="accordeon">
+                    <summary class="accordeon">
+                        <img class="accordeon p2" src="sand_jam0.jpg" />
+                    </summary>
+                    <div class="accordeon page"><img class="a1" src="sand_jam0.jpg" /></div>
+                </details>
+                <details class="accordeon">
+                    <summary class="accordeon">
+                        <img class="accordeon p2" src="sand_jam2.jpg" />
+                    </summary>
+                    <div class="accordeon page"><img class="accordeon a1" src="sand_jam2.jpg" /></div>
+                </details>
+                <details class="accordeon">
+                    <summary class="accordeon">
+                        <img class="accordeon p2" src="sand_jam3.jpg" />
+                    </summary>
+                    <div class="accordeon page"><img class="accordeon a1" src="sand_jam3.jpg" /></div>
+                </details>
+                <details class="accordeon">
+                    <summary class="accordeon">
+                        <img class="accordeon p2" src="sand_jam4.jpg" />
+                    </summary>
+                    <div class="accordeon page"><img class="accordeon a1" src="sand_jam4.jpg" /></div>
+                </details>
+                <details class="accordeon">
+                    <summary class="accordeon">
+                        <img class="accordeon p2" src="sand_jam5.jpg" />
+                    </summary>
+                    <div class="accordeon page"><img class="accordeon a1" src="sand_jam5.jpg" /></div>
+                </details>
+                <details class="accordeon">
+                    <summary class="accordeon">
+                        <img class="accordeon p2" src="sand_residency.jpg" />
+                    </summary>
+                    <div class="accordeon page"><img class="accordeon a1" src="sand_residency.jpg" /></div>
+                </details>
+                </p>
+            </section>
+        </article>
+        <article id="framing" class="work">
+            <!--img class="full p25 c" src='sand_jam6.jpg' style="display:block;" /-->
+            <h2>Framing Ritual</h2>
+            <section class="overview">
+                <p>The framing ritual was part of 2017's future witchcraft series of experiments (July, with 12
                     participants and 4 preparational workshops). My questions are: 1) can the 'framing' of the body
                     through visible lines make our motivations more transparent? 2) How does this 'inscription'
                     (Federici) relate to patriarchal inscriptions such as ableism, gender, skin color?</p>
-                    </section>
-                    <section>
-                        <aside class="introductory links"> Massage each other, then paint each other blue. Stand in a circle,
+            </section>
+            <section>
+                <aside class="introductory links"> Massage each other, then paint each other blue. Stand in a circle,
                     shake, then find a common voice. Go play around the space. If you feel a part of your body becomes
                     active, go to the painting spot and let someone paint this part with a golden line. If a body part
                     becomes less active, remove the line. I found my centers around the ankles, the sacrum, the belly,
                     the lower end of the lungs, and around the clavicle bones and shoulders. Can be different for you.
                 </aside>
-                        <p>&nbsp;</p><img class="s1" src="framing.jpg"/>
-                    </section>
-                </article>
+                <p>&nbsp;</p><img class="s1" src="framing.jpg" />
             </section>
-        </div>
-        <section id="pleasures" class="content">
-            <article class="intro">
-                <aside class="navigational">
-                    <details>
-                        <summary>6 works</summary>
-                        <a href="#crawling">
-                            <h4>«animal movement» & «crawling group»</h4>
-                        </a>
-                        <a href="#skills">
-                            <h4>«machine skills» workshops</h4>
-                        </a>
-                        <a href="#cyborgism">
-                            <h4>«limit cyborgism» practices</h4>
-                        </a>
-                        <a href="#river">
-                            <h4>«river species» ritual</h4>
-                        </a>
-                        <a href="#instrument">
-                            <h4>«mechanized workshops» score compilation («group’s instrument of…»)</h4>
-                        </a>
-                        <a href="#stillness">
-                            <h4>«my stillness in the garden» workshop series</h4>
-                        </a>
-                    </details>
-                    <details>
-                        <summary>2 presentations</summary>
-                        <a href="#societes">
-                            <h4>«machine skills»</h4>
-                        </a>
-                        <p>workshop performance on counterpoint technique at Vulva Club #15.</p>
-                        <aside class="links">
-                            <a href="https://www.facebook.com/events/1869636803326598/">
-                                <span>the event
-                                site</span></a>
-                        </aside>
-                        <a href="#societes">
-                            <h4>«river species»</h4>
-                        </a>
-                        <p>workshop at Rundgang 17.</p>
-                    </details>
-                    <details>
-                        <summary>2 downloads</summary>
-                        <a href="kunst_und_gesellschaft.pdf" download>
-                            <h4 class="pdf">«Akademie» portfolio, ‘13</h4>
-                        </a>
-                        <a href="Societe of Labyrinth - project description - Guzowska Torabi Röben Boeno Pishvai.pdf"
+        </article>
+    </section>
+    </div>
+    <section id="pleasures" class="content">
+        <article class="intro">
+            <aside class="navigational">
+                <details>
+                    <summary>6 works</summary>
+                    <a href="#crawling">
+                        <h4>«animal movement» & «crawling group»</h4>
+                    </a>
+                    <a href="#skills">
+                        <h4>«machine skills» workshops</h4>
+                    </a>
+                    <a href="#cyborgism">
+                        <h4>«limit cyborgism» practices</h4>
+                    </a>
+                    <a href="#river">
+                        <h4>«river species» ritual</h4>
+                    </a>
+                    <a href="#instrument">
+                        <h4>«mechanized workshops» score compilation («group’s instrument of…»)</h4>
+                    </a>
+                    <a href="#stillness">
+                        <h4>«my stillness in the garden» workshop series</h4>
+                    </a>
+                </details>
+                <details>
+                    <summary>2 presentations</summary>
+                    <a href="#societes">
+                        <h4>«machine skills»</h4>
+                    </a>
+                    <p>workshop performance on counterpoint technique at Vulva Club #15.</p>
+                    <aside class="links">
+                        <a href="https://www.facebook.com/events/1869636803326598/">
+                            <span>the event site</span></a>
+                    </aside>
+                    <a href="#societes">
+                        <h4>«river species»</h4>
+                    </a>
+                    <p>workshop at Rundgang 17.</p>
+                </details>
+                <details>
+                    <summary>2 downloads</summary>
+                    <a href="kunst_und_gesellschaft.pdf" download>
+                        <h4 class="pdf">«Akademie» portfolio, ‘13</h4>
+                    </a>
+                    <a href="Societe of Labyrinth - project description - Guzowska Torabi Röben Boeno Pishvai.pdf"
                         download>
-                            <h4 class="pdf">«Sociétés» exposée, ‘15</h4>
-                        </a>
-                    </details>
-                </aside>
-                <h1>machine pleasures</h1>
-                <p>In «tableaux vivants», ‘living images’, actors represent a concept through staging a scenic figure taken
+                        <h4 class="pdf">«Sociétés» exposée, ‘15</h4>
+                    </a>
+                </details>
+            </aside>
+            <h1>machine pleasures</h1>
+            <p>In «tableaux vivants», ‘living images’, actors represent a concept through staging a scenic figure taken
                 from a known text. It fell out of use amidst the onset of industrialization due to a somewhat ribald
                 excess: a body is always more than what it supposedly marks. In particular, excessive pleasures may
                 transcend narrative frames and bear yet-unwritten myths from the cyborg worlds. My graduation work «solo
                 for my body» (July 17, ‘18) assaied the concept. </p>
-                <p>«machine skills» was a workshop performance I gave in several frames. Tackling D.A. Haraway’s enigmatic
+            <p>«machine skills» was a workshop performance I gave in several frames. Tackling D.A. Haraway’s enigmatic
                 assurance that “intense pleasures” were to arise from “machine skills”, I created a garden for cyborgs,
                 and invited the participants to embark on counterpoint singing, affirming they have the according
                 skills. </p>
-                <p>The «cyborgism» practice was the result of my first interpretation of Haraway’s Cyborg Manifesto as a
+            <p>The «cyborgism» practice was the result of my first interpretation of Haraway’s Cyborg Manifesto as a
                 choreographic score. In several workshops and jams, the guests explored the pleasurable implications of
                 being a cyborg in a shared space. </p>
-                <p>How would a cyborg perceive and engage the material world? Sensations of touch and gravity guided the
+            <p>How would a cyborg perceive and engage the material world? Sensations of touch and gravity guided the
                 «moss residency» with dancer/artist Pauline Payen that comprised of somatic practice as well as felting
                 interfaces, and talking about our economic situations. </p>
-                <p>An aspect of cyborgs’ spacial economy is how we perceive limits. In recurring «limit jams», the invitees
+            <p>An aspect of cyborgs’ spacial economy is how we perceive limits. In recurring «limit jams», the invitees
                 explored resistance and presence through malleable, contracting and expanding boundaries with tools from
                 meditation, contact improvisation and martial arts. </p>
-                <p>The touch of material became very visceral when rain was pouring during the participative installation of
+            <p>The touch of material became very visceral when rain was pouring during the participative installation of
                 «river species», part of the «future witchcraft» series of events. </p>
-                <p>«my stillness with the garden», a technique for grounding and preceiving everything as material began to
+            <p>«my stillness with the garden», a technique for grounding and preceiving everything as material began to
                 develop in early ‘16 within ritual retreats I organized on the basis of Starhawk’s emancipatory
                 witchcraft writings. </p>
-                <p>Throughout summer ‘14, I met with three fellow artists to move like animals. We called ourselves the
+            <p>Throughout summer ‘14, I met with three fellow artists to move like animals. We called ourselves the
                 «crawling group». What started as a development process towards the production of a butoh-inspired
                 performance, eventually became a deep dive into an alternative way of encounter, with both the
                 environment and each other.</p>
-            </article>
-            <article id="tableau" class="work">
-                <h2>Tableau Vivant</h2>
-                <img class="a1" src="tableau_vivant.jpg"/>
-            </article>
-            <article id="river" class="work">
-                <h2>River Species Ritual</h2>
-                <p>Make a long river. create 3 or 4 shapes (Water Lily, bridge, Stone…). Go into the river, feel the
+        </article>
+        <article id="tableau" class="work">
+            <h2>Tableau Vivant</h2>
+            <img class="a1" src="tableau_vivant.jpg" />
+        </article>
+        <article id="river" class="work">
+            <h2>River Species Ritual</h2>
+            <p>Make a long river. create 3 or 4 shapes (Water Lily, bridge, Stone…). Go into the river, feel the
                 current, take a shape until the current throws you off balance. Float until you find a new shape.</p>
-                <p>This participative installation was part of the 2018 annual exhibition at the HZT campus of UdK Berlin.
+            <p>This participative installation was part of the 2018 annual exhibition at the HZT campus of UdK Berlin.
             </p>
-                <p><img class="s1" src="riverspecies.jpg"/></p>
-            </article>
-        </section>
-        <section id="myth" class="content">
-            <article class="intro">
-                <aside class="navigational">
-                    <details>
-                        <summary>4 works</summary>
-                        <a href="#luftschiff">
-                            <h4>«Luftschiff»</h4>
-                        </a>
-                        <a href="#societes">
-                            <h4>«Sociétés in the city without environs»</h4>
-                        </a>
-                        <a href="#stillness">
-                            <h4>«my stillness with the garden»</h4>
-                        </a>
-                        <a href="#fabelfilm">
-                            <h4>«fabulous clarity» workshop series</h4>
-                        </a>
-                    </details>
-                    <details>
-                        <summary>2 presentations</summary>
-                        <a href="#societes">
-                            <h4>«Sociétés in the city without environs»</h4>
-                        </a>
-                        <p>Société du Labyrinthe, on Feb 2, ‘15, in a repurposed shop and basement at Eulerstraße 1a,
+            <p><img class="s1" src="riverspecies.jpg" /></p>
+        </article>
+    </section>
+    <section id="myth" class="content">
+        <article class="intro">
+            <aside class="navigational">
+                <details>
+                    <summary>4 works</summary>
+                    <a href="#luftschiff">
+                        <h4>«Luftschiff»</h4>
+                    </a>
+                    <a href="#societes">
+                        <h4>«Sociétés in the city without environs»</h4>
+                    </a>
+                    <a href="#stillness">
+                        <h4>«my stillness with the garden»</h4>
+                    </a>
+                    <a href="#fabelfilm">
+                        <h4>«fabulous clarity» workshop series</h4>
+                    </a>
+                </details>
+                <details>
+                    <summary>2 presentations</summary>
+                    <a href="#societes">
+                        <h4>«Sociétés in the city without environs»</h4>
+                    </a>
+                    <p>Société du Labyrinthe, on Feb 2, ‘15, in a repurposed shop and basement at Eulerstraße 1a,
                         Berlin.</p>
-                        <h4>«Disconnected Space»</h4>
-                        <aside class="links">
-                            <a href="teheran.pdf" download>
-                                <span class="pdf"> download the
-                                portfolio</span></a>
-                        </aside>
-                        <p>Environment on a rooftop using local fabrics, a dish with water and local building materials;
+                    <h4>«Disconnected Space»</h4>
+                    <aside class="links">
+                        <a href="teheran.pdf" download>
+                            <span class="pdf"> download the portfolio</span></a>
+                    </aside>
+                    <p>Environment on a rooftop using local fabrics, a dish with water and local building materials;
                         2x3x5m. On Sep 2-9, ‘16, at Mohsen Gallery, Tehran.</p>
-                    </details>
-                    <details>
-                        <summary>2 downloads</summary>
-                        <a href="kunst_und_gesellschaft.pdf" download>
-                            <h4 class="pdf">«Akademie» portfolio, ‘13</h4>
-                        </a>
-                        <a href="Societe of Labyrinth - project description - Guzowska Torabi Röben Boeno Pishvai.pdf"
+                </details>
+                <details>
+                    <summary>2 downloads</summary>
+                    <a href="kunst_und_gesellschaft.pdf" download>
+                        <h4 class="pdf">«Akademie» portfolio, ‘13</h4>
+                    </a>
+                    <a href="Societe of Labyrinth - project description - Guzowska Torabi Röben Boeno Pishvai.pdf"
                         download>
-                            <h4 class="pdf">«Sociétés» exposée, ‘15</h4>
-                        </a>
-                    </details>
-                </aside>
-                <h1>myth container</h1>
-                <p>What I call <em>myth container</em> («Fabelcontainer», ‘12-⁠13) is a site-⁠as-⁠figure. Armed with the
+                        <h4 class="pdf">«Sociétés» exposée, ‘15</h4>
+                    </a>
+                </details>
+            </aside>
+            <h1>myth container</h1>
+            <p>What I call <em>myth container</em> («Fabelcontainer», ‘12-⁠13) is a site-⁠as-⁠figure. Armed with the
                 hieroglyphic fragments of an abandoned, or counterfeit discourse (they are always latent), we can enter
                 this site-⁠as-⁠figure and practice the dislocation of our dance into a parallel world. Historical
                 discourses depend on models of societies, and, in retrospect, evoke fascinating myths, stories within
@@ -1912,7 +1942,7 @@
                 attributes, invokes meaning through a conventional myth. Conclusively, just as we commonly dance to
                 produce a volatile space, through latent narratives, the volatility of a space arouses a dance in
                 return.</p>
-                <p>The expression ‘double in a parallel world’, liberally borrowed from Alice Chauchat, may grasp a
+            <p>The expression ‘double in a parallel world’, liberally borrowed from Alice Chauchat, may grasp a
                 grounding concept in several of my works. Those include the theatre script «K-⁠Gruppen» set in a looping
                 1972 election night shifting between ‘limits to growth’, radical agit-⁠prop, and cyberneticized popular
                 front politics (‘13), as well as the «Luftschiff» and «Architecten» narratives (with related works since
@@ -1929,7 +1959,7 @@
                 like(li)ness and spatial fidelity to the architectural sediment (as in ‘take the hyroglyph for text’)
                 carries a promise, a gesture of deference to normative reality effects, and this gesture is what I am
                 trying to cultivate in all my projects.</p>
-                <p id="luftschiff">«Luftschiff» and «Architecten», as well as the «Akademie» and «Lustgarten» take place in
+            <p id="luftschiff">«Luftschiff» and «Architecten», as well as the «Akademie» and «Lustgarten» take place in
                 a fictional socialist Europe that has never embraced the steam engine. While the latter two are situated
                 in a stratified but affluent late (and long) 19th century, the airship in «Luftschiff» crosses the
                 Baltic sea in 1917, and hosts the author of a fiction, «Architecten», that projects WWI up int the year
@@ -1945,11 +1975,11 @@
                 world war be staged through this hypothetical setup? Which art corresponds to a society that perpetually
                 reperforms long-⁠forgotten antique myths? Very likely, we may develop a sensibility for the history of
                 that world in our’s—after all, has the early modern age in Europe ever ended?</p>
-                <a href="kunst_und_gesellschaft.pdf" download>
-                    <aside class="pdf links"> download my original take on the «Akademie» myth, which was my application
+            <a href="kunst_und_gesellschaft.pdf" download>
+                <aside class="pdf links"> download my original take on the «Akademie» myth, which was my application
                     portfolio for UdK fine arts academy in 2013.</aside>
-                </a>
-                <p id="societes">In «Sociétés in the city without environs» (‘14-15), the myth begins with the endlessness
+            </a>
+            <p id="societes">In «Sociétés in the city without environs» (‘14-15), the myth begins with the endlessness
                 of a periphery (the site), and the self-⁠sufficiency of local secret societies (the hypothetical
                 discourse), and then asks the site for fragments of a text. Which is the practice, or ritual, that a
                 ‘city without environs’ lends itself to? The paradigmatic sprawl speaks of urban-⁠social indifference.
@@ -1958,154 +1988,765 @@
                 «Sociétés in the city without environs» started with bygone spaces rhetorically appropriated in order to
                 summon the double of our troupe in another world, such as the (re)constructed labyrinth as synecdoche,
                 or the abandoned Iraqui embassy building taken as metonym for the «bureaucracie».</p>
-                <a href="Societe of Labyrinth - project description - Guzowska Torabi Röben Boeno Pishvai.pdf" download>
-                    <aside class="pdf links"> download our «Sociétés» project exposée, which details a ‘functor L’ that
+            <a href="Societe of Labyrinth - project description - Guzowska Torabi Röben Boeno Pishvai.pdf" download>
+                <aside class="pdf links"> download our «Sociétés» project exposée, which details a ‘functor L’ that
                     transforms any given space.</aside>
-                </a>
-                <p>The site-⁠as-⁠figure in an allegorical equation is a device I find myself using all the time. But
+            </a>
+            <p>The site-⁠as-⁠figure in an allegorical equation is a device I find myself using all the time. But
                 similarly, the solutions to the equations are developing their own lives as inquiry devices: they
                 illuminate the contingency of today’s specific patriarchy. As they intergrow, their shared world, a
                 ‘parallel’, raises issues of our’s. This is the cradle in which my inquiries in ‘18—«allegory of
                 economy», «my stillness with the garden», and the performances around «cyborgism» and «machine
                 pleasures»—would form: they are all questions that other world poses us.</p>
-            </article>
-            <article class="work" id="stillness">
-                <h2>my stillness in the garden</h2>
-                <section class="overview">
-                    <p>Workshops and experiments in remote sites. ‘15-⁠18.</p>
-                    <p>The basic assumption is that a certain stillness facilitates the appreciation of wind, moisture and
+        </article>
+        <article class="work" id="stillness">
+            <h2>my stillness in the garden</h2>
+            <section class="overview">
+                <p>Workshops and experiments in remote sites. ‘15-⁠18.</p>
+                <p>The basic assumption is that a certain stillness facilitates the appreciation of wind, moisture and
                     presence towards a sense of mutuality: my stillness in the garden is my <em>“with-⁠ness”</em>.</p>
-                </section>
-                <div class="videoWrapper">
-                    <iframe width="1080" height="768"
-                    src="https://www.youtube.com/embed/6hYqtUxOd2U?rel=0&amp;controls=0" frameborder="0"
-                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </section>
+            <div class="videoWrapper">
+                <iframe width="1080" height="768" src="https://www.youtube.com/embed/6hYqtUxOd2U?rel=0&amp;controls=0"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </article>
+        <article id="alchemy">
+            <article id="other_world">
+                <h2>Fabelfilm</h2>
+                <aside class="links">
+                    <a href="http://fabelfilm.github.io/projekt/">visit the invitation site (2014)</a>
+                </aside>
+            </article>
+            <article>
+                <h2>curiously using alchemy</h2>
+                <a href="http://s2.rasalhague.uberspace.de/alchemist/"><img class="s1" src="alchemy0.jpeg" />
+                    <em>visit the project site</em>
+                </a>
+            </article>
+        </article>
+    </section>
+    <section id="poetry" class="intro">
+        <details class="draggable box r27" style="margin-right:-.3rem;">
+            <summary>
+                <span style="background:cyan; color:black;">Welcome to this shell.</span>
+            </summary>
+            <p> I spent the windy days with the cyberfeminists of the early 90s. At some point, a recurring figure
+                struck me: the SHELL, embodiment of the abutting surfaces that carry the imaginaries. </p>
+        </details>
+        <details class="draggable box r27" style="margin-right:-.3rem;">
+            <summary>
+                <span style="color:cyan;"> Where are you?</span>
+            </summary>
+            <p style="color:cyan"> Your feet may be on a ground somewhere on this planet, but your hands reach halfway
+                into cyberspace. Or the other way around. Are you comfortable? How would you like to live, which beings
+                to share these minutes with? </p>
+        </details>
+        <details class="draggable box r27" style="margin-right:-.3rem;">
+            <summary>
+                <span style="color:cyan;"> I like</span>
+            </summary>
+            <pre style="color:cyan ;position: absolute;
+    right: 0.5%; max-width:99%;">
+                i like salons. i don't like work.
+
+i like to host. usually i like to be hosted.
+
+i like early music and traditional greek and klezmer music. i like 
+  latex, wool and feathers. i like all shades of turquoise, red and yellow.
+
+i like the long table in the narrow alley. i like a deep and spiraling conversation. i like 
+  the smell in the small organic shop.
+
+i like stories. i like speculation.
+
+i like architectural patterns, in philosophy, visual design and software.
+
+i like clarinets and Italian harpsichords from the 17th century.
+
+i like fellini's movies because of their estetics.
+
+i like to touch.
+
+i like to make beautiful movies: light and shadow, atmosphere, water, earth, 
+  body-constellations in movement. Textures. Lots of things going on.
+
+i like my dreams. Very very much.
+
+i like it when everyone is immersed in what they do.
+
+i like curious people.
+
+i like nonverbal play.
+
+i like places and situations outside the logic of reciprocity.
+
+i like skin, gentle impact, being naked. i like vulnerability. 
+  I'm scared.
+
+i like concave/convex, hard and soft, and everything in between.
+
+i like moist moss and lichen.
+
+i like coffee in the morning (80% Robusta).
+
+i like calm shapes.
+
+i like silence.
+i sometimes wish my head was silent, so i stream a video. bad idea.
+
+i like Le Gruyère.
+
+i like dark rye bread.
+
+i like rice with vegetables.
+
+i like cabbage.
+
+i like the colors of all the produce in autumn and of blue carrots.
+
+i like lists.
+
+i like 'i like' lists.
+
+i like recursion, obviously.
+
+these are just some of my favorite things.
+
+i like french.
+
+i like for no reason.
+
+i like sexy everywhere.
+
+i like smiles.
+
+i like it when everything changes.
+
+i like small catastrophes with clear solutions.
+
+i like gifts.
+
+i like linux and free&open software.
+
+i like good documentation.
+
+i like tiramisú, croissants and crêpes.
+
+i like all sorts of nuts.
+
+i like small rivers in the mountains.
+
+i like the pool of cold clear water that forms around the source.
+
+i like kind, nurturing conversations with strangers on instagram.
+
+i like beOS/Windows 3 style window frames and i like 
+  tiling windows even more.
+
+i like 'browse history'.
+
+i like 'single source of truth'.
+
+i like 'composability' and 'cohesion'.
+
+i like early cyberfeminist enthusiasm.
+
+i like the sunlight in northern february.
+
+i like all animals a lot.
+
+i like when people tell me your so cute.
+
+i like to be very disruptive once it gets too cosy though.
+
+i like people to not know who i am.
+
+i like to have no money problems.
+
+i like to have a place to sleep, a place to be alone, enough 
+  food and water and a toilet. I like squatting toilet with waterhose.
+
+i like people around me who are peaceful and fierce.
+
+i'd like to have a bathtub.
+
+i like community kitchen and community sleeping room.
+
+i like gardens.
+
+i like painted nails.
+
+i like human-animal hybrids.
+
+i like dense old cities.
+
+i like buildings that have lost their purpose long ago.
+
+i like german expressionist literature.
+
+i like buster keaton films.
+
+i like to draw with Aquarell.
+
+i like to build machines.
+
+i like to create plays and scenes and music.
+
+i like allegory.
+
+i like autogestion culture.
+
+i like the freedom of imagination.
+
+i like the freedom to move around the world.
+
+i like situations without "normal".
+
+i like wood and wooden things.
+
+i like trees in the city.
+
+i like wildlife in the city. Like donkey and deer and lynx. 
+  instead of cars and polluting factories.
+
+i like the atlantic ocean and the windy beach (also the Mediterranean 
+  and the north sea. the others i never saw).
+
+i like Buenos aires, a city where everyone is poeta.
+
+i like learning random stuff.
+
+i like dark chocolate.
+
+i like to dislike (but not now).
+
+i like dialectics.
+
+i like glue.
+
+i like zines and valki's collage imagination.
+
+i like witty dialogue.
+
+i like abundance.
+
+i like intimacy.
+
+i like erotics.
+
+i like katamarans.
+
+i like trains.
+
+i like train, tram and metro networks.
+
+i like the portuguese Intercity train and the czech train bistro.
+
+i like puddles.
+
+i like swimming in the lake while it rains.
+
+i like sweatlodge and sauna.
+
+i like autostop.
+
+i like where mountains touch the sea.
+
+i like fog.
+
+i like cats.
+
+i like crows.
+
+i like music that makes me cry.
+
+i like political witchcraft.
+
+i like magic (but I'm uneasy with esoterics and astrology).
+
+i like direct action.
+
+i like how circus troupes travel around from village to village.
+
+i like derision as well as mysterium.
+
+i like to mix past, present and future realities.
+
+i like ochre and violet.
+
+i like beautiful stones.
+
+i like spiders.
+
+i like shells.
+
+i like self made egg tempera.
+
+i like krapplack and azure.
+
+i like copper, iron, brass and chrome.
+
+i like paper and what you can make out of it.
+
+i like surfaces and superficiality.
+
+i like mutual care.
+
+i like losing what i don't need any more.
+
+i like to think I'm here temporarily, so why bother too much, or 
+  rather: why not bother...?
+
+i like the militants around the world who fight for everyone's freedom, 
+  and whose freedom we fight for.
+
+i like the destruction of property.
+
+i like airships.
+
+i like turtles.
+
+i like asses.
+
+i like my rage.
+
+i'd like to focus my rage.
+
+i like so much more. what do you like? </pre>
+        </details>
+        <details class="draggable box r7" style="margin-right:-.3rem; min-width:13rem;">
+            <summary>🚧 Poem for you </summary>
+            <i
+                style="background-color:indigo; color:lavenderblush; display:block; font-style:italic; font-size:0.75rem;">
+                <p>Can't I do the good work? What's this bugging pain? I want to live on a boat under a willow-tent, I
+                    want to read one page per day, I want a deep conversation per day, eat a bouquet of flowers and
+                    colors, drink tea and coffee, move through the dim, prospective air of dreams. I want to take a dip
+                    and melt, then reassemble myself in the harsh breeze; again and again, day for day, season for
+                    season. Summer, whose promise, or imagined promise, is too large to bear, cruel you, give me the
+                    courage to fall!</p>
+                <p>There you are, scent of budding, earthworm, virtuoso of harpsicord and trombone. I thought you were
+                    gone. You should have gone for I was horrible. But perhaps you don't mind so much? You like this
+                    place? And your comrades, they're here as well? How fabulous, how delightful!</p>
+                <p>I want to play the instruments with you. Or listen. I want to sing to you and cry. I want you close
+                    or distant. In silent appreciation or disdain. I want all of you close or distant, I want to know if
+                    I want you close or distant. I want to tell you in clear and calm words, now is the time for me, and
+                    I want you to tell me, or to tell each other with our bodies, or with the closing note.</p>
+                <p>I miss you.</p>
+                <p>I miss you so dearly, but am I missing the imaginary memories I created, that I composed out of
+                    helplessness and self-sorrow once, out of the vapors of warm soil, the moist, infested shade behind
+                    a straw bale? Am I missing a second hand or third hand memory or caricature thereof?</p>
+                <p>We take a walk on the cloud that is mist over the morning river, our feet dissolving. I want to
+                    freeze and to evaporate. I want my skin to be the portal of your anger and your hope. I want the
+                    path to open once a year to let a stranger in, but only if they know what I don't know. Don't tell
+                    me about the systems some guru has told you about. No, I want to admire how every limb of your body
+                    moves with the swells of mood and temperature. I want your four liquids all over the place. I want
+                    your grace and earnesty.</p>
+                <p>I know you. The better I know me I know you. I know us. We are many. I know it's a small step from
+                    the cubicle to the vast, open. We are connected. I am feeling the umbilical channel ring like a
+                    phone line. Knock, and I'm scared to accept.</p>
+                <p>Help me accept. Wind, help me accept and trust that I can deny when I need to. Sun, help me stay
+                    where I am and go where I go. Help me channel my anger, my radiant, sound, manifest rage, into
+                    beauty for I am one beautiful beast as my naked feet are dancing on the dry planks over mud and
+                    puddles. Ocean, give me the salty drops that heal my pain. Let it rain on me to make my skin
+                    transparent. Embrace my clay-made, readymade, multiple body to exchange the heat and soften the
+                    form. Dust, injure my eyes so that I listen. Make me stiff and long so that I forget the dragon in
+                    my womb.</p>
+            </i>
+        </details>
+        <details class="draggable box r27">
+            <summary>
+                <span style=" color:chartreuse"> This night, I had a pleasurable dream. </span>
+            </summary>
+            <span>
+                <p>I woke up and told a friend, via e-mail. Pleasurable but disturbing. Distance is quite relative, and
+                    I'm just learning to be intimate with myself. </p>
+                <p style="color:crimson">Those who talk big about the future have no clue. They believe in euklidean
+                    space and binary gender, and these superstitions make them deaf to the whirring and whirling all
+                    around. I am hereby devoting the rest of my life to nurturing connections across and beyond the
+                    territorial.</p>
+            </span>
+        </details>
+        <details class="draggable box r27">
+            <summary>
+                <span style=" color:yellow"> What I want </span>
+            </summary>
+            <span>
+                <pre style="position: absolute;
+    right: 0.5%; max-width:99%;">I don't want friends. I want fellow militants.
+I don't want relationships. I want intensities.
+I don't want art. I want magic.
+I don't want money. I want power-with.
+I don't want fulfillment. I want emptying.
+I don't want a community. I want a fairy lair.
+I don't want family. I want a post-capitalist cell.
+I don't want connections. I want encounters.
+I don't want comfort and security. I want boundaries.
+I don't want guidance. I want confusion.
+I don't want answers. I want mysteries.
+I don't want challenges. I want to challenge.
+I don't want creation. I want failure.
+I don't want deals. I want gifts.
+I don't want future. I want now.
+I don't want sex. I want perversity.
+I don't want privacy. I want maturity.
+I don't want sustainability. I want system collapse.
+I don't want harmony. I want wrath.
+I don't want accountability. I want mutual care.
+I don't want authenticity. I want beauty.</pre>
+            </span>
+        </details>
+        <details>
+            <summary>Workshop: Naked Limit Jam</summary>
+            <a style=" width:100%;padding: .5em; display: block;background:blue;color: white; text-decoration:dotted;"
+                href="https://flupsi.uber.space/limitJam/invitation.pdf">
+                <span style="margin-top: auto; display: block;">Find the invitation with all details <u>here</u>.</p>
+            </a>
+            <p style="color:cyan; font-variant:italic; "> On Sunday, 29th January 2023, I invite you to join the
+                <b>naked limit jam</b> from 9:30-13:00h, and explore other ways of encountering each other. More info <a
+                    href="https://flupsi.uber.space/limitJam/invitation.pdf">in the invitation</a>. The practice will be
+                open and free. <br />
+                <a href="./Naked%20Limit%20Jam%20-%20ScheduleAndConsensus.pdf"> Click here to read the schedule and
+                    consensus</a>
+            </p>
+        </details>
+        <details>
+            <summary>Workshop: Thinking, Dancing, Imagining - with Shells!</summary>
+            <p style="color:magenta;" id="shells"> On Saturday, 18th February 2023, I'll host a workshop at altes
+                finanzamt where I will share my recent practices with Shells, and we can move with them and have fun and
+                unknow lots of hegemonial knowledge thanks to how weird the Shell is! The practice will be open and
+                free. </p>
+            <p style="width: 100vw;
+    padding: 0;
+    background: darkmagenta;
+    margin: 0;
+    max-width: 100vw;
+    text-align: center;
+    padding-top: 0.5em;">
+                <video title="Click here to play part 1!" onended="run('#v1')" id="v0" preload="none"
+                    onclick="this.paused ? this.play() : this.pause();"
+                    style="display:inline-block; width:360px; height:640px; margin:auto; cursor:pointer; background-image: url('https://c.tenor.com/7O_b7XHfOroAAAAM/rainbow-scroll.gif'); background-size: cover;"
+                    src="Altes1.mp4"></video>
+                <video title="Click here to play part 2" onended="run('#v2')" id="v1" preload="none"
+                    onclick="this.paused ? this.play() : this.pause();"
+                    style="display:inline-block; width:360px; height:640px; margin:auto; cursor:pointer; background:black;;"
+                    src="Altes2.mp4"></video>
+                <video title="Click here to play part 3" onended="run()" id="v2" preload="none"
+                    onclick="this.paused ? this.play() : this.pause();"
+                    style="display:inline-block; width:360px; height:640px; margin:auto; cursor:pointer; background:black;;"
+                    src="Altes3.mp4"></video>
+            </p>
+            <a
+                href="https://docs.google.com/document/d/e/2PACX-1vQrtVZQEc9QHKuutcXynNZCqoDP9UnomuEkwbghRHjgYg23kE5ATUpGD0tHlaurPRuAxQmngfkBwfRg/pub">
+                <p style="color:magenta;"> Click here for more info on the Shells Workshop at <i>altes</i>
+                </p>
+            </a>
+            <details class="inline-bevel" style="">
+                <summary>Workshop Schelldule</summary>
+                <div style="color:#FF99aa; padding: 1em 10vw; background:rgba(255,200,200,.2);">
+                    <table class="c84">
+                        <tbody>
+                            <tr class="c95">
+                                <td class="c97" colspan="1" rowspan="1">
+                                    <p class="c16">
+                                        <span class="c56 c100 c31 c126">1.</span>
+                                    </p>
+                                </td>
+                                <td class="c101 c127" colspan="1" rowspan="1">
+                                    <p class="c15">
+                                        <span class="c6"></span>
+                                    </p>
+                                </td>
+                                <td class="c101 c116" colspan="1" rowspan="1">
+                                    <p class="c15">
+                                        <span class="c6"></span>
+                                    </p>
+                                </td>
+                                <td class="c101 c105" colspan="1" rowspan="1">
+                                    <p class="c15">
+                                        <span class="c6"></span>
+                                    </p>
+                                </td>
+                                <td class="c102" colspan="1" rowspan="1">
+                                    <p class="c124 c22 c26">
+                                        <span class="c6"></span>
+                                    </p>
+                                </td>
+                                <td class="c96" colspan="1" rowspan="1">
+                                    <p class="c15">
+                                        <span class="c6"></span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c95">
+                                <td class="c36" colspan="6" rowspan="1">
+                                    <p class="c38 c22">
+                                        <span class="c56 c31">Check-in circles </span>
+                                        <span class="c56">(sound, gesture, gaze, word)</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c95">
+                                <td class="c21" colspan="2" rowspan="1">
+                                    <p class="c22 c51">
+                                        <span class="c52 c11 c30">Limit Gaze Fishbowl</span>
+                                    </p>
+                                </td>
+                                <td class="c68" colspan="4" rowspan="1">
+                                    <p class="c16">
+                                        <span class="c7">Consent and Boundaries.</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c53">
+                                <td class="c21" colspan="2" rowspan="1">
+                                    <p class="c51 c22">
+                                        <span class="c11 c30 c52">Shaking</span>
+                                    </p>
+                                </td>
+                                <td class="c68" colspan="4" rowspan="1">
+                                    <p class="c16">
+                                        <span class="c7">Warming up shells, bones, senses, names, floor by surprise,
+                                        </span>
+                                        <span class="c7 c31">proximities and other companions,</span>
+                                        <span class="c7">&nbsp;voices in the body places,</span>
+                                        <span class="c7 c31">&nbsp;inner chimera</span>
+                                        <span class="c7">, becoming sand, </span>
+                                        <span class="c7 c31">becoming moss.</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c53">
+                                <td class="c21" colspan="2" rowspan="1">
+                                    <p class="c51 c22">
+                                        <span class="c52 c11 c30">Fake Butoh</span>
+                                    </p>
+                                </td>
+                                <td class="c68" colspan="4" rowspan="1">
+                                    <p class="c16">
+                                        <span class="c7">Practicing co-presence with the Shell.</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c123">
+                                <td class="c47" colspan="6" rowspan="1">
+                                    <p class="c38 c22">
+                                        <span class="c56 c31">Teatime &amp; Wishing circle</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c111">
+                                <td class="c134" colspan="3" rowspan="1">
+                                    <p class="c16">
+                                        <span class="c3">2.</span>
+                                    </p>
+                                </td>
+                                <td class="c44" colspan="3" rowspan="1">
+                                    <p class="c16 c26">
+                                        <span class="c52 c58 c11 c108"></span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c53">
+                                <td class="c86" colspan="3" rowspan="1">
+                                    <p class="c51 c22">
+                                        <span class="c90">Assembling a collective toolbox</span>
+                                    </p>
+                                </td>
+                                <td class="c91" colspan="3" rowspan="1">
+                                    <p class="c16">
+                                        <span class="c52 c11">“Know-how-to-know-with”</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c93">
+                                <td class="c41" colspan="6" rowspan="1">
+                                    <p class="c38 c22">
+                                        <span class="c13">Break</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c93">
+                                <td class="c41" colspan="6" rowspan="1">
+                                    <p class="c22 c57">
+                                        <span class="c90">One of the following experiments:</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c93">
+                                <td class="c40" colspan="2" rowspan="1">
+                                    <p class="c38 c22">
+                                        <span class="c52 c11">“Case study”</span>
+                                        <span class="c90">&nbsp;<br>Boundaries we encounter in our activist
+                                            practices</span>
+                                    </p>
+                                </td>
+                                <td class="c54" colspan="2" rowspan="1">
+                                    <p class="c38 c22">
+                                        <span class="c52 c11">“Tableau Vivant”</span>
+                                        <span class="c90">&nbsp;<br>Growing a collective exoskeleton</span>
+                                    </p>
+                                </td>
+                                <td class="c77" colspan="2" rowspan="1">
+                                    <p class="c22 c38">
+                                        <span class="c52 c11">“Switching the Shell”</span>
+                                        <span class="c90">&nbsp;Experimental body-replacement</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c93">
+                                <td class="c89" colspan="6" rowspan="1">
+                                    <p class="c38 c22">
+                                        <span class="c13">Reflection &amp; Documentation</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c53">
+                                <td class="c133" colspan="3" rowspan="1">
+                                    <p class="c16">
+                                        <span class="c52 c11 c30 c58">3.</span>
+                                    </p>
+                                </td>
+                                <td class="c39" colspan="3" rowspan="1">
+                                    <p class="c16 c26">
+                                        <span class="c25 c7"></span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c53">
+                                <td class="c118" colspan="3" rowspan="1">
+                                    <p class="c51 c22">
+                                        <span class="c52 c11 c30">Open Stage</span>
+                                    </p>
+                                </td>
+                                <td class="c122" colspan="3" rowspan="1">
+                                    <p class="c16">
+                                        <span class="c7">“Shell we?”</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="c93">
+                                <td class="c125" colspan="6" rowspan="1">
+                                    <p class="c38 c22">
+                                        <span class="c31 c90 c103">Closing circle &amp; After care</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="https://www.instagram.com/altesfinanzamt/">Check out altes'insta here!</a>
                 </div>
-            </article>
-            <article id="alchemy">
-                <article id="other_world">
-                    <h2>Fabelfilm</h2>
-                    <aside class="links">
-                        <a href="http://fabelfilm.github.io/projekt/">visit the invitation site (2014)</a>
-                    </aside>
-                </article>
-                <article>
-                    <h2>curiously using alchemy</h2>
-                    <a href="http://s2.rasalhague.uberspace.de/alchemist/"><img class="s1" src="alchemy0.jpeg"/>
-                        <em>visit
-                        the project site</em>
-                    </a>
-                </article>
-            </article>
-        </section>
-        <section>
-            <article id="fail"
-            style="background:rgb(250,190,260); padding-top:2rem; padding-bottom:2rem; margin-bottom:2rem;">
-                <h2> Producing for the archive (no pay, of course!): </h2>
-                <section class="overview">
-                    <p>As a freelance artist, I am economically dependent on the goodwill of those who own more than they
+            </details>
+        </details>
+    </section>
+    <section>
+        <article id="fail"
+            style="display:none;background:rgb(250,190,260); padding-top:2rem; padding-bottom:2rem; margin-bottom:2rem;">
+            <h2> Producing for the archive (no pay, of course!): </h2>
+            <section class="overview">
+                <p>As a freelance artist, I am economically dependent on the goodwill of those who own more than they
                     need. This includes commercial foundations that can save taxes and restore their publich image
                     through «philantrophy», the political units from city to continent that see themselves pitted
                     against each other in a competition for the art that can turn excrements into metal, and finally, of
                     course, the customers of my services. Some of which think they can opt out of a contract after the
                     work is done.</p>
-                </section>
-                <article>
-                    <p>As a freelance artist, I work for free. I connect with fellow artists to write huge applications. But
+            </section>
+            <article>
+                <p>As a freelance artist, I work for free. I connect with fellow artists to write huge applications. But
                     I don’t want to write CVs and Begging E-Mails and pseudophilosophical nonsense around a good idea.
                     Not if it’s not remunerated. I want to go out and do. </p>
-                    <p>As a freelance artist, I connect my several websites and social media accounts and media servers and
+                <p>As a freelance artist, I connect my several websites and social media accounts and media servers and
                     struggle to keep everything up to date. But I don’t want to manage an artist’s archive. Not without
                     remuneration. I want my work to be paid for. </p>
-                    <p>As a freelance artist, I hope to get exposure, recommendation, a name. Not because I like it but
+                <p>As a freelance artist, I hope to get exposure, recommendation, a name. Not because I like it but
                     because I need the money. I help friends and friends-of-friends with my knowledge and my tools. Not
                     because they will give me anything in return but because it’s what I have in abundance. I prepare
                     and study subjects that may be fruitful for a future project. Not to entice potential investors but
                     because this work is my passion. But I don’t want to ask everyone if they might perhaps offer me a
                     donation, and exhibit art in gallerys where nobody buys it, and give the same technical support over
                     and over, and stay with a rotting pile of artworks. Not for free. </p>
-                    <p>As a freelance artist, I will survive. I have loving friends and family that will always share with
+                <p>As a freelance artist, I will survive. I have loving friends and family that will always share with
                     me what they have. But that’s a dog’s life! I am anxious because I am earning too little. I am
                     anxious because my brain is constantly calculating how much I can spend and which client I must
                     remind to pay me. I am anxious because the philantrophic institutions don’t care for my everyday
                     life problems, and they won’t pay me the money that I already spent if anything goes wrong.</p>
-                    <p>Fuck the gallery. Fuck the state. Fuck the philantrophic sociopath threefold. Just give me money so I
+                <p>Fuck the gallery. Fuck the state. Fuck the philantrophic sociopath threefold. Just give me money so I
                     don’t need to think about money any more.</p>
-                </article>
             </article>
-        </section>
-        <section>
-            <article id="contact"
-            style="background:rgb(145,255,178); padding-top:3em; border: .7rem solid rgb(45,155,78); padding-bottom:3em; margin-bottom:2rem;">
-                <h3 class="caption"> Contact Flupsi! </h3>
-                <p>Facebook: <a href="fb.me/flupsi.upsi" style="background: white;">Flupsi Upsi</a>
-                </p>
-                <p>Instagram: <a href="https://www.instagram.com/flupsiupsi" style="background: white;">@flupsiupsi</a>
-                </p>
-                <p>Electronic Mail: <a href="mailto:'upsiflu@_gmail.com'" style="background: white;">upsiflu /at\ gmail /.\
-                    com</a>
-                </p>
-            </article>
-        </section>
-        <article id="footer" alt="property is theft.">
-            <p id="imprint">(c) 2018-2049 Flupsi Upsi.<br/>No commercial use permitted.</p>
         </article>
     </section>
-</section>
-<script>
-    function textNodesUnder(el) {
-        var n,
-            a = [],
-            walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
-        while (n = walk.nextNode()) 
-            a.push(n);
-        return a;
-    }
-    var reflowAll = function (tags) {
-        var toReflow = [];
-        for (var t = 0; t < tags.length; t++) {
-            var elements = document.getElementsByTagName(tags[t]);
-            for (var i = 0; i < elements.length; i++) {
-                var e = textNodesUnder(elements[i]);
-                for (var j = 0; j < e.length; j++) {
-                    var f = e[j];
-                    toReflow.unshift(f);
-                    if (tags[t] == "p") 
-                        toReflow.push(f); //paragraphs get double treatment
+    <section>
+        <article id="contact"
+            style="background:rgb(145,255,178); padding-top:3em; border: .7rem solid rgb(45,155,78); padding-bottom:3em; margin-bottom:2rem;">
+            <h3 class="caption"> Contact Flupsi! </h3>
+            <p>Facebook: <a href="fb.me/flupsi.upsi" style="background: white;">Flupsi Upsi</a>
+            </p>
+            <p>Instagram: <a href="https://www.instagram.com/flupsiupsi" style="background: white;">@flupsiupsi</a>
+            </p>
+            <p>Electronic Mail: <a href="mailto:'upsiflu@_gmail.com'" style="background: white;">upsiflu /at\ gmail /.\
+                    com</a>
+            </p>
+        </article>
+    </section>
+    <article id="footer" alt="property is theft.">
+        <p id="imprint">(c) 2018-2049 Flupsi Upsi.<br />No commercial use permitted.</p>
+    </article>
+    </section>
+    </section>
+    <script>
+        function textNodesUnder(el) {
+            var n,
+                a = [],
+                walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+            while (n = walk.nextNode())
+                a.push(n);
+            return a;
+        }
+        var reflowAll = function (tags) {
+            var toReflow = [];
+            for (var t = 0; t < tags.length; t++) {
+                var elements = document.getElementsByTagName(tags[t]);
+                for (var i = 0; i < elements.length; i++) {
+                    var e = textNodesUnder(elements[i]);
+                    for (var j = 0; j < e.length; j++) {
+                        var f = e[j];
+                        toReflow.unshift(f);
+                        if (tags[t] == "p")
+                            toReflow.push(f); //paragraphs get double treatment
                     }
                 }
+            }
+            for (var t = 0; t < toReflow.length; t++) {
+                var paragraph = toReflow.pop();
+                joinLastWords(paragraph);
+            }
         }
-        for (var t = 0; t < toReflow.length; t++) {
-            var paragraph = toReflow.pop();
-            joinLastWords(paragraph);
-        }
-    }
 
-    var joinLastWords = function (p) {
-        if (p.nodeValue) {
-            p.nodeValue = p
-                .nodeValue
-                .replace(/^\s+|\s+$/g, ' '); //remove trailing whitespace
-            p.nodeValue = p
-                .nodeValue
-                .replace(/ (?=[^ ]*$)/, '\xa0'); //join last two words
-        } else {}
-    }
-    document.addEventListener("DOMContentLoaded", function () {
-        window.requestAnimationFrame(function () {
-            reflowAll([
-                "p",
-                "h1",
-                "h2",
-                "h3",
-                "h4",
-                "h5",
-                "aside"
-            ]);
+        var joinLastWords = function (p) {
+            if (p.nodeValue) {
+                p.nodeValue = p
+                    .nodeValue
+                    .replace(/^\s+|\s+$/g, ' '); //remove trailing whitespace
+                p.nodeValue = p
+                    .nodeValue
+                    .replace(/ (?=[^ ]*$)/, '\xa0'); //join last two words
+            } else { }
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            window.requestAnimationFrame(function () {
+                reflowAll([
+                    "p",
+                    "h1",
+                    "h2",
+                    "h3",
+                    "h4",
+                    "h5",
+                    "aside"
+                ]);
+            });
         });
-    });
-    function resizeIframe(obj) {}
-</script>
+        function resizeIframe(obj) { }
+    </script>
 </body>
 
 </html>
