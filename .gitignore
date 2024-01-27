@@ -5,5 +5,4 @@ dist/
 gen/
 .DS_STORE
 .firebase/
-.vscode/
-
+.vscode
