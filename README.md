@@ -8,7 +8,9 @@ firebase login
 firebase deploy
 ```
 
-_To edit the Multimedia portfolio, `cd` into the `multimedia` directory. You can find a deploy script there in a separate package.json._
+_To edit the Multimedia portfolio, `git clone https://github.com/upsiflu/multimedia` and then `cd` into the `multimedia` directory. You can find a deploy script there in a separate package.json._
+
+_Same with the Text offer subsite._
 
 ## License
 
