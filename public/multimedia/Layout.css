@@ -1,0 +1,143 @@
+:root {
+    --column: 32rem;
+}
+
+
+body {
+    font-family: 'EB Garamond', serif;
+    padding-top: 8rem;
+}
+
+main {
+    margin-top: -6rem;
+}
+
+main>:first-child {
+    position  : relative;
+    top       : -3rem;
+    text-align: right;
+}
+
+
+
+
+@media only screen and (min-width: 481px) {
+    :root {
+        font-size: 15px
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    :root {
+        font-size: calc(100vw / 480 * 15);
+    }
+}
+
+:root {
+    --unit: 4rem;
+}
+
+img {
+    width: 100%;
+}
+
+.sample iframe {
+    height    : 44rem;
+    border    : 5px ridge silver;
+    box-shadow: 1em 1em black, -1px -1px white;
+    outline   : 2px outset silver;
+}
+
+.scene>ul {
+    list-style-type: none;
+    margin         : 0;
+    padding        : 2px;
+    padding-bottom : 10rem;
+    overflow       : hidden;
+}
+
+.scene>ul>:not(.sample) {
+    max-width: 45rem;
+    margin   : auto;
+}
+
+
+body {
+    margin: 0
+}
+
+/*****************/
+
+h1,
+h2,
+h3 {
+    margin-left   : -0.05em;
+    letter-spacing: -0.01em;
+}
+
+a:has(:is(h1, h2, h3)):not(:hover) {
+    text-decoration: none;
+}
+
+.category,
+.timeframe {
+    font-style: italic;
+}
+
+.description {
+    font-size: 1.4em;
+}
+
+.scene>ul>:is(.category, .timeframe):not(:first-of-type) {
+    margin-left: 1rem;
+}
+
+:is(.category, .timeframe)+a>h1 {
+    margin-block-start: 0;
+}
+
+/*****************/
+
+pre {
+    max-width: 100%;
+    overflow : auto;
+}
+
+
+/*****************/
+
+.row {
+    display       : flex;
+    flex-direction: row;
+}
+
+.column.center .row {
+    gap            : 1rem;
+    justify-content: space-evenly;
+    width          : 100%;
+}
+
+.column {
+    display       : flex;
+    flex-direction: column;
+    align-self    : stretch;
+}
+
+.row,
+.column {
+    align-content: space-around;
+}
+
+.row>*,
+.column>* {
+    flex-grow: 1;
+}
+
+body {
+    image-rendering    : pixelated;
+    overscroll-behavior: none;
+}
+
+img[alt~=smooth] {
+    image-rendering: auto;
+}

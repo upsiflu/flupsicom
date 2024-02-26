@@ -1,0 +1,488 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown>.summary {
+    /* Make sure to give it a tabindex=1 attribute so it's focusable */
+    background   : #96ff96;
+    border-radius: 1.5px;
+    display      : inline;
+    cursor       : pointer;
+}
+
+.url .dropdown+.dropdown>.summary {
+    background: #ffb5ff;
+}
+
+
+
+.url .dropdown:has(+.dropdown)>.summary {
+    background: #ffd5bd;
+}
+
+.dropdown:has(alternate)>.summary {
+    background   : rgba(255, 255, 255, 0.8);
+    outline      : 0.5px solid black;
+    box-shadow   : 0.2em 0.2em black;
+    padding-left : 0.3em;
+    padding-right: 0.3em;
+    border-radius: 0;
+}
+
+.left .legend-container:has(alternate) {
+    transform: translate(0.5em, -0.8em)
+}
+
+.right .legend-container:has(alternate) {
+    transform: translate(-1.4em, -0.4em)
+}
+
+a:visited:not(:active) {
+    color                : blue;
+    text-decoration-color: #a0f;
+}
+
+.dropdown>.summary:active {
+    outline       : 1px dotted currentColor;
+    outline-offset: -0.5px;
+}
+
+.dropdown>.summary>p {
+    display: inline;
+}
+
+.dropdown>.popup>p {
+    display: inline-block;
+    padding: 0.2rem;
+    margin : 0;
+}
+
+.dropdown>.summary:focus,
+.dropdown>.summary:focus-within,
+.dropdown>.summary:active {
+    filter       : invert(1);
+    background   : yellow;
+    outline-color: yellow;
+}
+
+.popup:has(>.dropdown>.summary>p:only-child>img) {
+    background: #96ff96;
+    padding   : 0;
+    outline   : 0.5px solid #96ff96;
+}
+
+.dropdown:not(:focus-within)>.summary~* {
+    opacity       : 0;
+    pointer-events: none;
+    filter        : blur(2px)
+}
+
+a.popup:not(:hover) a {
+    text-decoration: none;
+}
+
+.dropdown>.summary~* {
+    position     : absolute;
+    border       : 0.5px solid currentColor;
+    background   : rgb(255, 250, 156);
+    box-shadow   : 5px 5px currentColor;
+    min-width    : 100%;
+    width        : max-content;
+    max-width    : 24rem;
+    border-radius: 2px;
+    transition   : all .2s;
+    left         : 50%;
+    top          : 1.05em;
+    padding      : .1em 0.2em;
+}
+
+
+
+.dropdown:focus-within>.summary~* {
+    padding   : 0 0.2em 0.1em 0.2em;
+    box-shadow: 6px 6px currentColor;
+    z-index   : 11;
+    top       : 1.25em;
+}
+
+
+:is(.right, .left):has(:focus) {
+    z-index: 5;
+}
+
+.sample .dropdown>.summary~* {
+    max-width: 12rem;
+}
+
+
+.scrolling>p {
+    margin: 0;
+}
+
+/*********************/
+
+.bevelled.yellow {
+    border    : 3px outset #ed3;
+    outline   : 0.5px solid black;
+    background: #dc3;
+}
+
+.bevelled.yellow:active {
+    border    : 3px outset #ed3;
+    outline   : 0.5px solid black;
+    background: #dc3;
+    border    : 3px inset #cb0;
+    background: #ba0;
+}
+
+.bevelled.yellow .summary:focus,
+.bevelled.yellow .summary:focus-within {
+    border    : 3px inset #cb0;
+    background: #ba0;
+}
+
+/*********************/
+
+
+p:only-child,
+.legend-container>p {
+    display: inline;
+}
+
+.legend-container>.dropdown>.summary {
+    white-space: nowrap;
+}
+
+.legend-container>*:after,
+.legend-container>*:before {
+    content    : ' ';
+    white-space: nowrap;
+}
+
+/*********************/
+
+.left>.legend,
+.right>.legend {
+    width    : min-content;
+    max-width: 100%;
+}
+
+.left {
+    align-items: flex-end;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .left>.legend,
+    .right>.legend {
+        width: max-content;
+    }
+
+    .left,
+    .right {
+        overflow: visible;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .scene>ul:has(single-column) {
+        width         : calc(50vw - 0.3em);
+        display       : inline-block;
+        vertical-align: top;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+
+    .scene>ul:has(single-column) {
+        width: calc(33.333vw - 0.3em);
+    }
+}
+
+.left,
+.right {
+    z-index: 0;
+}
+
+
+.right .legend-container {
+    float: right
+}
+
+.center {
+    z-index: 1;
+}
+
+
+
+:has(:is(.left, .right) :is(:hover, :focus))>.center {
+    z-index: -1 !important;
+}
+
+img {
+    pointer-events: none;
+}
+
+.url {
+    display      : inline-flex;
+    border       : 0.5px solid black;
+    border-radius: 1em;
+    padding      : 0.2em 0.8em;
+    box-shadow   : inset 0.3em 0.3em black;
+    align-items  : baseline;
+}
+
+.url>.dropdown>.summary {
+    white-space: nowrap;
+}
+
+
+
+@font-face {
+    font-family: 'bpdotsminusbold';
+    src        : url('bpdotsminusbold-webfont.woff2') format('woff2'),
+        url('bpdotsminusbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style : normal;
+
+}
+
+.url>p,
+.url>.dropdown>.summary,
+code {
+    font-family: 'bpdotsminusbold', monospace;
+}
+
+.url>p {
+    margin: 0;
+}
+
+.carousel {
+    display        : flex;
+    height         : 56rem;
+    max-height     : 60vh;
+    overflow-x     : scroll;
+    overflow-y     : hidden;
+    margin         : 2.5rem auto;
+    width          : 100vw;
+    justify-content: center;
+    outline        : 4px ridge silver;
+    outline-offset : 2px;
+    max-width      : max-content;
+}
+
+.carousel>.scrolling {
+    display       : flex;
+    flex-direction: row;
+    align-items   : stretch;
+}
+
+.carousel>.scrolling>.entry {
+    height     : 100%;
+    flex-shrink: 0;
+    position   : relative;
+}
+
+.entry> :is(a:first-child, center-me-horizontally) {
+    outline-offset: -2px;
+    position      : absolute;
+    height        : 100%;
+    width         : 100%;
+    inset         : 0;
+    color         : transparent;
+}
+
+.entry>a:first-child {
+    cursor: alias;
+}
+
+.entry:hover>a:first-child {
+    outline       : 1px dashed cyan;
+    outline-offset: -3px;
+}
+
+
+center-me-horizontally {
+    pointer-events: none;
+}
+
+.entry>p {
+    margin: 0;
+}
+
+.entry>.dropdown {
+    position      : absolute;
+    top           : 1px;
+    left          : 0;
+    width         : calc(100% - 1px);
+    height        : calc(100% - 1px);
+    pointer-events: none;
+}
+
+.entry>.dropdown>.summary {
+    float: right;
+}
+
+.entry>.dropdown .summary {
+    pointer-events: all;
+}
+
+.carousel>.scrolling .dropdown .dropdown {
+    max-height: 80%;
+    height    : 80%;
+    display   : inline-block;
+}
+
+
+
+.carousel .dropdown .dropdown {
+    position: static;
+}
+
+.carousel .dropdown .dropdown .popup {
+    bottom    : 1.5rem;
+    top       : auto;
+    overflow  : scroll;
+    max-height: 70%;
+    position  : absolute;
+}
+
+.carousel .dropdown>.summary~* {
+
+    min-width : calc(100% - 0.8em);
+    max-width : 100%;
+    left      : 0.5em;
+    max-height: calc(100% - 2em);
+}
+
+.carousel .dropdown>.summary~*>p {
+    display: inline;
+}
+
+.carousel .dropdown>.summary~*:has(img) {
+    display: flex;
+}
+
+
+
+.carousel>.scrolling>*:not(:last-child) {
+    margin-right: 2px;
+}
+
+.dropdown>.summary:has(img) {
+    display: block;
+}
+
+.carousel img,
+.carousel :has(img):not(.popup) {
+    height: 100%;
+}
+
+
+
+
+.overlaid {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    left    : 0;
+    top     : 0;
+    width   : max-content;
+}
+
+#Shell .overlay {
+    background    : white;
+    border        : 1.5px ridge #ccc;
+    outline       : 0.5px solid silver;
+    letter-spacing: 1px;
+    font-family   : Arial, sans-serif;
+}
+
+::selection {
+    background-color: cyan;
+}
+
+
+
+.info li .dropdown:after {
+    content: " ";
+}
+
+
+
+nav {
+    position      : sticky;
+    top           : 0;
+    border-bottom : 0.5px solid black;
+    margin-top    : -4rem;
+    background    : white;
+    z-index       : 100;
+    mix-blend-mode: exclusion;
+}
+
+nav>* {
+    display       : inline-block;
+    vertical-align: middle;
+}
+
+nav>*:hover:after {
+    content   : attr(href);
+    position  : absolute;
+    background: black;
+    color     : white;
+    left      : 0;
+    bottom    : -1rem;
+    outline   : 0.5px solid white;
+}
+
+nav>*:hover {
+    filter: invert(1);
+}
+
+nav p {
+    display: inline;
+}
+
+nav img {
+    height: 4rem;
+    width : auto;
+}
+
+center-me {
+    position: relative;
+    top     : -6rem;
+
+}
+
+
+#Restrictive .highlight {
+    color         : magenta;
+    outline       : 1.5px dashed currentColor;
+    border-radius : 2rem;
+    width         : 4rem;
+    height        : 4rem;
+    vertical-align: middle;
+    text-align    : center;
+    overflow      : visible;
+}
+
+.overlay:not(#Progressive1)>.highlight {
+    background: black;
+}
+
+
+
+
+#Restrictive .highlight>p {
+    display: block;
+    margin : 0;
+    padding: 0;
+
+}
+
+#Restrictive .overlay:has(.highlight) {
+    mix-blend-mode: difference;
+}

@@ -1,0 +1,307 @@
+:root {
+    --min-center-column: calc(var(--column) - 4rem)
+}
+
+#Restrictive {
+    --min-center-column: calc(var(--column) / 5 * 3 - 4rem)
+}
+
+#Restrictive .center {
+    mix-blend-mode: color-burn;
+    padding-top   : 4rem;
+}
+
+#Restrictive .after {
+    flex-grow: 0
+}
+
+#Restrictive .left {
+    padding-top: 4rem;
+}
+
+.sample {
+    margin-top   : 2rem;
+    margin-bottom: 2rem;
+}
+
+.sample :is(.left, .right) {
+    max-width: calc((100% - var(--min-center-column)) / 2);
+}
+
+.sample .center {
+    max-width: var(--min-center-column);
+}
+
+.sample .center>img {
+    pointer-events: none;
+}
+
+
+.sample .markdown {
+    position       : relative;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+}
+
+.sample .center .row .legend {
+    max-width: max-content;
+    z-index  : 8;
+}
+
+.markdown p {
+    padding: 0;
+    margin : 0;
+}
+
+:is(.left, .right) .before {
+    flex-grow: 0;
+}
+
+@keyframes wobble {
+    0% {
+        transform: skewX(0deg);
+    }
+
+    20% {
+        transform: skewX(-15deg);
+    }
+
+    40% {
+        transform: skewX(15deg);
+    }
+
+    60% {
+        transform: skewX(-10deg);
+    }
+
+    80% {
+        transform: skewX(10deg);
+    }
+
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes goIn {
+    0% {
+        left   : 0;
+        top    : 0;
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        left   : 45px;
+        top    : -60px;
+    }
+
+    51% {
+        opacity: 0;
+        left   : -100px;
+        top    : 100px;
+    }
+
+    100% {
+        left   : 0;
+        top    : 0;
+        opacity: 1;
+    }
+}
+
+#Shell .legend-container:focus-within img {
+    animation: .5s wobble;
+}
+
+
+#Shell img[alt] {
+    width    : auto;
+    position : relative;
+    max-width: 100%;
+}
+
+#Shell img[alt~=icon] {
+    max-width: min(10rem, 100%);
+    float    : right;
+    inset    : -5rem auto auto -2rem;
+
+}
+
+#Shell .right img[alt~=icon] {
+    mix-blend-mode: color-burn;
+    inset         : auto;
+}
+
+#Shell .left img[alt] {
+    max-width: min(10rem, 200%);
+}
+
+#Shell .legend-container:has(img[alt="Lucha"]) {
+    transform: translateX(85px);
+}
+
+#Shell .legend-container:has(img[alt="vide0club"]) {
+    transform: translate(19px, -38px);
+}
+
+#Shell .legend-container:has(img[alt="Hologram"]) {
+    transform: translate(0px, -34px);
+}
+
+#Shell .column:is(.left, .right) {
+    z-index: 2;
+}
+
+#Shell .legend:focus-within {
+    z-index: 3;
+}
+
+#Shell .center {
+    position      : relative;
+    mix-blend-mode: darken;
+}
+
+#Shell .overlay:has(:is([alt="HCO3"], [alt="Ca"])) {
+    background: transparent;
+    border    : none;
+    outline   : none;
+}
+
+
+#Shell :has(.center:hover) :is([alt="Ca"], [alt="HCO3"]) {
+    animation: .5s goIn var(--delay);
+    position : relative;
+}
+
+#Shell {
+    --delay: 0s;
+}
+
+#Shell img[alt="Ca"] {
+    --delay: .05s;
+}
+
+#Shell .right .after {
+    flex-grow: 0
+}
+
+.sample:has(.dropdown:is(:hover, :focus-within) [title~=Mentoring]) #Mentoring,
+.sample:has(.dropdown:is(:hover, :focus-within) [title~=Congresses]) #Congresses,
+.sample:has(.dropdown:is(:hover, :focus-within) [title~=Traces]) #Traces,
+.sample:has(.dropdown:is(:hover, :focus-within) [title~=Research]) #Research,
+.sample:has(.dropdown:is(:hover, :focus-within) [title~=Call]) #Call,
+.sample:has(.dropdown:is(:hover, :focus-within) [title~=Wearable]) #Wearable {
+    filter: invert(1);
+}
+
+.sample:has(.dropdown:is(:hover, :focus-within) [title~=Toggling]) #Toggling>.highlight,
+.sample:has(.dropdown:is(:hover, :focus-within) [title~=Code]) #Code>.highlight,
+.sample:has(.dropdown:is(:hover, :focus-within) [title~=Code]) #Code1>.highlight,
+.sample:has(.dropdown:is(:hover, :focus-within) [title~=Code]) #Code2>.highlight,
+.sample:has(.dropdown:is(:hover, :focus-within) [title~=Progressive]) #Progressive>.highlight,
+.sample:has(.dropdown:is(:hover, :focus-within) [title~=Progressive]) #Progressive1>.highlight {
+    background: currentColor;
+    animation : .15s linear 0s 10 blink;
+}
+
+
+.sample:has(#Mentoring:hover) .dropdown:has([title~=Mentoring]),
+.sample:has(#Congresses:hover) .dropdown:has([title~=Congresses]),
+.sample:has(#Traces:hover) .dropdown:has([title~=Traces]),
+.sample:has(#Research:hover) .dropdown:has([title~=Research]),
+.sample:has(#Call:hover) .dropdown:has([title~=Call]),
+.sample:has(#Wearable:hover) .dropdown:has([title~=Wearable]),
+
+.sample:has(#Toggling:hover) .dropdown:has([title~=Toggling]),
+.sample:has(#Code:hover) .dropdown:has([title~=Code]),
+.sample:has(#Code1:hover) .dropdown:has([title~=Code]),
+.sample:has(#Code2:hover) .dropdown:has([title~=Code]),
+.sample:has(#Progressive:hover) .dropdown:has([title~=Progressive]),
+.sample:has(#Progressive1:hover) .dropdown:has([title~=Progressive]) {
+    filter: invert(1);
+}
+
+/* 
+@media only screen and ((max-width: 480px)) {
+    .center .overlaid {
+        transform: scale(calc(100% * 480px / 100vw));
+    }
+} */
+
+
+
+
+
+@keyframes moveRight {
+
+    0% {
+        opacity  : 0;
+        transform: translateX(-1rem);
+    }
+
+    50% {
+        transform: translateX(0);
+        opacity  : 1;
+    }
+
+    100% {
+        transform: translateX(1rem);
+        opacity  : 0;
+    }
+}
+
+.carousel::after,
+.carousel:hover::after,
+.carousel:hover::after::after {
+    display    : block;
+    content    : ">>";
+    animation  : .3s ease-in-out 0.1s 18 moveRight;
+    position   : absolute;
+    right      : 0;
+    top        : 50%;
+    text-shadow: 2px 2px solid black;
+    color      : white;
+    font-size  : 2rem;
+}
+
+.carousel::after::after {
+    animation: .3s ease-in-out 0s 18 moveRight;
+
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel::after {
+    opacity    : 0;
+    display    : block;
+    content    : ">>";
+    animation  : .3s ease-in-out .1s 18 moveRight;
+    position   : absolute;
+    right      : 0;
+    top        : 50%;
+    text-shadow: 2px 2px white;
+    color      : black;
+    font-size  : 12rem;
+}
