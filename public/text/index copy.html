@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flupsi translates your texts</title>
+    <style>
+        :root {
+            font-size: max(1.1em, calc(0.5em + 1.1dvw));
+            --column-width: 20rem;
+            --gap: 3rem;
+            --color-background-header-start: #2c4e25;
+            --color-background-header-middle: #75673196;
+            --color-background-start: #2a44d2;
+            --color-background-end: #4252a8;
+            --color-background-main-1: #bdee5111;
+            --color-background-main-2: #bdee5133;
+            --color-background-main-3: #bdee5166;
+            --color-background-main-4: #bcee51a7;
+            --color-background-main-5: #bdee51DD;
+            --color-background-main-6: #bcee51f1;
+            --color-background-main-7: #bdee51;
+            --color-background-main-8: #bdee51;
+            --color-foreground: #00ff04;
+            --color-rubric: #fc8217;
+            --color-inversion: #79c556;
+            --color-lightness: #7503d4ab;
+            overscroll-behavior-y: none;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.25em;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(var(--color-background-start), var(--color-background-end));
+        }
+
+        body:after {
+            pointer-events: none;
+            position: fixed;
+            inset: 0;
+            content: " ";
+            background: var(--color-lightness);
+            mix-blend-mode: plus-lighter;
+        }
+
+        header {
+            color: var(--color-rubric);
+            position: sticky;
+            top: 0;
+            background: linear-gradient(var(--color-background-header-start), var(--color-background-header-middle), transparent);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            padding: 5rem 0;
+            flex-wrap: wrap;
+            transition: filter .2s;
+        }
+
+        main {
+            display: flex;
+            gap: var(--gap);
+            justify-content: center;
+            flex-wrap: wrap;
+            mix-blend-mode: hard-light;
+            padding-bottom: calc(var(--gap) * 3);
+            background: linear-gradient(transparent, var(--color-background-main-1) 3rem, var(--color-background-main-2) 6rem, var(--color-background-main-3) 9rem, var(--color-background-main-4) 12rem, var(--color-background-main-5) 15rem, var(--color-background-main-6) 18rem, var(--color-background-main-7) 21rem, var(--color-background-main-8));
+            margin-top: -17rem;
+            padding-top: 17rem;
+        }
+
+        p {
+            width: calc(var(--column-width) - --gap);
+        }
+
+        :lang("en"),
+        :lang("de-de") {
+            --constant: 1.3px;
+            --linear: 0.06em;
+            letter-spacing: calc(var(--constant) - var(--linear));
+        }
+
+        :lang("de-de") {
+            font-family: 'Times New Roman', Times, Georgia, serif;
+            font-style: italic;
+            font-size: 116%;
+            padding-right: 0.08em;
+        }
+
+        :lang("en") {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .rubric {
+            color: var(--color-rubric);
+            text-shadow: 1px 1px black, 1px 0px black, 0px 1px black;
+            ;
+        }
+
+        .decorative {
+            --fontSize: max(18rem, 40dvw);
+            margin: .09em -.128em;
+            transform: translateY(-.085em);
+            mix-blend-mode: difference;
+            color: var(--color-inversion);
+            transition: margin .3s, transform .4s;
+            font-size: var(--fontSize);
+        }
+
+        :has(main:hover) .decorative:lang("en") {
+            margin-left: -20vw;
+            margin-right: 20vw;
+        }
+
+        :has(main:hover) .decorative:lang("de-de") {
+            margin-left: 20vw;
+            margin-right: -20vw;
+        }
+
+        :has(main:hover) header {
+            filter: blur(0px);
+        }
+
+        header+* {
+            position: relative;
+        }
+
+        .leftRight {
+            width: min-content;
+            flex-shrink: none;
+            font-size: max(0.8rem, 3dvw);
+            line-height: 1.1em;
+            font-weight: 100;
+            mix-blend-mode: initial;
+        }
+
+        .animated {
+            transform: translateY(-0.05em) scaleX(1);
+        }
+
+        :hover>.animated {
+            transform: translateY(-0.05em) scaleX(-1);
+        }
+
+        ol,
+        ul {
+            max-width: var(--column-width)
+        }
+
+        .card-list li {
+            outline: 4px outset white;
+            outline-offset: -4px;
+            padding: 0.8rem 1rem;
+            margin: 1rem 0;
+            box-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div lang="en">
+            <div class="leftRight"> I translate, revise and abridge your texts and graphics in German and English.<br />
+                My areas of expertise are Art, Activism, Journalism and the Humanities. </div>
+            <div style="  line-height:10dvw; text-align: end;" class="decorative "> en </div>
+        </div>
+        <span style="font-size:min(12rem, 15dvw);" class="animated decorative rubric" style="
+        mix-blend-mode: hard-light;">⮂</span>
+        <div lang="de-de">
+            <div style="  line-height:10dvw;" class="decorative "> de </div>
+            <div class="leftRight"> Ich übersetze, überarbeite oder kürze deine Texte und Grafiken in deutsch und
+                englisch. <br />Meine Fachgebiete sind Kunst, Aktivismus, Journalismus sowie Sozial- und
+                Geisteswissenschaften. </div>
+        </div>
+    </header>
+    <main>
+        <ol class="card-list">
+            <li>
+                <p>
+                    <span lang="en"><b> Send me your texts</b> </span><br /><span lang="de-de">Schick mir unverbindlich
+                        deine Texte </span><br />
+                <pre class="rubric">upsiflu@gmail.com</pre>
+                <span lang="en">Or message me </span><br /><span lang="de-de">Oder per Social Media </span><br />
+                <pre class="rubric">@flupsiupsi</pre>
+                </p>
+            </li>
+            <li>
+                <p lang="en"> <b>I will contact you, and we meet in Berlin or online.</b> We'll discuss what it's all
+                    about and what's important to you, and I'll make you an offer. </p>
+                <p lang="en"><b>Per page of source material, I charge 40,&zwnj;-.</b> For anti-commercial initiatives, I
+                    work free of charge. </p>
+                <p lang="de-de"> Ich melde mich bei dir und wir machen ein Treffen in Berlin oder online aus. Da
+                    besprechen wir, worum es geht und worauf es dir ankommt, und ich mache dir ein Angebot. </p>
+                <p lang="de-de">Pro Seite Ausgangsmaterial nehme ich 40,&zwnj;-. Für antikommerzielle Initiativen
+                    arbeite ich gratis. </p>
+            </li>
+            <li>
+                <p lang="en"> We will clarify any questions that come up during the work online or at further meetings.
+                    <b> I will send you the final result in the format of your choice</b>, for example as a website,
+                    print-ready pdf, diagram, or text document. </p>
+                <p lang="de-de"> Während der Arbeit klären wir eventuelle Fragen online oder auf weiteren Treffen. Das
+                    Endergebnis schicke ich dir im Format deiner Wahl, etwa als Website, druckfertiges pdf, Diagramm
+                    oder Textdokument. </p>
+            </li>
+        </ol>
+        <ul>
+            <li>
+                <p lang="en"> Each translation includes comprehensive proofreading and revision, depending on your
+                    intended form and readership. Furthermore, I offer content-preserving abridgements as well as
+                    summaries of any length. </p>
+                <p lang="de-de"> Zu jeder Übersetzung mache ich ein umfassendes inhaltliches und formales Lektorat.
+                    Daneben kann ich deine Texte kürzen, ohne dass Inhalte verlorengehen, und Zusammenfassungen
+                    beliebiger Länge anfertigen. </p>
+            </li>
+            <li>
+                <p lang="en"> If you need a great layout, graphic design, or a translation into Russian or French for
+                    your project, I will put you in touch with my reliable colleagues. </p>
+                <p lang="de-de"> Falls du für dein Projekt noch ein gutes Layout, Grafikdesign, Übersetzungen in
+                    russischer oder französischer Sprache brauchst, vermittle ich dich an zuverlässige Kollegïnnen. </p>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>

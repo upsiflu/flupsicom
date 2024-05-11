@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flupsi translates your texts</title>
+    <style>
+        /*
+        * VARIABLES 
+        * =====================================================
+        */
+        :root {
+            --scroll-px: calc(var(--scroll) * 1px);
+            --scroll-vh: calc(var(--scroll) * 1vh);
+            --scroll-percent: calc(100vh / var(--scroll-px) / 100);
+            font-size: max(1.1em, calc(0.5em + 1vw));
+            --column-width: 20rem;
+            --gap: 3rem;
+            overscroll-behavior-y: none;
+            --steepness: 8vh;
+            --color-rubric: #ff3f2b;
+            --color-background: #bb2119;
+            --color-highlight: #e3e150;
+            --color-highlight-alternate: white;
+            --min-length: min(100vw, 95vh);
+        }
+
+        /*
+        * RESET 
+        * =====================================================
+        */
+
+        ul, ol{
+            padding: 1rem 0;
+        }
+        /*
+        * LAYOUT 
+        * =====================================================
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.25em;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: var(--color-background);
+        }
+
+        header {
+            color: var(--color-highlight);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            overflow: hidden;
+            height: calc(95vh - var(--steepness));
+            transition: background-color .3s;
+        }
+
+        main {
+            top: calc(var(--steepness) / 2);
+        }
+
+        main>section,
+        main>section>section {
+            margin-top: calc(0px - var(--steepness));
+            position: relative;
+            width: 100%;
+            background: var(--color-highlight);
+            padding-top: calc(var(--gap) * 2);
+            clip-path: polygon(0 0, 20% var(--steepness), 40% 0, 60% var(--steepness), 80% 0, 100% var(--steepness), 100% 100%, 0 100%);
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap);
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        section ul,
+        section ol {
+            padding-bottom: calc(var(--gap) * 2);
+        }
+
+        main section>section {
+            padding-top: 0;
+        }
+
+        main>section:nth-of-type(even),
+        main>section>section:nth-of-type(odd) {
+            background: silver;
+        }
+
+        .bottom-sticky {
+            position: sticky;
+            bottom: 0;
+        }
+
+        .top-sticky {
+            position: sticky;
+            top: 0;
+        }
+
+        /*
+        * TYPOGRAPHY 
+        * =====================================================
+        */
+        :lang("en"),
+        :lang("de-de") {
+            --constant: 1.05px;
+            --linear: 0.04em;
+            letter-spacing: calc(var(--constant) - var(--linear));
+        }
+
+        b:lang("en"),
+        b:lang("de-de") {
+            --constant: 1.2px;
+            --linear: 0.08em;
+        }
+
+        :lang("de-de") {
+            font-family: 'Times New Roman', Times, Georgia, serif;
+            font-style: italic;
+            font-size: 112%;
+            padding-right: 0.08em;
+        }
+
+        :lang("en") {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p:lang("en") {
+            padding-right: 1.5rem;
+        }
+
+        p:lang("de-de") {
+            padding-left: 1.5rem;
+        }
+
+        .half-line{
+            display:block;
+            margin-bottom:0.625em;
+        }
+
+        
+
+        /*
+        * MARKUP 
+        * =====================================================
+        */
+        .rubric {
+            color: var(--color-rubric);
+        }
+
+        .pre {
+            width: fit-content;
+        }
+
+        .centered {
+            width: 100%;
+            text-align: center;
+        }
+
+        /*
+        * ANIMATION 
+        * =====================================================
+        */
+        :has(main:hover) header {
+            background: #119960;
+            color: #119960;
+        }
+
+        .animated {
+            transform: translateY(.1em) scaleX(1);
+            color: var(--color-rubric);
+            width: 1em;
+            text-align: center;
+        }
+
+        :hover>.animated {
+            transform: translateY(-0.05em) scaleX(-1);
+        }
+
+        /* .decorative {
+            margin: .14em -.128em;
+            transform: translateY(-.085em);
+            mix-blend-mode: exclusion;
+            color: var(--color-rubric);
+            transition: margin .9s, transform .4s;
+        }
+
+        :has(main:hover) .decorative:lang("en") {
+            margin-left: -20vw;
+            margin-right: 20vw;
+        }
+
+        :has(main:hover) .decorative:lang("de-de") {
+            margin-left: 20vw;
+            margin-right: -20vw;
+        }
+
+        :has(main:hover) .decorative:is(:lang("de-de"), :lang("en")) {
+            margin: -.14em -.128em;
+        }
+
+        .leftRight {
+            width: min-content;
+            font-size: max(0.8rem, 5dvw);
+            line-height: 1.1em;
+        } */
+        /*
+        * LISTS 
+        * =====================================================
+        */
+        ol,
+        ul {
+            display: flex;
+            max-width: 100%;
+            gap: var(--gap);
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            counter-reset: item;
+        }
+
+        li {
+            counter-increment: item;
+        }
+
+        ol>li:before {
+            transform: translate(-5.5rem, 5rem);
+            content: counter(item);
+            background: #ccc;
+            font-weight: bolder;
+            border-radius: 100%;
+            color: var(--color-highlight);
+            width: 1.25em;
+            font-size: 8rem;
+            line-height: 1.25em;
+            text-align: center;
+            display: block;
+            mix-blend-mode: darken;
+            position: absolute;
+        }
+
+        li {
+            min-width: var(--column-width);
+            width: min-content;
+        }
+
+        /*
+        * ILLUSTRATIONS 
+        * =====================================================
+        */
+        .incipit img {
+            filter: contrast(5) invert(1) brightness(0.45);
+            max-height: 9rem;
+            min-height: 8rem;
+            position: relative;
+        }
+
+        .incipit {
+            height: 11rem;
+            mix-blend-mode: exclusion;
+            margin-bottom: -2rem;
+            position: relative;
+            background: black;
+            left: -2rem;
+        }
+
+        .incipit:after {
+            position: absolute;
+            inset: 0px;
+            content: "";
+            mix-blend-mode: color;
+            background: #ff3000;
+            display: block;
+        }
+
+        /*
+        * DECORATION 
+        * =====================================================
+        */
+        :root {
+            --rotation: -11deg;
+        }
+
+        .logo-text,
+        #symbol {
+            font-size: calc(0.6 * var(--min-length));
+            mix-blend-mode: screen;
+            line-height: 0.6em;
+            transform: rotate(var(--rotation));
+            position: fixed;
+        }
+
+        #symbol {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            width: 2em;
+            top: calc(42vh - 0.12em);
+            left: calc(50vw - 1em);
+        }
+
+        .introduction {
+            font-size: max(1rem, calc(0.04 * var(--min-length)));
+            line-height: 1.15em;
+            position: fixed;
+        }
+
+        .introduction.slim-screen-only{
+            font-size: calc(1.4vh + 0.4rem + 1.3vw);
+        }
+
+        .introduction.left {
+            left: calc(2rem - var(--scroll-px));
+            bottom: calc(25vh + var(--scroll-vh) / 10);
+        }
+
+        .introduction.right {
+            right: calc(2rem - var(--scroll-px));
+            top: calc(0.5rem + 5vh - var(--scroll-vh) / 10);
+        }
+
+        .logo-text.left {
+            text-align: start;
+            left: 0;
+            top: 0;
+        }
+
+        .logo-text.right {
+            text-align: end;
+            right: 0;
+            bottom: 20vh;
+        }
+
+        .slim-screen-only{
+                visibility: hidden;
+            }
+
+        @media only screen and (max-width: 38rem){
+            .slim-screen-only{
+                visibility: visible;
+            }
+
+            .wide-screen-only{
+                visibility: hidden;
+            }
+        }
+        
+    </style>
+    <script>
+        const setStyle = ([variable, value]) => {
+            document.querySelector(":root").style.setProperty(`--${variable}`, value);
+        }
+        setStyle(["scroll", 0 ]);
+        setStyle(["rotation", "11deg" ]);
+        window.addEventListener("scroll", (e) => {
+            setStyle([ "scroll", window.scrollY] );
+            setStyle( ["rotation", `${12-window.scrollY/30}deg`] );
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div lang="en" class="wide-screen-only introduction left"> I <b>translate</b>, <b>revise</b> and <b>abridge</b>
+            your<br />texts and graphics in German and English.<br />My areas of expertise are the Arts,
+            Activism,<br />Journalism and the Humanities. </div>
+        <div lang="en" class="slim-screen-only pre introduction left"> I <b>translate</b>, <b>revise</b> and <b>abridge</b>
+            <br /> your texts and graphics<br /> in German and English.<br class="half-line" />My areas of expertise are<br /> the Arts,
+            Activism, Journalism <br />and the Humanities. </div>
+        <div class="rubric logo-text left" lang="en"> en </div>
+        <div class="rubric logo-text" id="symbol">⮂</div>
+        <div class="rubric logo-text right" lang="de-de"> de </div>
+        <div lang="de-de" class="wide-screen-only pre introduction right"> Ich übersetze, überarbeite oder kürze<br />deine Texte und
+            Grafiken in deutsch <br />und englisch.<br />Meine Fachgebiete sind Kunst, Aktivismus,<br />Journalismus
+            sowie Sozial-<br />und Geisteswissenschaften. </div>
+        <div lang="de-de" class="slim-screen-only  introduction right"> Ich übersetze, überarbeite <br />
+            oder kürze deine Texte und <br />Grafiken in deutsch und englisch.<br class="half-line" />Meine Fachgebiete sind<br /> 
+            Kunst,  Aktivismus, Journalismus<br /> sowie Sozial- und<br /> Geisteswissenschaften. </div>
+    </header>
+    <!-- <header>
+        <div lang="en">
+            <div class="leftRight"> I <b>translate</b>, <b>revise</b> and <b>abridge</b> your texts and graphics in
+                German and English.<br /> My areas of expertise are Art, Activism, Journalism and the Humanities. </div>
+            <div style="  line-height:10dvw; text-align: end;" class="decorative "> en </div>
+        </div>
+        <span id="symbol" style="font-size:min(12rem, 43vw);" class="animated decorative rubric" style="
+        mix-blend-mode: hard-light;">⮂</span>
+        <div lang="de-de">
+            <div style="  line-height:10dvw;" class="decorative "> de </div>
+            <div class="leftRight"> Ich übersetze, überarbeite oder kürze deine Texte und Grafiken in deutsch und
+                englisch. <br />Meine Fachgebiete sind Kunst, Aktivismus, Journalismus sowie Sozial- und
+                Geisteswissenschaften. </div>
+        </div>
+    </header> -->
+    <main>
+        <section>
+            <ol class="card-list">
+                <li>
+                    <div class="incipit">
+                        <img
+                            src=" data:image/png;base64,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" />
+                    </div>
+                    <p>
+                    <p lang="en"><b> Send me your texts</b> </p>
+                    <p lang="de-de">Schick mir unverbindlich deine Texte </p>
+                    <pre class="rubric centered">upsiflu@gmail.com</pre>
+                    <p lang="en">Or drop a pm</p>
+                    <p lang="de-de">Oder per Social Media </p>
+                    <a href="https://instagram.com/flupsiupsi" title="Instagram">
+                        <pre class="rubric centered">@flupsiupsi</pre>
+                    </a>
+                    </p>
+                </li>
+                <li>
+                    <div class="incipit"><img
+                            src=" data:image/png;base64,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" />
+                    </div>
+                    <p lang="en"> <b>I will contact you, and we meet in Berlin or online.</b> We'll discuss what it's
+                        all about and what's important to you, and I'll make you an offer. </p>
+                    <p lang="en"><b>Per page of source material, I charge 40,&zwnj;-.</b> For anti-commercial
+                        initiatives, I work free of charge. </p>
+                    <p lang="de-de" class="sticky"> Ich melde mich bei dir und wir machen ein Treffen in Berlin oder
+                        online aus. Da besprechen wir, worum es geht und worauf es dir ankommt, und ich mache dir ein
+                        Angebot. </p>
+                    <p lang="de-de" class="sticky">Pro Seite Ausgangsmaterial nehme ich 40,&zwnj;-. Für antikommerzielle
+                        Initiativen arbeite ich gratis. </p>
+                </li>
+                <li>
+                    <div class="incipit"><img
+                            src=" data:image/png;base64,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" />
+                    </div>
+                    <p lang="en"> We will clarify any questions that come up during the work online or at further
+                        meetings. <b> I will send you the final result in the format of your choice</b>, for example as
+                        a website, print-ready pdf, diagram, or text document. </p>
+                    <p lang="de-de"> Während der Arbeit klären wir eventuelle Fragen online oder auf weiteren Treffen.
+                        Das Endergebnis schicke ich dir im Format deiner Wahl, etwa als Website, druckfertiges pdf,
+                        Diagramm oder Textdokument. </p>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <section style="padding-top:var(--steepness)">
+                <ul>
+                    <li>
+                        <div class="incipit"><img
+                                src=" data:image/png;base64,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" />
+                        </div>
+                        <p lang="en"> Each translation includes comprehensive proofreading and revision, depending on
+                            your intended form and readership. Furthermore, I offer content-preserving abridgements as
+                            well as summaries of any length. </p>
+                        <p lang="de-de"> Zu jeder Übersetzung mache ich ein umfassendes inhaltliches und formales
+                            Lektorat. Daneben kann ich deine Texte kürzen, ohne dass Inhalte verlorengehen, und
+                            Zusammenfassungen beliebiger Länge anfertigen. </p>
+                    </li>
+                    <li>
+                        <div class="incipit"><img
+                                src=" data:image/png;base64,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" />
+                        </div>
+                        <p lang="en"> If you need a great layout, graphic design, or a translation into Russian or
+                            French for your project, I will put you in touch with my amicable colleagues. </p>
+                        <p lang="de-de"> Falls du für dein Projekt noch ein gutes Layout, Grafikdesign, Übersetzungen in
+                            russischer oder französischer Sprache brauchst, vermittle ich dich an liebe Kollegïnnen.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="bottom-sticky" style="padding-top:var(--steepness)">
+                <p>Made by <a href="https://fLupsi.com">Flupsi</a> 🐌 <a href="https://FLupsi.com#contact"> Contact
+                        me!</a></p>
+            </section>
+        </section>
+    </main>
+</body>
+<script>
+    const symbolElement = document.querySelector("#symbol");
+    const symbols = ["⮂", "=", "⮂", "≙", "⮂", "≈", "⮂", "☞", "☜", "•", "×", "÷", "∨", "|", "⟋", "—"]
+    const next = ([first, second, ...rest]) => {
+        symbolElement.textContent = first;
+        setTimeout((() => next(second ? [second, ...rest] : symbols)), 1330)
+    }
+    next(symbols);
+</script>
+
+</html>
