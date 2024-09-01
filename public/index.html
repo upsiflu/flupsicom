@@ -9,7 +9,11 @@
     <meta name="author" content="Flupsi Upsi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>φλυψι</title>
+    <!-- Facade to defer loading youtube -->
+    <link rel="stylesheet" href="node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
     
+    <script src="node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
+    <!-- End Facade -->
     <style>
         /*normalize*/
         a,
@@ -2729,8 +2733,7 @@ I don't want authenticity. I want beauty.</pre>
                     presence towards a sense of mutuality: my stillness in the garden is my <em>“with-⁠ness”</em>.</p>
             </section>
             <div class="videoWrapper">
-                <iframe width="1080" height="768" src="https://www.youtube.com/embed/6hYqtUxOd2U?rel=0&amp;controls=0"
-                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <lite-youtube videoid="6hYqtUxOd2U" playlabel="Creature at Paschenfeld"></lite-youtube>
             </div>
         </article>
         <article id="alchemy">
