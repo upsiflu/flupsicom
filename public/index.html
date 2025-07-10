@@ -1039,6 +1039,31 @@
             height: 4rem;
             width: auto;
         }
+
+        .rainbow {
+            position: relative;
+            background: white;
+        }
+        .rainbow:hover{
+            filter:invert(1);
+        }
+        .rainbow::before{
+            content: "'";
+            position:absolute;
+            left: 0; top: 0;
+            width:100%;
+            height:100%;
+            mix-blend-mode: color;
+        background:
+        linear-gradient(rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%)
+        0 0/100% 200%;
+        animation: slide 2s linear infinite;
+        pointer-events: none;
+        }
+
+        @keyframes slide {
+        to {background-position:0 -200%}
+        }
     </style>
 </head>
 
@@ -1062,6 +1087,10 @@
             <p><a href="https://github.com/upsiflu" target="_blank">➳ github</a>
             </p>
             <p ><a href="./text" target="_blank" title="Translation, Revision & Abridgement service">➳ text services</a>
+            </p>
+
+
+            <p class="rainbow"><a href="./multimedia/" target="_blank" title="Multimedia projects">➳ multimedia</a>
             </p>
         </section>
     </section>
@@ -1546,7 +1575,7 @@ I don't want authenticity. I want beauty.</pre>
                 <em>2024</em> Presenting the Shell at p4p unconference and pa-f summer university, more digital commons projects with eco:bytes; more collaborations and beautiful travels and generosity.
             <aside id="bookmark_rant" class="bookmark explore work links">
                 <h2 class="caption">10 points</h2>
-                <p> spoken at p4p unconference, offline.place: <a
+                <p> spoken at p4p unconference, offline.place: <a  class="rainbow"
                         href="https://www.are.na/block/30328182?blockId=30328182&blockProfileId=flupsi-upsi&blockChannelId=shell-3fezyrjc5iy&mode=Edit&intent=content">Shell rant</a>; </p>
             </aside>
 
