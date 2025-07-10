@@ -18,9 +18,9 @@ em {font-family: "Times", "Times New Roman", serif;}
 
 body {padding: 50px; padding-bottom: 5rem; background: #fefefe;}
 body > * {
-    max-width: min(calc(100vw-101px), 28rem); margin-left: auto;  margin-right: auto;
+    max-width: min(calc(100vw - 101px), 28rem); margin-left: auto;  margin-right: auto;
 }
-body: before{
+body::before{
 content: "'";
   position: fixed;
   width: 100%;
